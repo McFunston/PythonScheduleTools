@@ -9,7 +9,7 @@ def GetJobs(fileName, columns):
         jn = list()
         for column_index in columns:
             jn.append(sheet.cell(row_index+1, column_index).value.encode("latin-1"))
-            jobs.append(jn)    
-            print jobs[row_index]
+        jobs.append(jn)        
+        print jobs[row_index]       
 
 GetJobs('Printflow-ToDo.xls',[3,2])
