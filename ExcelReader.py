@@ -8,7 +8,7 @@ def get_jobs(file_name, columns):
     for row_index in range(sheet.nrows-1):
         job_info = list()
         for column_index in columns:
-            cell_value = sheet.cell(row_index+1, column_index).value.encode("latin-1")
+            cell_value = sheet.cell(row_index+1, column_index).value.encode("utf-8")
             cell_value = cell_value.strip()
             job_info.append(cell_value)
         jobs_info.append(job_info)
