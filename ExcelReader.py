@@ -8,8 +8,10 @@ def GetJobs(fileName, columns):
     for row_index in range(sheet.nrows-1):
         jn = list()
         for column_index in columns:
-            jn.append(sheet.cell(row_index+1, column_index).value.encode("latin-1"))
+            cellValue=sheet.cell(row_index+1, column_index).value.encode("latin-1")
+            cellValue = cellValue.strip()
+            jn.append(cellValue)
         jobs.append(jn)        
         print jobs[row_index]       
 
-GetJobs('Printflow-ToDo.xls',[3,2])
+GetJobs('Printflow-ToDo.xls',[3,2,7])
