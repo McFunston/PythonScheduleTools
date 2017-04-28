@@ -1,17 +1,17 @@
-from xlrd import open_workbook,XL_CELL_TEXT
+from xlrd import open_workbook
 
-def GetJobs(fileName, columns):
-    
-    book = open_workbook(fileName)
+def get_jobs(file_name, columns):
+    """Print a list of jobs columns from an Excel File"""
+    book = open_workbook(file_name)
     sheet = book.sheet_by_index(0)
-    jobs = list()
+    jobs_info = list()
     for row_index in range(sheet.nrows-1):
-        jn = list()
+        job_info = list()
         for column_index in columns:
-            cellValue=sheet.cell(row_index+1, column_index).value.encode("latin-1")
-            cellValue = cellValue.strip()
-            jn.append(cellValue)
-        jobs.append(jn)        
-        print jobs[row_index]       
+            cell_value = sheet.cell(row_index+1, column_index).value.encode("latin-1")
+            cell_value = cell_value.strip()
+            job_info.append(cell_value)
+        jobs_info.append(job_info)
+        print jobs_info[row_index]
 
-GetJobs('Printflow-ToDo.xls',[3,2,7])
+get_jobs('Printflow-ToDo.xls', [3, 2, 7])
