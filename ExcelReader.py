@@ -1,7 +1,7 @@
 from xlrd import open_workbook,XL_CELL_TEXT
 
-def GetJobs(file):
-    book = open_workbook(file)
+def GetJobs(FileName):
+    book = open_workbook(FileName)
     sheet = book.sheet_by_index(0)
     jobs = list()
     for row_index in range(sheet.nrows-1):
