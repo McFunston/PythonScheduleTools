@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from xlrd import open_workbook
 
 def get_jobs(file_name, columns):
