@@ -1,7 +1,13 @@
 from xlrd import open_workbook
 
 def get_jobs(file_name, columns):
-    """Print a list of jobs columns from an Excel File"""
+    """Print a list of jobs columns from an Excel File.
+
+    Args:
+        file_name: The name of the Excel file containing jobs
+        columns: A list of the column indices to get
+
+    Returns: None """
     book = open_workbook(file_name)
     sheet = book.sheet_by_index(0)
     jobs_info = list()
