@@ -21,5 +21,5 @@ def get_jobs(file_name, columns):
             job_info.append(cell_value)
         jobs_info.append(job_info)
         print(jobs_info[row_index])
-print(sys.version)
+#print(sys.version)
 get_jobs('Printflow-ToDo.xls', [3, 2, 7])
