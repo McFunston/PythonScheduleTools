@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from xlrd import open_workbook
+import sys
 
 def get_jobs(file_name, columns):
     """Print a list of jobs columns from an Excel File.
@@ -20,5 +21,5 @@ def get_jobs(file_name, columns):
             job_info.append(cell_value)
         jobs_info.append(job_info)
         print(jobs_info[row_index])
-
+print(sys.version)
 get_jobs('Printflow-ToDo.xls', [3, 2, 7])
