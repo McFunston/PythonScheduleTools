@@ -22,4 +22,4 @@ def get_jobs(file_name, columns):
         jobs_info.append(job_info)
         print(jobs_info[row_index])
 print(sys.version)
-get_jobs('Printflow-ToDo.xls', [3, 2, 7])
+get_jobs('Printflow-ToDo.xls', [0, 3, 2, 7])
