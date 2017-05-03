@@ -29,20 +29,21 @@ def get_folder_list(path):
         print("Failure")
         return False
 
-def find_folders(path, name):
+def find_folders(path, names):
     """Returns a list of complete path of a folder if they exists within the given path.
-    path -- Path to search
+    path -- List of paths to search
     name -- Partial or complete name to search for
     Returns a list of paths as strings.
     """
     found_folders = list()
     folder_candidates = get_folder_list(path)
-    for folder in folder_candidates:
-        if name in folder:
-            fullpath = path + '/' + folder
-            found_folders.append(fullpath)
+    for name in names:
+        for folder in folder_candidates:
+            if name in folder:
+                fullpath = path + '/' + folder
+                found_folders.append(fullpath)
     return found_folders
 
 #f = get_folder_list("/Volumes/Dockets")
-f = find_folders('/Volumes/Dockets', '68')
-print(f)
+folder_list = find_folders('/Volumes/Dockets', ['689965', '689931'])
+print(folder_list)
