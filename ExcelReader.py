@@ -4,6 +4,11 @@ import sys
 import pprint
 from xlrd import open_workbook
 
+def get_all_jobs(file_name):
+    with open_workbook(file_name) as book:
+        sheet = book.sheet_by_index(0)
+    return sheet
+
 def get_jobs(file_name, columns):
     """Print a list of jobs columns from an Excel File.
 
@@ -25,7 +30,7 @@ def get_jobs(file_name, columns):
         #print(jobs_info[row_index])
     return jobs_info
 
-def get_job(file_name, id_column, job_id):
+def get_jobs_by_id(file_name, id_column, job_id):
     """Gets the rows in a workbook that relate to a given job
 
     Args:
@@ -33,9 +38,14 @@ def get_job(file_name, id_column, job_id):
         id_column: Column containg job identifier (job#, invoice#, etc)
         job_id: A string to search for that is unique to the job being searched for
 
-    Returns: A tuple containg the rows that match the job_id"""
-    with open_workbook(file_name) as book:
-        sheet = book.sheet_by_index(0)
+    Returns: A list containg the rows that match the job_id"""
+    sheet = get_all_jobs(file_name)
+    rows = sheet.get_rows()
+    jobs = [row for row in rows if row[id_column].value == job_id]
+    return jobs
 
-x = get_jobs('Printflow-ToDo.xls', [0, 3, 2, 7])
-pprint.pprint(x)
+#x = get_jobs('Printflow-ToDo.xls', [0, 3, 2, 7])
+#x = get_all_jobs('Printflow-ToDo.xls')
+#pprint.pprint(type(x.row(0)))
+job = get_jobs_by_id('Printflow-ToDo.xls', 3, "690114")
+pprint.pprint(job)
