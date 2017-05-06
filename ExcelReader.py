@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
+"""MS Excel tools related to schedules save as workbooks"""
 from xlrd import open_workbook
-import sys
 
 def get_jobs(file_name, columns):
     """Print a list of jobs columns from an Excel File.
