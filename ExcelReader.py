@@ -10,8 +10,8 @@ def get_jobs(file_name, columns):
         columns: A list of the column indices to get
 
     Returns: None """
-    book = open_workbook(file_name)
-    sheet = book.sheet_by_index(0)
+    with open_workbook(file_name) as book:
+        sheet = book.sheet_by_index(0)
     jobs_info = list()
     for row_index in range(sheet.nrows-1):
         job_info = list()
