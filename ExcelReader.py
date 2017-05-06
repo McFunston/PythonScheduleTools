@@ -13,9 +13,16 @@ def list_strip(list_to_strip):
     return stripped_list
 
 def get_all_jobs(file_name):
-    with open_workbook(file_name) as book:
-        sheet = book.sheet_by_index(0)
-    return sheet
+    """Get the contents of the first worksheet of an Excel file
+    Args:
+       file_name: The name of the Excel file containing jobs
+    Returns: Excel work sheet as xlrd.sheet.Sheet"""
+    try:
+        with open_workbook(file_name) as book:
+            sheet = book.sheet_by_index(0)
+        return sheet
+    except FileNotFoundError:
+        raise ValueError("That file doesn't exist at the given location")
 
 def get_jobs(file_name, columns):
     """Print a list of jobs columns from an Excel File.
@@ -47,7 +54,11 @@ def get_jobs_by_id(file_name, id_column, job_id):
         job_id: A string to search for that is unique to the job being searched for
 
     Returns: A list containg the rows that match the job_id"""
-    sheet = get_all_jobs(file_name)
+    try:
+        sheet = get_all_jobs(file_name)
+    except ValueError as error:
+        print(error.args)
+        raise
     rows = sheet.get_rows()
     jobs = [list_strip(row) for row in rows if row[id_column].value == str(job_id)]
     return jobs
