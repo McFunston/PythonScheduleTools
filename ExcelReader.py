@@ -22,4 +22,14 @@ def get_jobs(file_name, columns):
         jobs_info.append(job_info)
         print(jobs_info[row_index])
 
+def get_job(file_name, column, job_id):
+    """Gets the rows in a workbook that relate to a given job
+
+    Args:
+        file_name: The name of the Excel file containing jobs
+        columns: A list of the column indices to get
+        job_id: A string to search for that is unique to the job being searched for
+
+    Returns: A tuple containg the rows that match the job_id"""
+
 get_jobs('Printflow-ToDo.xls', [0, 3, 2, 7])
