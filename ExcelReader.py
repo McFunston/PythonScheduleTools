@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """MS Excel tools related to schedules save as workbooks"""
+import sys 
+import pprint
 from xlrd import open_workbook
 
 def get_jobs(file_name, columns):
@@ -9,7 +11,7 @@ def get_jobs(file_name, columns):
         file_name: The name of the Excel file containing jobs
         columns: A list of the column indices to get
 
-    Returns: None """
+    Returns: list(list(str))  """
     with open_workbook(file_name) as book:
         sheet = book.sheet_by_index(0)
     jobs_info = list()
@@ -20,16 +22,20 @@ def get_jobs(file_name, columns):
             cell_value = cell_value.strip()
             job_info.append(cell_value)
         jobs_info.append(job_info)
-        print(jobs_info[row_index])
+        #print(jobs_info[row_index])
+    return jobs_info
 
-def get_job(file_name, column, job_id):
+def get_job(file_name, id_column, job_id):
     """Gets the rows in a workbook that relate to a given job
 
     Args:
         file_name: The name of the Excel file containing jobs
-        columns: A list of the column indices to get
+        id_column: Column containg job identifier (job#, invoice#, etc)
         job_id: A string to search for that is unique to the job being searched for
 
     Returns: A tuple containg the rows that match the job_id"""
+    with open_workbook(file_name) as book:
+        sheet = book.sheet_by_index(0)
 
-get_jobs('Printflow-ToDo.xls', [0, 3, 2, 7])
+x = get_jobs('Printflow-ToDo.xls', [0, 3, 2, 7])
+pprint.pprint(x)
