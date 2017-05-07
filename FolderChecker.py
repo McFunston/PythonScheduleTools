@@ -7,8 +7,8 @@ from os.path import isfile, isdir, join
 
 def get_file_list(path):
     """Given a path prints a list of all files contained,
-    path -- Path that you want to get the file list from
-    Returns list of string (file names)"""
+    Args: path: Path that you want to get the file list from
+    Returns: list of string (file names)"""
     try:
         file_list = [f for f in listdir(path) if isfile(join(path, f))]
         print(file_list)
@@ -44,6 +44,20 @@ def find_folders(path, names):
                 found_folders.append(fullpath)
     return found_folders
 
+def folder_append(folders, sub_folder):
+    """Appends subfolder paths onto a list of folders
+        Args:
+            folders: list of folders to append to
+            sub_folder: path to append (string)
+        Returns: list of folder paths
+    """
+    full_folder = list()
+    for folder in folders:
+        folder += sub_folder
+        full_folder.append(folder)
+    return full_folder
+
 #f = get_folder_list("/Volumes/Dockets")
-folder_list = find_folders('/Volumes/Dockets', ['689965', '689931'])
-print(folder_list)
+#folder_list = find_folders('/Volumes/Dockets', ['689965', '689931'])
+FOLDER_LIST = folder_append(find_folders('G:/TestWorkFolder/Dockets', ['684421', '685543']), "/Production/Print")
+print(FOLDER_LIST)
