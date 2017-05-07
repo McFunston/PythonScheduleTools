@@ -7,7 +7,7 @@ import FolderChecker
 
 def check_status_by_files(excel_filename, status_column, id_column, status, root_path, sub_path):
     jobs_to_check = ExcelReader.get_jobs_by_status(excel_filename, status_column, status)
-    jobs_tocheck = ExcelReader.get_just_ids(jobs_to_check, id_column)
+    jobs_to_check = ExcelReader.get_just_ids(jobs_to_check, id_column)
     folders_to_check = FolderChecker.find_folders(root_path, jobs_to_check)
     folders_to_check = FolderChecker.folder_append(folders_to_check, sub_path)
     candidates = FolderChecker.count_files(folders_to_check)
