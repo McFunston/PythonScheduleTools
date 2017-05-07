@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """MS Excel tools related to schedules save as workbooks"""
-import sys 
+import sys
 import pprint
 from xlrd import open_workbook
 
@@ -23,6 +23,17 @@ def get_all_jobs(file_name):
         return sheet
     except FileNotFoundError:
         raise ValueError("That file doesn't exist at the given location")
+
+def excel_to_dict(file_name):
+    sheet = get_all_jobs(file_name)
+    excel_dict = dict()
+    for row_index in range(sheet.nrows-1):
+        for column_index in range(sheet.ncols-1):
+            cell_value = sheet.cell(row_index+1, column_index+1).value
+            cell_value = cell_value.strip()
+            cell_location = (row_index+1, column_index+1)
+            excel_dict[cell_location] = cell_value
+    return excel_dict
 
 def get_jobs(file_name, columns):
     """Print a list of jobs columns from an Excel File.
@@ -66,5 +77,7 @@ def get_jobs_by_id(file_name, id_column, job_id):
 #x = get_jobs('Printflow-ToDo.xls', [0, 3, 2, 7])
 #x = get_all_jobs('Printflow-ToDo.xls')
 #pprint.pprint(type(x.row(0)))
-job = get_jobs_by_id('Printflow-ToDo.xls', 3, 690114)
-pprint.pprint(job)
+#JOB = get_jobs_by_id('Printflow-ToDo.xls', 3, 690114)
+#pprint.pprint(JOB)
+TEST = excel_to_dict('Printflow-ToDo.xls')
+pprint.pprint(TEST)
