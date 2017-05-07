@@ -91,6 +91,16 @@ def get_jobs_by_status(file_name, status_column, status):
     jobs = [list_strip(row) for row in rows if status in row[status_column].value]
     return jobs
 
+def get_just_ids(jobs, id_index):
+    """Strip away everything except the job ids from a list of jobs
+    Args:
+        jobs: A list of jobs
+        id_index: Location in the list of the indices
+    Returns: A list of job ids (string)
+    """
+    ids = [job[id_index] for job in jobs]
+    return ids
+
 #x = get_jobs('Printflow-ToDo.xls', [0, 3, 2, 7])
 #x = get_all_jobs('Printflow-ToDo.xls')
 #pprint.pprint(type(x.row(0)))
@@ -98,4 +108,5 @@ def get_jobs_by_status(file_name, status_column, status):
 #pprint.pprint(JOB)
 #TEST = excel_to_dict('Printflow-ToDo.xls')
 TEST = get_jobs_by_status('Printflow-ToDo.xls', 2, 'Files In')
+TEST = get_just_ids(TEST, 3)
 pprint.pprint(TEST)
