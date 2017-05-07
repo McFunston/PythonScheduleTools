@@ -74,10 +74,21 @@ def get_jobs_by_id(file_name, id_column, job_id):
     jobs = [list_strip(row) for row in rows if row[id_column].value == str(job_id)]
     return jobs
 
+def get_jobs_by_status(file_name, status_column, status):
+    try:
+        sheet = get_all_jobs(file_name)
+    except ValueError as error:
+        print(error.args)
+        raise
+    rows = sheet.get_rows()
+    jobs = [list_strip(row) for row in rows if status in row[status_column].value]
+    return jobs
+
 #x = get_jobs('Printflow-ToDo.xls', [0, 3, 2, 7])
 #x = get_all_jobs('Printflow-ToDo.xls')
 #pprint.pprint(type(x.row(0)))
 #JOB = get_jobs_by_id('Printflow-ToDo.xls', 3, 690114)
 #pprint.pprint(JOB)
-TEST = excel_to_dict('Printflow-ToDo.xls')
+#TEST = excel_to_dict('Printflow-ToDo.xls')
+TEST = get_jobs_by_status('Printflow-ToDo.xls', 2, 'Files In')
 pprint.pprint(TEST)
