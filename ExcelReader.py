@@ -75,6 +75,13 @@ def get_jobs_by_id(file_name, id_column, job_id):
     return jobs
 
 def get_jobs_by_status(file_name, status_column, status):
+    """Get all of the rows in an Excel file where the status column contains a certain status
+    Args:
+        file_name: Name of the Excel file
+        status_column: Column that contains the statuses for the jobs
+        status: Status to filter by
+    Returns: A list of row contents
+    """
     try:
         sheet = get_all_jobs(file_name)
     except ValueError as error:
