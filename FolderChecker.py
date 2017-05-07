@@ -11,10 +11,10 @@ def get_file_list(path):
     Returns: list of string (file names)"""
     try:
         file_list = [f for f in listdir(path) if isfile(join(path, f))]
-        print(file_list)
+        #print(file_list)
         return file_list
     except:
-        print("Failure")
+        #print("Failure")
         return False
 
 def get_folder_list(path):
@@ -57,17 +57,21 @@ def folder_append(folders, sub_folder):
         full_folder.append(folder)
     return full_folder
 
-def count_files(folder):
+def count_files(folders):
     """Count the files contained in a folder
     Args:
         folder: Path to check
-    Returns: Count of files contained (int)
+    Returns: [Folder Path, Count of files contained (int), List of files]
     """
-    return len(get_file_list(folder))
+    folder_size = list()
+    for folder in folders:
+        file_list = get_file_list(folder)
+        folder_size.append([folder, len(file_list), file_list])
+    return folder_size
 
 #f = get_folder_list("/Volumes/Dockets")
 #folder_list = find_folders('/Volumes/Dockets', ['689965', '689931'])
 #FOLDER_LIST = folder_append(find_folders('G:/TestWorkFolder/Dockets', ['684421', '685543']), "/Production/Print")
 #print(FOLDER_LIST)
-FILE_COUNT = count_files("G:/TestWorkFolder/Dockets/684421/Production/Print")
-print(FILE_COUNT)
+#FILE_COUNT = count_files(["G:/TestWorkFolder/Dockets/684421/Production/Print"])
+#print(FILE_COUNT)
