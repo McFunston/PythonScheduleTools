@@ -11,11 +11,10 @@ def get_file_list(path):
     Returns: list of string (file names)"""
     try:
         file_list = [f for f in listdir(path) if isfile(join(path, f))]
-        #print(file_list)
         return file_list
-    except:
-        #print("Failure")
-        return False
+    except FileNotFoundError as error:
+        print("Failure" + error.args)
+        return
 
 def get_folder_list(path):
     """Given a path prints a list of all folders contained,
@@ -23,26 +22,27 @@ def get_folder_list(path):
     Returns list of string (folder names)"""
     try:
         folder_list = [f for f in listdir(path) if isdir(join(path, f))]
-        #print(folder_list)
         return folder_list
-    except:
+    except FileNotFoundError:
         print("Failure")
         return False
 
 def find_folders(path, names):
-    """Returns a list of complete path of a folder if they exists within the given path.
+    """Returns a list of the complete paths of folders if they exists within the given path.
     path -- List of paths to search
     name -- Partial or complete name to search for
     Returns a list of paths as strings.
     """
     found_folders = list()
     folder_candidates = get_folder_list(path)
-    for name in names:
-        for folder in folder_candidates:
-            if name in folder:
-                fullpath = path + '/' + folder
-                found_folders.append(fullpath)
-    return found_folders
+    if folder_candidates:
+        for name in names:
+            for folder in folder_candidates:
+                if name in folder:
+                    fullpath = path + '/' + folder
+                    found_folders.append(fullpath)
+        return found_folders
+    else: return
 
 def folder_append(folders, sub_folder):
     """Appends subfolder paths onto a list of folders
@@ -52,10 +52,12 @@ def folder_append(folders, sub_folder):
         Returns: list of folder paths
     """
     full_folder = list()
-    for folder in folders:
-        folder += sub_folder
-        full_folder.append(folder)
-    return full_folder
+    if folders:
+        for folder in folders:
+            folder += sub_folder
+            full_folder.append(folder)
+        return full_folder
+    else: return
 
 def count_files(folders):
     """Count the files contained in a folder
@@ -64,12 +66,15 @@ def count_files(folders):
     Returns: [Folder Path, Count of files contained (int), List of files]
     """
     folder_size = list()
-    for folder in folders:
-        file_list = get_file_list(folder)
-        folder_size.append([folder, len(file_list), file_list])
-    return folder_size
+    if folders:
+        for folder in folders:
+            file_list = get_file_list(folder)
+            folder_size.append([folder, len(file_list), file_list])
+        return folder_size
+    else: return
 
-#f = get_folder_list("/Volumes/Dockets")
+f = get_folder_list("/Volumes/Dockets")
+print(f)
 #folder_list = find_folders('/Volumes/Dockets', ['689965', '689931'])
 #FOLDER_LIST = folder_append(find_folders('G:/TestWorkFolder/Dockets', ['684421', '685543']), "/Production/Print")
 #print(FOLDER_LIST)
