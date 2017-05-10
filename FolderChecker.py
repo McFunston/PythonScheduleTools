@@ -14,7 +14,7 @@ def get_file_list(path):
         return file_list
     except FileNotFoundError:
         print("Failure in get_file_list")
-        return
+        return ["Bad folder structure"]
 
 def get_folder_list(path):
     """Given a path prints a list of all folders contained,
@@ -71,8 +71,7 @@ def count_files(folders):
             file_list = get_file_list(folder)
             if file_list:
                 folder_size.append([folder, len(file_list), file_list])
-            else:
-                folder_size.append([folder, 9999, "Bad folder structure"])
+
         return folder_size
     else: return
 
