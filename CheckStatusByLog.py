@@ -15,5 +15,5 @@ def check_status_by_csv(excel_filename, status_column, id_column, status, csv_fi
 
 #TEST = check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', 'G:/TestWorkFolder/Dockets', '/Production/Print')
 #print(TEST)
-TEST = check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'Job Log.txt')
+TEST = check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'Job Log.csv')
 pprint.pprint(TEST)
