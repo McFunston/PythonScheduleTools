@@ -12,9 +12,18 @@ def find_in_csv(file_name, search_strings):
     with open(file_name, newline='', encoding='latin-1') as csvfile:
         reader = csv.reader(x.replace('\0', '') for x in csvfile)
         findings = list()
+        read = [r for r in reader]
         #log_file = csv.reader(csvfile, delimiter=',', quotechar='"')
         for search_string in search_strings:
-            findings.append([[r[0], r[1]] for r in reader if len(r) > 1 and search_string in r[1]])
-        return findings
-#FOUND = find_in_csv('Job Log.csv', ['690381'])
+            #print(search_string)
+            for r in read:
+                #print(len(r))
+                if len(r) > 1 and str(search_string) in str(r[1]):
+                    #print("found one")
+                    findings.append([r[0], r[1]])
+                #elif len(r) > 2: pprint.pprint(search_string + " not found in " + r[1])
+                #findings.append([[r[0], r[1]] if len(r) > 1 and search_string in r[1]])
+
+    return findings
+#FOUND = find_in_csv('Job Log.txt', ['888888', '690381'])
 #pprint.pprint(FOUND)
