@@ -14,5 +14,5 @@ def find_in_csv(file_name, search_string):
         #log_file = csv.reader(csvfile, delimiter=',', quotechar='"')
         findings = [[r[0], r[1]] for r in reader if len(r) > 1 and search_string in r[1]]
         return findings
-FOUND = find_in_csv('Job Log.csv', '690381')
-pprint.pprint(FOUND)
+#FOUND = find_in_csv('Job Log.csv', '690381')
+#pprint.pprint(FOUND)
