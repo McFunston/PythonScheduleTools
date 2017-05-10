@@ -10,12 +10,10 @@ def check_status_by_csv(excel_filename, status_column, id_column, status, csv_fi
     jobs_to_check = ExcelReader.get_jobs_by_status(excel_filename, status_column, status)
     jobs_to_check = ExcelReader.get_just_ids(jobs_to_check, id_column)
     candidates = list()
-    for job in jobs_to_check:
-        found_jobs = CSVReader.find_in_csv(csv_file, job)
-        candidates.append(found_jobs)
+    candidates = CSVReader.find_in_csv(csv_file, jobs_to_check)
     return candidates
 
 #TEST = check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', 'G:/TestWorkFolder/Dockets', '/Production/Print')
 #print(TEST)
-TEST = check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'Job Log.csv')
+TEST = check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'Job Log.txt')
 pprint.pprint(TEST)
