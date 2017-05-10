@@ -12,8 +12,8 @@ def get_file_list(path):
     try:
         file_list = [f for f in listdir(path) if isfile(join(path, f))]
         return file_list
-    except FileNotFoundError as error:
-        print("Failure" + error.args)
+    except FileNotFoundError:
+        print("Failure in get_file_list")
         return
 
 def get_folder_list(path):
@@ -24,8 +24,8 @@ def get_folder_list(path):
         folder_list = [f for f in listdir(path) if isdir(join(path, f))]
         return folder_list
     except FileNotFoundError:
-        print("Failure")
-        return False
+        print("Failure in get_folder_list")
+        return
 
 def find_folders(path, names):
     """Returns a list of the complete paths of folders if they exists within the given path.
@@ -69,12 +69,15 @@ def count_files(folders):
     if folders:
         for folder in folders:
             file_list = get_file_list(folder)
-            folder_size.append([folder, len(file_list), file_list])
+            if file_list:
+                folder_size.append([folder, len(file_list), file_list])
+            else:
+                folder_size.append([folder, 9999, "Bad folder structure"])
         return folder_size
     else: return
 
-f = get_folder_list("/Volumes/Dockets")
-print(f)
+#f = get_folder_list("/Volumes/Dockets")
+#print(f)
 #folder_list = find_folders('/Volumes/Dockets', ['689965', '689931'])
 #FOLDER_LIST = folder_append(find_folders('G:/TestWorkFolder/Dockets', ['684421', '685543']), "/Production/Print")
 #print(FOLDER_LIST)
