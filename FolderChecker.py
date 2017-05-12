@@ -24,7 +24,7 @@ def get_folder_list(path):
         folder_list = [f for f in listdir(path) if isdir(join(path, f))]
         return folder_list
     except FileNotFoundError:
-        print("Failure in get_folder_list")
+        print("Failure in get_folder_list" + path)
         return
 
 def find_folders(path, names):
