@@ -2,6 +2,12 @@
 """Tools for extracting job info from CSV files"""
 import csv
 import pprint
+
+def read_log(path):
+    with open(path, newline='', encoding='latin-1') as csvfile:
+        reader = csv.reader(x.replace('\0', '') for x in csvfile)
+    return reader
+
 def find_in_csv(file_name, search_strings):
     """Find a string within a CSV file
     Args:

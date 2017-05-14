@@ -1,22 +1,32 @@
 #!/usr/bin/env python3
 """A utility to add any new files in a given folder to a comma separated text file"""
+import csv
+import CSVReader
 import FolderChecker
 def folder_watcher(folder, logfile):
-    files = FolderChecker.get_file_list(folder)
-    
+    files = FolderChecker.get_file_list_with_date(folder)
     try:
         file = open(logfile, 'r')
     except IOError:
         file = open(logfile, 'w')
     finally:
         file.close()
+    current_log = CSVReader.read_log(logfile)
+    files_to_add = list()
+    for file in files:
+        if file[1] not in current_log:
+            files_to_add.append(file)
+    with open(logfile, 'w', newline='', encoding='latin-1') as csvfile:
+        writer = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+        for file_to_add in files_to_add:
+            writer.writerow(file_to_add)
 
-    with open(logfile, mode='r') as logged:
-        current_log = logged.read()
-    current_log += str(files)
-    current_log = str(current_log)
-    current_log = current_log.split(',')
-    current_log = str(set(current_log))
-    with open(logfile, mode='w') as logged:
-        logged.write(current_log)
-folder_watcher("/", "Proofs.txt")
+    #with open(logfile, mode='r') as logged:
+        #current_log = logged.read()
+    #current_log += str(files)
+    #current_log = str(current_log)
+    #current_log = current_log.split(',')
+    #current_log = str(set(current_log))
+    #with open(logfile, mode='w') as logged:
+        #logged.write(current_log)
+folder_watcher("c:/Visual Studio Projects/PythonScheduleTools", "Proofs.txt")

@@ -2,11 +2,13 @@
 # sample regex (^|\D)\d{6}($|\D)
 """Folder and file utilities"""
 import re
+import os
 from os import listdir
 from os.path import isfile, isdir, join
+import time
 
 def get_file_list(path):
-    """Given a path prints a list of all files contained,
+    """Given a path returns a list of all files contained,
     Args: path: Path that you want to get the file list from
     Returns: list of string (file names)"""
     try:
@@ -16,8 +18,15 @@ def get_file_list(path):
         print("Failure in get_file_list")
         return ["Bad folder structure"]
 
+def get_file_list_with_date(path):
+    file_list = get_file_list(path)
+    file_list_with_date = []
+    for file in file_list:
+        file_list_with_date.append([os.path.getmtime(file), file])
+    return file_list_with_date
+
 def get_folder_list(path):
-    """Given a path prints a list of all folders contained,
+    """Given a path returns a list of all folders contained,
     path -- Path that you want to get the file list from
     Returns list of string (folder names)"""
     try:
