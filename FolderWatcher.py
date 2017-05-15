@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """A utility to add any new files in a given folder to a comma separated text file"""
+import sys
 import csv
 import CSVReader
 import FolderChecker
@@ -21,14 +22,10 @@ def folder_watcher(folder, logfile):
         for file_to_add in files_to_add:
             writer.writerow(file_to_add)
 
-    #with open(logfile, mode='r') as logged:
-        #current_log = logged.read()
-    #current_log += str(files)
-    #current_log = str(current_log)
-    #current_log = current_log.split(',')
-    #current_log = str(set(current_log))
-    #with open(logfile, mode='w') as logged:
-        #logged.write(current_log)
-folder_watcher("c:/Visual Studio Projects/PythonScheduleTools", "Job Log.csv")
-#READ = CSVReader.read_log("Job Log.csv")
-#print(READ)
+#folder_watcher("c:/Visual Studio Projects/PythonScheduleTools", "Job Log.csv")
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Arguments 'folder' and 'logfile' required")
+    else:
+        folder_watcher(sys.argv[1], sys.argv[2])
+
