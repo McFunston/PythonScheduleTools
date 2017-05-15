@@ -3,9 +3,15 @@
 import csv
 import pprint
 
-def read_log(path):
-    with open(path, newline='', encoding='latin-1') as csvfile:
-        reader = csv.reader(x.replace('\0', '') for x in csvfile)
+def read_log(file_name):
+    try:
+        csvfile = open(file_name, newline='', encoding='latin-1', mode='r')
+    except IOError:
+        return
+    finally:
+        csvfile.close
+    reader = csv.reader(x.replace('\0', '') for x in csvfile)
+    csvfile.close
     return reader
 
 def find_in_csv(file_name, search_strings):
@@ -33,3 +39,5 @@ def find_in_csv(file_name, search_strings):
     return findings
 #FOUND = find_in_csv('Job Log.txt', ['888888', '690381'])
 #pprint.pprint(FOUND)
+#READ = read_log("Job Log.csv")
+#print(READ)

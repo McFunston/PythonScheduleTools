@@ -29,4 +29,6 @@ def folder_watcher(folder, logfile):
     #current_log = str(set(current_log))
     #with open(logfile, mode='w') as logged:
         #logged.write(current_log)
-folder_watcher("c:/Visual Studio Projects/PythonScheduleTools", "Proofs.txt")
+folder_watcher("c:/Visual Studio Projects/PythonScheduleTools", "Job Log.csv")
+#READ = CSVReader.read_log("Job Log.csv")
+#print(READ)
