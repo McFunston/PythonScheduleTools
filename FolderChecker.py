@@ -22,7 +22,11 @@ def get_file_list_with_date(path):
     file_list = get_file_list(path)
     file_list_with_date = []
     for file in file_list:
-        file_list_with_date.append([time.ctime(os.path.getmtime(file)), file])
+        file = path + '/' + file
+        try:
+            file_list_with_date.append([time.ctime(os.path.getmtime(file)), file])
+        except FileNotFoundError:
+            print(file + " is not a real file")
     return file_list_with_date
 
 def get_folder_list(path):

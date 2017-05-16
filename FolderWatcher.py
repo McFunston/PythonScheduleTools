@@ -22,7 +22,7 @@ def folder_watcher(folder, logfile):
         for file_to_add in files_to_add:
             writer.writerow(file_to_add)
 
-#folder_watcher("c:/Visual Studio Projects/PythonScheduleTools", "Job Log.csv")
+folder_watcher("/Volumes/PTDATA/PDFs", "ProofLog.csv")
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Arguments 'folder' and 'logfile' required")
