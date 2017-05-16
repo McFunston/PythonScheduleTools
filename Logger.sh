@@ -1,2 +1,2 @@
-Python3 FolderWatcher.py "/Volumes/share/" "ProofLog.csv"
-Python3 FolderWatcher.py "/Volumes/PTDATA/PDFs" "ProofLog.csv"
+Python3 /Users/MicaFunston/Projects/PythonScheduleTools/FolderWatcher.py "/Volumes/share/" "/Users/MicaFunston/Projects/PythonScheduleTools/ProofLog.csv"
+Python3 /Users/MicaFunston/Projects/PythonScheduleTools/FolderWatcher.py "/Volumes/PTDATA/PDFs" "/Users/MicaFunston/Projects/PythonScheduleTools/ProofLog.csv"
