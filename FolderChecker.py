@@ -3,6 +3,7 @@
 """Folder and file utilities"""
 import re
 import os
+import os.path
 from os import listdir
 from os.path import isfile, isdir, join
 import time
@@ -18,15 +19,25 @@ def get_file_list(path):
         print("Failure in get_file_list")
         return ["Bad folder structure"]
 
+def get_full_file_list(path):
+    file_list = list()
+    for dirpath, dirnames, filenames in os.walk(path):
+        for filename in [f for f in filenames if f.endswith(".pdf")]:
+            if filename[0] != ".":
+                file_list.append(os.path.join(dirpath, filename))
+            #print(os.path.join(dirpath, filename))
+    return file_list
+
 def get_file_list_with_date(path):
-    file_list = get_file_list(path)
+    file_list = get_full_file_list(path)
     file_list_with_date = []
     for file in file_list:
-        file = path + '/' + file
-        try:
-            file_list_with_date.append([time.ctime(os.path.getmtime(file)), file])
-        except FileNotFoundError:
-            print(file + " is not a real file")
+        if file[0] != ".":
+            #file = path + '/' + file
+            try:
+                file_list_with_date.append([time.ctime(os.path.getmtime(file)), file])
+            except FileNotFoundError:
+                print(file + " is not a real file")
     return file_list_with_date
 
 def get_folder_list(path):
@@ -95,3 +106,4 @@ def count_files(folders):
 #print(FOLDER_LIST)
 #FILE_COUNT = count_files(["G:/TestWorkFolder/Dockets/684421/Production/Print"])
 #print(FILE_COUNT)
+
