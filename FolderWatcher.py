@@ -22,11 +22,12 @@ def folder_watcher(folder, logfile):
             log.append(file)
     #log.append(files_to_add)
     with open(logfile, 'w', newline='', encoding='latin-1') as csvfile:
-        writer = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+        writer = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
         for file_to_add in log:
             writer.writerow(file_to_add)
+#quotechar='|'
 
-#folder_watcher("/Volumes/PTDATA/PDFs", "ProofLog.csv")
+#folder_watcher("//192.168.113.50/share/", "ProofLog2.csv")
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Arguments 'folder' and 'logfile' required")

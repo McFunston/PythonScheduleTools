@@ -99,7 +99,7 @@ def count_files(folders):
         return folder_size
     else: return
 
-#f = get_folder_list("/Volumes/Dockets")
+#f = get_file_list_with_date("/Volumes/share/")
 #print(f)
 #folder_list = find_folders('/Volumes/Dockets', ['689965', '689931'])
 #FOLDER_LIST = folder_append(find_folders('G:/TestWorkFolder/Dockets', ['684421', '685543']), "/Production/Print")
