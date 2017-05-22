@@ -47,13 +47,14 @@ class filedialogExample(tkinter.Frame):
 
     def check_files_in(self):
         files_in = list()
+        files_in.clear()
         dockets_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/Dockets', '/Production/Print')
         files_in.append(dockets_files)
         insite_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/AraxiVolume_PRINERGYEPM_J/Jobs', '/System/SubPages')
         files_in.append(insite_files)
         self.l.set("it worked")
-        self.results_box.delete(1.0, tkinter.END)
         self.results_box.config(state="normal")
+        self.results_box.delete(1.0, tkinter.END)
         self.results_box.insert(tkinter.END, files_in)
         self.results_box.config(state="disabled")
 
