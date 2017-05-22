@@ -3,7 +3,7 @@ from tkinter import filedialog
 import CheckStatusByFiles
 result = "test"
 class filedialogExample(tkinter.Frame):
-    
+
 
     def __init__(self, root):
 
@@ -18,7 +18,10 @@ class filedialogExample(tkinter.Frame):
         tkinter.Button(self, text='Check Proofs In', command=self.asksaveasfile).pack(**button_opt)
         self.l = tkinter.StringVar()
         self.l.set("test")
+        self.results_box = tkinter.Text(self)        
         tkinter.Label(self, textvariable=self.l).pack()
+        self.results_box.config(state="disabled")
+        self.results_box.pack()
 
         # define options for opening or saving a file
         self.file_opt = options = {}
@@ -41,7 +44,7 @@ class filedialogExample(tkinter.Frame):
         options['mustexist'] = False
         options['parent'] = root
         options['title'] = 'This is a title'
-    
+
     def check_files_in(self):
         files_in = list()
         dockets_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/Dockets', '/Production/Print')
@@ -49,6 +52,10 @@ class filedialogExample(tkinter.Frame):
         insite_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/AraxiVolume_PRINERGYEPM_J/Jobs', '/System/SubPages')
         files_in.append(insite_files)
         self.l.set("it worked")
+        self.results_box.delete(1.0, tkinter.END)
+        self.results_box.config(state="normal")
+        self.results_box.insert(tkinter.END, files_in)
+        self.results_box.config(state="disabled")
 
     def askopenfile(self):
 
