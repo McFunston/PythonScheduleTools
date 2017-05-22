@@ -1,5 +1,6 @@
 import tkinter
 from tkinter import filedialog
+import CheckStatusByFiles
 result = "test"
 class filedialogExample(tkinter.Frame):
     
@@ -12,12 +13,12 @@ class filedialogExample(tkinter.Frame):
         button_opt = {'fill': tkinter.constants.BOTH, 'padx': 10, 'pady': 10}
 
         # define buttons
-        tkinter.Button(self, text='askopenfile', command=self.askopenfile).pack(**button_opt)
-        tkinter.Button(self, text='askopenfilename', command=self.askopenfilename).pack(**button_opt)
-        tkinter.Button(self, text='asksaveasfile', command=self.asksaveasfile).pack(**button_opt)
-        tkinter.Button(self, text='asksaveasfilename', command=self.asksaveasfilename).pack(**button_opt)
-        tkinter.Button(self, text='askdirectory', command=self.askdirectory).pack(**button_opt)
-        tkinter.Button(self, text=result, command="").pack(**button_opt)
+        tkinter.Button(self, text='Check Files In', command=self.check_files_in).pack(**button_opt)
+        tkinter.Button(self, text='Check Proofs Out', command=self.askopenfilename).pack(**button_opt)
+        tkinter.Button(self, text='Check Proofs In', command=self.asksaveasfile).pack(**button_opt)
+        self.l = tkinter.StringVar()
+        self.l.set("test")
+        tkinter.Label(self, textvariable=self.l).pack()
 
         # define options for opening or saving a file
         self.file_opt = options = {}
@@ -40,6 +41,14 @@ class filedialogExample(tkinter.Frame):
         options['mustexist'] = False
         options['parent'] = root
         options['title'] = 'This is a title'
+    
+    def check_files_in(self):
+        files_in = list()
+        dockets_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/Dockets', '/Production/Print')
+        files_in.append(dockets_files)
+        insite_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/AraxiVolume_PRINERGYEPM_J/Jobs', '/System/SubPages')
+        files_in.append(insite_files)
+        self.l.set("it worked")
 
     def askopenfile(self):
 
