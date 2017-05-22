@@ -56,7 +56,10 @@ class filedialogExample(tkinter.Frame):
         self.l.set("it worked")
         self.results_box.config(state="normal")
         self.results_box.delete(1.0, tkinter.END)
-        self.results_box.insert(tkinter.END, files_in)
+        for file_in in files_in:
+            if file_in:
+                self.results_box.insert(tkinter.END, file_in)
+                self.results_box.insert(tkinter.END, '\n\n')
         self.results_box.config(state="disabled")
 
     def check_proofs_out(self):
@@ -65,7 +68,9 @@ class filedialogExample(tkinter.Frame):
         proofs_out=CheckStatusByLog.check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'ProofLog.csv')
         self.results_box.config(state="normal")
         self.results_box.delete(1.0, tkinter.END)
-        self.results_box.insert(tkinter.END, proofs_out)
+        for proof in proofs_out:
+            self.results_box.insert(tkinter.END, proof)
+            self.results_box.insert(tkinter.END, '\n\n')
         self.results_box.config(state="disabled")
 
     def askopenfile(self):
