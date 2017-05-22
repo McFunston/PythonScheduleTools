@@ -18,7 +18,7 @@ class ScheduleToolsGUI(tkinter.Frame):
         tkinter.Button(self, text='Check Proofs In', command=self.asksaveasfile).pack(**button_opt)
         self.l = tkinter.StringVar()
         self.l.set("test")
-        self.results_box = tkinter.Text(self)        
+        self.results_box = tkinter.Text(self)
         tkinter.Label(self, textvariable=self.l).pack()
         self.results_box.config(state="disabled")
         self.results_box.pack()
