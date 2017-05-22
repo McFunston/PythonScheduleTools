@@ -1,6 +1,7 @@
 import tkinter
 from tkinter import filedialog
 import CheckStatusByFiles
+import CheckStatusByLog
 result = "test"
 class filedialogExample(tkinter.Frame):
 
@@ -14,7 +15,7 @@ class filedialogExample(tkinter.Frame):
 
         # define buttons
         tkinter.Button(self, text='Check Files In', command=self.check_files_in).pack(**button_opt)
-        tkinter.Button(self, text='Check Proofs Out', command=self.askopenfilename).pack(**button_opt)
+        tkinter.Button(self, text='Check Proofs Out', command=self.check_proofs_out).pack(**button_opt)
         tkinter.Button(self, text='Check Proofs In', command=self.asksaveasfile).pack(**button_opt)
         self.l = tkinter.StringVar()
         self.l.set("test")
@@ -56,6 +57,15 @@ class filedialogExample(tkinter.Frame):
         self.results_box.config(state="normal")
         self.results_box.delete(1.0, tkinter.END)
         self.results_box.insert(tkinter.END, files_in)
+        self.results_box.config(state="disabled")
+
+    def check_proofs_out(self):
+        proofs_out = list()
+        proofs_out.clear()
+        proofs_out=CheckStatusByLog.check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'ProofLog.csv')
+        self.results_box.config(state="normal")
+        self.results_box.delete(1.0, tkinter.END)
+        self.results_box.insert(tkinter.END, proofs_out)
         self.results_box.config(state="disabled")
 
     def askopenfile(self):
