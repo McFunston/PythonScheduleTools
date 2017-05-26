@@ -18,7 +18,7 @@ def check_status_by_files(excel_filename, status_column, id_column, status, root
 
 #TEST = check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', 'G:/TestWorkFolder/Dockets', '/Production/Print')
 #print(TEST)
-TEST = check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/Dockets', '/Production/Print')
-TEST2 = check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/AraxiVolume_PRINERGYEPM_J/Jobs', '/System/SubPages')
-pprint.pprint(TEST)
-pprint.pprint(TEST2)
+#TEST = check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/Dockets', '/Production/Print')
+#TEST2 = check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/AraxiVolume_PRINERGYEPM_J/Jobs', '/System/SubPages')
+#pprint.pprint(TEST)
+#pprint.pprint(TEST2)
