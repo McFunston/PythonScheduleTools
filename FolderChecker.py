@@ -21,6 +21,10 @@ def get_file_list(path):
         return ["Bad folder structure"]
 
 def get_full_file_list(path):
+    """Given a path returns a list of all files contained,
+    with full path,
+    Args: path: Path that you want to get the file list from
+    Returns: list of string (file names)"""
     file_list = list()
     for dirpath, dirnames, filenames in os.walk(path):
         for filename in [f for f in filenames if f.endswith(".pdf")]:
@@ -124,6 +128,7 @@ class MyTest(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def test_get_full_file_list(self):
+        """get_full_file_list unit test"""
         #Arrange
         expected = ['TestData/Dockets/685543/Production/print\\test.pdf']
         #Act
@@ -131,6 +136,12 @@ class MyTest(unittest.TestCase):
         #Assert
         self.assertEqual(actual, expected)
 
+    def test_get_file_list_with_date(self):
+        #Arrange
+        expected = [['Sun May  7 10:06:02 2017', 'TestData/Dockets/685543/Production/print\\test.pdf']]
+        #Act
+        actual = get_file_list_with_date('TestData/Dockets/685543/Production/print')
+        self.assertEqual(actual, expected)
 
 if __name__ == '__main__':
     unittest.main()
