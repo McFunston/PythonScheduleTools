@@ -54,7 +54,7 @@ def get_folder_list(path):
 def find_folders(path, names):
     """Returns a list of the complete paths of folders if they exists within the given path.
     path -- List of paths to search
-    name -- Partial or complete name to search for
+    names -- List of partial or complete names to search for
     Returns a list of paths as strings.
     """
     found_folders = list()
@@ -98,6 +98,17 @@ def count_files(folders):
 
         return folder_size
     else: return
+
+def folder_exists(folder):
+    """Check it a folder exists at a given path
+    Args:
+        folder: Path of folder to check
+    Returns: True if folder exists, False if it doesn't
+"""
+    if os.path.exists(folder):
+        return True
+    else:
+        return False
 
 #f = get_file_list_with_date("/Volumes/share/")
 #print(f)
