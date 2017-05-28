@@ -7,6 +7,7 @@ import os.path
 from os import listdir
 from os.path import isfile, isdir, join
 import time
+import unittest
 
 def get_file_list(path):
     """Given a path returns a list of all files contained,
@@ -109,6 +110,30 @@ def folder_exists(folder):
         return True
     else:
         return False
+
+class MyTest(unittest.TestCase):
+    """FolderChecker.py Unit Tests"""
+
+    def test_get_file_list(self):
+        """get_file_list unit test"""
+        #Arrange
+        expected = ['test.pdf']
+        #Act
+        actual = get_file_list('TestData/Dockets/685543/Production/print')
+        #Assert
+        self.assertEqual(actual, expected)
+
+    def test_get_full_file_list(self):
+        #Arrange
+        expected = ['TestData/Dockets/685543/Production/print\\test.pdf']
+        #Act
+        actual = get_full_file_list('TestData/Dockets/685543/Production/print')
+        #Assert
+        self.assertEqual(actual, expected)
+
+
+if __name__ == '__main__':
+    unittest.main()
 
 #f = get_file_list_with_date("/Volumes/share/")
 #print(f)
