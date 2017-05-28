@@ -22,7 +22,7 @@ class ScheduleToolsGUI(tkinter.Frame):
         tkinter.Label(self, textvariable=self.l).pack()
         self.results_box.insert(tkinter.END, "Results will go here")
         #self.results_box.config(state="disabled")
-        self.results_box.pack()
+        self.results_box.pack(expand=True, fill="both")
 
         # define options for opening or saving a file
         self.file_opt = options = {}
