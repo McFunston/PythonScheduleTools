@@ -141,6 +141,7 @@ class MyTest(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def test_get_file_list_with_date(self):
+        """get_file_list_with_date unit test"""
         #Arrange
         expected = [['Sun May  7 10:06:02 2017', 'TestData/Dockets/685543/Production/print\\test.pdf']]
         #Act
@@ -149,6 +150,7 @@ class MyTest(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def test_get_folder_list(self):
+        """get_folder_list unit test"""
         #Arrange
         expected = ['672143', '684421', '685543', '687203', '689398']
         #Act
@@ -157,10 +159,20 @@ class MyTest(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def test_find_folders(self):
+        """find_folders unit test"""
         #Arrange
         expected = ['TestData/Dockets/672143', 'TestData/Dockets/684421']
         #Act
         actual = find_folders('TestData/Dockets', ['672143', '684421'])
+        #Assert
+        self.assertEqual(actual, expected)
+
+    def test_folder_append(self):
+        """folder_append unit test"""
+        #Arrange
+        expected = ['TestData/Dockets/672143']
+        #Act
+        actual = folder_append(['TestData/Dockets/'], '672143')
         #Assert
         self.assertEqual(actual, expected)
 
