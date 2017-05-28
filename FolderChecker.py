@@ -34,6 +34,10 @@ def get_full_file_list(path):
     return file_list
 
 def get_file_list_with_date(path):
+    """Given a path, returns a list of dates and file paths
+    Args: path: Path that you want to get the file list from
+    Returns: list of [date, path]
+    """
     file_list = get_full_file_list(path)
     file_list_with_date = []
     for file in file_list:
@@ -141,6 +145,15 @@ class MyTest(unittest.TestCase):
         expected = [['Sun May  7 10:06:02 2017', 'TestData/Dockets/685543/Production/print\\test.pdf']]
         #Act
         actual = get_file_list_with_date('TestData/Dockets/685543/Production/print')
+        #Assert
+        self.assertEqual(actual, expected)
+
+    def test_get_folder_list(self):
+        #Arrange
+        expected = ['672143', '684421', '685543', '687203', '689398']
+        #Act
+        actual = get_folder_list('TestData/Dockets')
+        #Assert
         self.assertEqual(actual, expected)
 
 if __name__ == '__main__':
