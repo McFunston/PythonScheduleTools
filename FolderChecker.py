@@ -176,6 +176,15 @@ class MyTest(unittest.TestCase):
         #Assert
         self.assertEqual(actual, expected)
 
+    def test_count_files(self):
+        """count_files unit test"""
+        #Arrange
+        expected = [['TestData/Dockets/685543/Production/print', 1, ['test.pdf']]]
+        #Act
+        actual = count_files(['TestData/Dockets/685543/Production/print'])
+        #Assert
+        self.assertEqual(actual, expected)
+
 if __name__ == '__main__':
     unittest.main()
 
