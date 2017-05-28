@@ -156,6 +156,14 @@ class MyTest(unittest.TestCase):
         #Assert
         self.assertEqual(actual, expected)
 
+    def test_find_folders(self):
+        #Arrange
+        expected = ['TestData/Dockets/672143', 'TestData/Dockets/684421']
+        #Act
+        actual = find_folders('TestData/Dockets', ['672143', '684421'])
+        #Assert
+        self.assertEqual(actual, expected)
+
 if __name__ == '__main__':
     unittest.main()
 
