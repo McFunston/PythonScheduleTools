@@ -68,19 +68,13 @@ class ScheduleToolsGUI(tkinter.Frame):
     def check_proofs_out(self):
         proofs_out = list()
         proofs_out.clear()
-        proofs_out=CheckStatusByLog.check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'ProofLog.csv')
+        proofs_out = CheckStatusByLog.check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'ProofLog.csv')
         self.results_box.config(state="normal")
         self.results_box.delete(1.0, tkinter.END)
         for proof in proofs_out:
             self.results_box.insert(tkinter.END, proof)
             self.results_box.insert(tkinter.END, '\n\n')
         self.results_box.config(state="disabled")
-
-    def asksaveasfile(self):
-
-        """Returns an opened file in write mode."""
-
-        return filedialog.asksaveasfile(mode='w', **self.file_opt)
 
 if __name__=='__main__':
     root = tkinter.Tk()
