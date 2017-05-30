@@ -9,26 +9,38 @@ def find_earlier(item1, item2):
         return item1
     else: return item2
 
-def results_shaper(self, results, status):
+def job_lister(results):
     shaped_results = list()
     jobs = list()
+    found_jobs = list()
     for result in results:
-        r = (re.search(r"\D(\d{6})\D", result[1]))
+        r = (re.search(r"(\d{6})", result[1]))
         jobs.append(r.groups())
     for job in jobs:
-        for result in results:
-            if job in result[1]:
-                None
-
+        found_jobs.append(job[0])
+    return found_jobs
+    
 class MyTest(unittest.TestCase):
+    item1 = ['Tue May 30 09:15:42 2017', "item1r684500"]
+    item2 = ['Wed May 24 15:44:57 2017', "700000item2"]
 
     def test_find_earlier(self):
         #Arrange
-        item1 = ['Tue May 30 09:15:42 2017', "item1"]
-        item2 = ['Wed May 24 15:44:57 2017', "item2"]
-        expected = item2
+
+        expected = self.item2
         #Act
-        actual = find_earlier(item1, item2)
+        actual = find_earlier(self.item1, self.item2)
+        #Assert
+        self.assertEqual(actual, expected)
+
+    def test_job_lister(self):
+        #Arrange
+        items = list()
+        items.append(self.item1)
+        items.append(self.item2)
+        expected = ["684500", "700000"]
+        #Act
+        actual = job_lister(items)
         #Assert
         self.assertEqual(actual, expected)
 
