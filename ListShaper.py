@@ -19,10 +19,23 @@ def job_lister(results):
     for job in jobs:
         found_jobs.append(job[0])
     return found_jobs
+
+def job_counter(jobs_list, job_number):
+    formed_job = list()
+    formed_job.append(job_number)
+    formed_job.append(0)
+    for job in jobs_list:
+        if job_number in job[1]:
+            formed_job[1] += 1
+            formed_job.append(job[1])
+    return formed_job
     
 class MyTest(unittest.TestCase):
     item1 = ['Tue May 30 09:15:42 2017', "item1r684500"]
     item2 = ['Wed May 24 15:44:57 2017', "700000item2"]
+    items = list()
+    items.append(item1)
+    items.append(item2)
 
     def test_find_earlier(self):
         #Arrange
@@ -35,12 +48,17 @@ class MyTest(unittest.TestCase):
 
     def test_job_lister(self):
         #Arrange
-        items = list()
-        items.append(self.item1)
-        items.append(self.item2)
         expected = ["684500", "700000"]
         #Act
-        actual = job_lister(items)
+        actual = job_lister(self.items)
+        #Assert
+        self.assertEqual(actual, expected)
+
+    def test_job_counter(self):
+        #Arrange
+        expected = ["684500", 1, "item1r684500"]
+        #Act
+        actual = job_counter(self.items, "684500")
         #Assert
         self.assertEqual(actual, expected)
 
