@@ -2,6 +2,7 @@ import tkinter
 from tkinter import filedialog
 import CheckStatusByFiles
 import CheckStatusByLog
+import re
 result = "test"
 class ScheduleToolsGUI(tkinter.Frame):
 
@@ -15,7 +16,7 @@ class ScheduleToolsGUI(tkinter.Frame):
         # define GUI
         tkinter.Button(self, text='Check Files In', command=self.check_files_in).pack(**button_opt)
         tkinter.Button(self, text='Check Proofs Out', command=self.check_proofs_out).pack(**button_opt)
-        tkinter.Button(self, text='Check Proofs In', command=self.asksaveasfile).pack(**button_opt)
+        #tkinter.Button(self, text='Check Proofs In', command=self.asksaveasfile).pack(**button_opt)
         self.l = tkinter.StringVar()
         self.l.set("test")
         self.results_box = tkinter.Text(self)
@@ -71,10 +72,30 @@ class ScheduleToolsGUI(tkinter.Frame):
         proofs_out = CheckStatusByLog.check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'ProofLog.csv')
         self.results_box.config(state="normal")
         self.results_box.delete(1.0, tkinter.END)
+        #self.results_box.insert(tkinter.END, self.results_shaper(proofs_out, "proof out"))
         for proof in proofs_out:
             self.results_box.insert(tkinter.END, proof)
             self.results_box.insert(tkinter.END, '\n\n')
         self.results_box.config(state="disabled")
+
+    def find_earlier(self, item1, item2):
+        if item1[0] < item2[0]:
+            return item1
+        else: return item2
+
+    def results_shaper(self, results, status):
+        shaped_results = list()
+        jobs = list()
+        for result in results:
+            r = (re.search(r"\D(\d{6})\D", result[1]))
+            jobs.append(r.groups())
+        for job in jobs:
+            for result in results:
+                if job in result[1]:
+                    None
+
+            
+        #return list(set(shaped_results))
 
 if __name__=='__main__':
     root = tkinter.Tk()
