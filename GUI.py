@@ -77,24 +77,6 @@ class ScheduleToolsGUI(tkinter.Frame):
             self.results_box.insert(tkinter.END, proof)
             self.results_box.insert(tkinter.END, '\n\n')
         self.results_box.config(state="disabled")
-
-    def find_earlier(self, item1, item2):
-        if item1[0] < item2[0]:
-            return item1
-        else: return item2
-
-    def results_shaper(self, results, status):
-        shaped_results = list()
-        jobs = list()
-        for result in results:
-            r = (re.search(r"\D(\d{6})\D", result[1]))
-            jobs.append(r.groups())
-        for job in jobs:
-            for result in results:
-                if job in result[1]:
-                    None
-
-            
         #return list(set(shaped_results))
 
 if __name__=='__main__':
