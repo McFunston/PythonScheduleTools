@@ -39,12 +39,12 @@ def get_file_list_with_date(path):
     Returns: list of [date, path]
     """
     file_list = get_full_file_list(path)
-    file_list_with_date = []
+    file_list_with_date = list()
     for file in file_list:
         if file[0] != ".":
-            #file = path + '/' + file
+            #file = os.path.normpath(file)
             try:
-                file_list_with_date.append([time.ctime(os.path.getmtime(file)), file])
+                file_list_with_date.append([time.ctime(os.path.getmtime(file)), os.path.basename(file)])
             except FileNotFoundError:
                 print(file + " is not a real file")
     return file_list_with_date
@@ -101,10 +101,10 @@ def count_files(folders):
     folder_size = list()
     if folders:
         for folder in folders:
-            file_list = get_file_list(folder)
+            #file_list = get_file_list(folder)
+            file_list = get_file_list_with_date(folder)
             if file_list:
                 folder_size.append([folder, len(file_list), file_list])
-
         return folder_size
     else: return
 
@@ -143,7 +143,7 @@ class MyTest(unittest.TestCase):
     def test_get_file_list_with_date(self):
         """get_file_list_with_date unit test"""
         #Arrange
-        expected = [['Sun May  7 10:06:02 2017', 'TestData/Dockets/685543/Production/print\\test.pdf']]
+        expected = [['Sun May  7 10:06:02 2017', 'test.pdf']]
         #Act
         actual = get_file_list_with_date('TestData/Dockets/685543/Production/print')
         #Assert
@@ -179,7 +179,7 @@ class MyTest(unittest.TestCase):
     def test_count_files(self):
         """count_files unit test"""
         #Arrange
-        expected = [['TestData/Dockets/685543/Production/print', 1, ['test.pdf']]]
+        expected = ['TestData/Dockets/685543/Production/print', 1, ['Sun May  7 10:06:02 2017', 'test.pdf']]
         #Act
         actual = count_files(['TestData/Dockets/685543/Production/print'])
         #Assert
@@ -194,10 +194,11 @@ class MyTest(unittest.TestCase):
         #Assert
         self.assertEqual(actual, expected)
 
-if __name__ == '__main__':
-    unittest.main()
+#if __name__ == '__main__':
+#    unittest.main()
 
-#f = get_file_list_with_date("/Volumes/share/")
+f = count_files(['TestData/Dockets/685543/Production/print'])
+print(f)
 #print(f)
 #folder_list = find_folders('/Volumes/Dockets', ['689965', '689931'])
 #FOLDER_LIST = folder_append(find_folders('G:/TestWorkFolder/Dockets', ['684421', '685543']), "/Production/Print")
