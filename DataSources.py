@@ -1,18 +1,27 @@
-class ExcelSchedule:
+from abc import ABC, abstractmethod
+
+class ExcelStatus:
     def __init__(self, path, id_column, status_column):
         self.path = path
         self.id_column = id_column
         self.status_column = status_column
 
-class LogFile:
+class LogFileStatus:
     def __init__(self, path, status):
         self.path = path
         self.status = status
 
-class storage_folder:
+class FileSystemStatus:
     def __init__(self, path, sub_path, status):
         self.path = path
         self.sub_path = sub_path
         self.status = status
 
+class FileStatus(FileSystemStatus):
+    def __init__(self, path, sub_path, status):
+        super().__init__(self, path, sub_path, status)
+
+class FolderStatus(FileSystemStatus):
+    def __init__(self, path, sub_path, status):
+        super().__init__(self, path, sub_path, status)
     
