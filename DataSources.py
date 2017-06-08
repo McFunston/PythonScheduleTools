@@ -1,10 +1,16 @@
 """Classes related to data collection for job statuses"""
 from abc import ABC, abstractmethod
+import ExcelReader
+import FolderChecker
 class ExcelStatus:
     def __init__(self, source_name, path, id_column, status_column):
         self.path = path
         self.id_column = id_column
         self.status_column = status_column
+
+    def check_status(self, status):
+        return_status = ExcelReader.get_jobs_by_status(self.path, self.status_column, status)
+        return 
 
 class LogFileStatus:
     def __init__(self, source_name, path, status):

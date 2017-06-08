@@ -102,12 +102,9 @@ def get_just_ids(jobs, id_index):
     ids = list(set(ids))
     return ids
 
-#x = get_jobs('Printflow-ToDo.xls', [0, 3, 2, 7])
-#x = get_all_jobs('Printflow-ToDo.xls')
-#pprint.pprint(type(x.row(0)))
-#JOB = get_jobs_by_id('Printflow-ToDo.xls', 3, 690114)
-#pprint.pprint(JOB)
-#TEST = excel_to_dict('Printflow-ToDo.xls')
-#TEST = get_jobs_by_status('Printflow-ToDo.xls', 2, 'Files In')
-#TEST = get_just_ids(TEST, 3)
-#pprint.pprint(TEST)
+def check_job_status(status, path, job_id, id_column, status_column):
+    jobs = get_jobs_by_id(path, id_column, job_id)
+    for job in jobs:
+        if job[status_column] == status:
+            return True
+        else: return False
