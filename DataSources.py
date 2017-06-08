@@ -1,5 +1,5 @@
+"""Classes related to data collection for job statuses"""
 from abc import ABC, abstractmethod
-
 class ExcelStatus:
     def __init__(self, source_name, path, id_column, status_column):
         self.path = path
@@ -22,6 +22,8 @@ class FileStatus(FileSystemStatus):
         super().__init__(self, path, sub_path, status)
 
 class FolderStatus(FileSystemStatus):
+
     def __init__(self, source_name, path, sub_path, status):
         super().__init__(self, path, sub_path, status)
     
+
