@@ -104,7 +104,11 @@ def get_just_ids(jobs, id_index):
 
 def check_job_status(status, path, job_id, id_column, status_column):
     jobs = get_jobs_by_id(path, id_column, job_id)
+    return_status = False
     for job in jobs:
         if job[status_column] == status:
-            return True
-        else: return False
+            return_status = True
+    return return_status
+
+#test = check_job_status('Dollco Printing-Proof In', 'Printflow-ToDo1.xls', "687556", 3, 2)
+#print(test)
