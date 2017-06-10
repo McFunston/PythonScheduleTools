@@ -42,7 +42,16 @@ class FileStatus(FileSystemStatus):
 
 class FolderStatus(FileSystemStatus):
 
-    def __init__(self, source_name, path, sub_path, status):
+    def __init__(self, source_name, path, sub_path, folder, status):
         super().__init__(self, path, sub_path, status)
-    
+
+    def check_status(self, status, job_id):
+        folders_to_check = FolderChecker.find_folders(self.path, [job_id])
+        folders_to_check = FolderChecker.folder_append(folders_to_check, self.sub_path)
+        for folder in folders_to_check:
+            if FolderChecker.folder_exists(folder+folder):
+                return True
+            else: return False
+
+
 
