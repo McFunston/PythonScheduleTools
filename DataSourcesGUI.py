@@ -30,14 +30,14 @@ class DataSourcesGUI(tk.Tk):
         self.data_sources_canvas.pack(side=tk.TOP, fill=tk.BOTH, expand=1)
         self.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
-        self.canvas_frame = self.tasks_canvas.create_window((0, 0), window=self.data_sources_frame, anchor="n")
+        self.canvas_frame = self.data_sources_canvas.create_window((0, 0), window=self.data_sources_frame, anchor="n")
         self.data_source_create.pack(side=tk.BOTTOM, fill=tk.X)
         self.text_frame.pack(side=tk.BOTTOM, fill=tk.X)
-        self.task_create.focus_set()
+        self.data_source_create.focus_set()
 
-        data_source1 = tk.Label(self.tasks_frame, text="--- Add Data Sources Here ---", bg="lightgrey",
+        data_source1 = tk.Label(self.data_sources_frame, text="--- Add Data Sources Here ---", bg="lightgrey",
             fg="black", pady=10)
-        data_source1.bind("<Button-1>", self.remove_task)
+        data_source1.bind("<Button-1>", self.remove_data_source)
 
         self.data_sources.append(data_source1)
 
@@ -49,7 +49,7 @@ class DataSourcesGUI(tk.Tk):
         self.bind_all("<MouseWheel>", self.mouse_scroll)
         self.bind_all("<Button-4>", self.mouse_scroll)
         self.bind_all("<Button-5>", self.mouse_scroll)
-        self.tasks_canvas.bind("<Configure>", self.task_width)
+        self.data_sources_canvas.bind("<Configure>", self.data_sources_width)
 
         self.colour_schemes = [{"bg": "lightgrey", "fg": "black"}, {"bg": "grey", "fg": "white"}]
 
@@ -60,7 +60,7 @@ class DataSourcesGUI(tk.Tk):
             new_data_source = tk.Label(self.data_sources_frame, text=data_source_text, pady=10)
             self.set_data_source_colour(len(self.data_sources), new_data_source)
 
-            new_data_source.bind("<Button-1>", self.remove_task)
+            new_data_source.bind("<Button-1>", self.remove_data_source)
             new_data_source.pack(side=tk.TOP, fill=tk.X)
 
             self.data_sources.append(new_data_source)
