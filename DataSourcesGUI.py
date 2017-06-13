@@ -13,7 +13,7 @@ class DataSourcesGUI(tk.Tk):
             self.data_sources = []
         else:
             self.data_sources = data_sources
-    
+
         self.data_sources_canvas = tk.Canvas(self)
 
         self.data_sources_frame = tk.Frame(self.data_sources_canvas)
@@ -31,7 +31,7 @@ class DataSourcesGUI(tk.Tk):
         choice = tk.StringVar(self.entry_frame)
         choice.set('Excel File')
 
-        self.data_source_create = tk.OptionMenu(self.entry_frame, *self.data_types)        
+        self.data_source_create = tk.OptionMenu(self.entry_frame, choice, *self.data_types)        
         
         self.data_sources_canvas.pack(side=tk.TOP, fill=tk.BOTH, expand=1)
         self.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
