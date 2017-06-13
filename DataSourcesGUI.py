@@ -17,7 +17,7 @@ class DataSourcesGUI(tk.Tk):
         self.data_sources_canvas = tk.Canvas(self)
 
         self.data_sources_frame = tk.Frame(self.data_sources_canvas)
-        self.text_frame = tk.Frame(self)
+        self.entry_frame = tk.Frame(self)
 
         self.scrollbar = tk.Scrollbar(self.data_sources_canvas, orient="vertical", command=self.data_sources_canvas.yview)
 
@@ -26,13 +26,19 @@ class DataSourcesGUI(tk.Tk):
         self.title = "Edit Data Sources"
         self.geometry("300x400")
 
-        self.data_source_create = tk.Text(self.text_frame, height=3, bg="white", fg="black")
+        self.data_types = ['Excel File', 'CSV Log File', 'Files', 'Folder']
+
+        choice = tk.StringVar(self.entry_frame)
+        choice.set('Excel File')
+
+        self.data_source_create = tk.OptionMenu(self.entry_frame, *self.data_types)        
+        
         self.data_sources_canvas.pack(side=tk.TOP, fill=tk.BOTH, expand=1)
         self.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
         self.canvas_frame = self.data_sources_canvas.create_window((0, 0), window=self.data_sources_frame, anchor="n")
         self.data_source_create.pack(side=tk.BOTTOM, fill=tk.X)
-        self.text_frame.pack(side=tk.BOTTOM, fill=tk.X)
+        self.entry_frame.pack(side=tk.BOTTOM, fill=tk.X)
         self.data_source_create.focus_set()
 
         data_source1 = tk.Label(self.data_sources_frame, text="--- Add Data Sources Here ---", bg="lightgrey",
