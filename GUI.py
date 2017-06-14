@@ -51,8 +51,9 @@ class ScheduleToolsGUI(tkinter.Frame):
         files_in = list()
         files_in.clear()
         dockets_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/Dockets', '/Production/Print')
-        for dockets_file in dockets_files:
-            files_in.append(dockets_file)        
+        if dockets_files:
+            for dockets_file in dockets_files:
+                files_in.append(dockets_file)        
         insite_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/AraxiVolume_PRINERGYEPM_J/Jobs', '/System/SubPages')
         if insite_files != None:
             for insite_file in insite_files:
