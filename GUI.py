@@ -23,7 +23,7 @@ class ScheduleToolsGUI(tkinter.Frame):
         tkinter.Label(self, textvariable=self.l).pack()
         self.results_box.insert(tkinter.END, "Results will go here")
         #self.results_box.config(state="disabled")
-        self.results_box.pack(expand=True, fill="both")
+        self.results_box.pack(fill="both", expand=1)
 
         # define options for opening or saving a file
         self.file_opt = options = {}
@@ -82,5 +82,5 @@ class ScheduleToolsGUI(tkinter.Frame):
 
 if __name__=='__main__':
     root = tkinter.Tk()
-    ScheduleToolsGUI(root).pack()
+    ScheduleToolsGUI(root).pack(fill="both", expand=1)
     root.mainloop()
