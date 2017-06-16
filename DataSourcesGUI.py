@@ -28,11 +28,34 @@ class DataSourcesGUI(tk.Tk):
 
         self.data_types = ['Excel File', 'CSV Log File', 'Files', 'Folder']
 
+        def choice_callback(*args):
+            chosen = choice.get()
+            if chosen == 'Excel File': 
+                options = ["Source Name", "Path", "Id Column", "Status Column"]
+            elif chosen == 'CSV File':
+                options = ["Source Name", "Path", "Status"]
+            elif chosen == 'Files':
+                options = ["Source Name", "Path", "Sub Path", "Status"]
+            else:
+                options = ["Source Name", "Path", "Sub Path", "Folder", "Status"]
+            
+            for i in range(len(options)):
+                en = tk.Entry(self.entry_frame, textvariable=options[i-1])
+                en.insert(0, options[i-1])
+                en.pack()
+
+
         choice = tk.StringVar(self.entry_frame)
         choice.set('Excel File')
+        choice.trace('w', choice_callback)
 
-        self.data_source_create = tk.OptionMenu(self.entry_frame, choice, *self.data_types)        
+        self.data_source_create = tk.OptionMenu(self.entry_frame, choice, *self.data_types)
         
+        excel_options = ["Source Name", "Path", "Id Column", "Status Column"]
+        log_file_options = ["Source Name", "Path", "Status"]
+        file_options = ["Source Name", "Path", "Sub Path", "Status"]
+        folder_options = ["Source Name", "Path", "Sub Path", "Folder", "Status"]
+
         self.data_sources_canvas.pack(side=tk.TOP, fill=tk.BOTH, expand=1)
         self.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
@@ -60,9 +83,9 @@ class DataSourcesGUI(tk.Tk):
         self.colour_schemes = [{"bg": "lightgrey", "fg": "black"}, {"bg": "grey", "fg": "white"}]
 
     def add_data_source(self, event=None):
-        data_source_text = self.data_source_create.get(1.0,tk.END).strip()
+        data_source_text = self.data_source_create.grab_release()
 
-        if len(data_source_text) > 0:
+        if data_source_text:
             new_data_source = tk.Label(self.data_sources_frame, text=data_source_text, pady=10)
             self.set_data_source_colour(len(self.data_sources), new_data_source)
 
@@ -71,7 +94,7 @@ class DataSourcesGUI(tk.Tk):
 
             self.data_sources.append(new_data_source)
         
-        self.data_source_create.delete(1.0, tk.END)
+        #self.data_source_create.delete(1.0, tk.END)
 
     def remove_data_source(self, event):
         data_source = event.widget
