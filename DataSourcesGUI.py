@@ -44,7 +44,6 @@ class DataSourcesGUI(tk.Tk):
                 en.insert(0, options[i-1])
                 en.pack()
 
-
         choice = tk.StringVar(self.entry_frame)
         choice.set('Excel File')
         choice.trace('w', choice_callback)
