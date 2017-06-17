@@ -18,42 +18,43 @@ class DataSourcesGUI(tk.Tk):
 
         self.data_sources_frame = tk.Frame(self.data_sources_canvas)
         self.entry_frame = tk.Frame(self)
+        self.entry_frame.configure(height = 10)
+        self.chooser_frame = tk.Frame(self)
+        self.chooser_frame.configure(height = 10)
 
         self.scrollbar = tk.Scrollbar(self.data_sources_canvas, orient="vertical", command=self.data_sources_canvas.yview)
 
         self.data_sources_canvas.configure(yscrollcommand=self.scrollbar.set)
 
         self.title = "Edit Data Sources"
-        self.geometry("300x400")
+        self.geometry("300x600")
+        self.entries = []
 
         self.data_types = ['Excel File', 'CSV Log File', 'Files', 'Folder']
 
         def choice_callback(*args):
-            chosen = choice.get()
-            if chosen == 'Excel File': 
-                options = ["Source Name", "Path", "Id Column", "Status Column"]
-            elif chosen == 'CSV File':
-                options = ["Source Name", "Path", "Status"]
-            elif chosen == 'Files':
-                options = ["Source Name", "Path", "Sub Path", "Status"]
-            else:
-                options = ["Source Name", "Path", "Sub Path", "Folder", "Status"]
-            
+            for widget in self.entry_frame.winfo_children():
+                widget.destroy()
+            chosen = self.choice.get()
+            options = self.get_choices()
+            self.entries.clear()
+
             for i in range(len(options)):
-                en = tk.Entry(self.entry_frame, textvariable=options[i-1])
-                en.insert(0, options[i-1])
-                en.pack()
+                row = tk.Frame(self.entry_frame)
+                lab = tk.Label(row,width=15, text=options[i-1], anchor='w')
+                ent = tk.Entry(row)
+                ent.delete(0, tk.END)
+                #ent.insert(0, options[i-1])
+                row.pack(side=tk.TOP, fill=tk.X, padx=5, pady=5)
+                lab.pack(side=tk.LEFT)
+                ent.pack(side=tk.RIGHT, expand=1, fill=tk.X)
+                self.entries.append((options[i-1], ent))
 
-        choice = tk.StringVar(self.entry_frame)
-        choice.set('Excel File')
-        choice.trace('w', choice_callback)
+        self.choice = tk.StringVar(self.entry_frame)
+        self.choice.set('Excel File')
+        self.choice.trace('w', choice_callback)
 
-        self.data_source_create = tk.OptionMenu(self.entry_frame, choice, *self.data_types)
-        
-        excel_options = ["Source Name", "Path", "Id Column", "Status Column"]
-        log_file_options = ["Source Name", "Path", "Status"]
-        file_options = ["Source Name", "Path", "Sub Path", "Status"]
-        folder_options = ["Source Name", "Path", "Sub Path", "Folder", "Status"]
+        self.data_source_create = tk.OptionMenu(self.chooser_frame, self.choice, *self.data_types)
 
         self.data_sources_canvas.pack(side=tk.TOP, fill=tk.BOTH, expand=1)
         self.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
@@ -61,6 +62,8 @@ class DataSourcesGUI(tk.Tk):
         self.canvas_frame = self.data_sources_canvas.create_window((0, 0), window=self.data_sources_frame, anchor="n")
         self.data_source_create.pack(side=tk.BOTTOM, fill=tk.X)
         self.entry_frame.pack(side=tk.BOTTOM, fill=tk.X)
+        self.chooser_frame.pack(side=tk.BOTTOM, fill=tk.X)        
+        
         self.data_source_create.focus_set()
 
         data_source1 = tk.Label(self.data_sources_frame, text="--- Add Data Sources Here ---", bg="lightgrey",
@@ -80,6 +83,19 @@ class DataSourcesGUI(tk.Tk):
         self.data_sources_canvas.bind("<Configure>", self.data_sources_width)
 
         self.colour_schemes = [{"bg": "lightgrey", "fg": "black"}, {"bg": "grey", "fg": "white"}]
+
+    def get_choices(self):
+        chosen = self.choice.get()
+        if chosen == 'Excel File':
+            options = ["Source Name", "Path", "Id Column", "Status Column"]
+        elif chosen == 'CSV File':
+            options = ["Source Name", "Path", "Status"]
+        elif chosen == 'Files':
+            options = ["Source Name", "Path", "Sub Path", "Status"]
+        else:
+            options = ["Source Name", "Path", "Sub Path", "Folder", "Status"]
+        return options
+
 
     def add_data_source(self, event=None):
         data_source_text = self.data_source_create.grab_release()
