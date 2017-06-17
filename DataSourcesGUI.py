@@ -32,6 +32,10 @@ class DataSourcesGUI(tk.Tk):
 
         self.data_types = ['Excel File', 'CSV Log File', 'Files', 'Folder']
 
+        def add_button_click(*args):
+            print("you clicked it")
+            self.add_data_source()
+
         def choice_callback(*args):
             for widget in self.entry_frame.winfo_children():
                 widget.destroy()
@@ -50,9 +54,13 @@ class DataSourcesGUI(tk.Tk):
                 ent.pack(side=tk.RIGHT, expand=1, fill=tk.X)
                 self.entries.append((options[i-1], ent))
 
+            self.add_button = tk.Button(self.entry_frame, text="ADD", command = add_button_click)
+            self.add_button.pack(side=tk.BOTTOM)
+
         self.choice = tk.StringVar(self.entry_frame)
         self.choice.set('Excel File')
         self.choice.trace('w', choice_callback)
+        choice_callback()
 
         self.data_source_create = tk.OptionMenu(self.chooser_frame, self.choice, *self.data_types)
 
@@ -62,12 +70,13 @@ class DataSourcesGUI(tk.Tk):
         self.canvas_frame = self.data_sources_canvas.create_window((0, 0), window=self.data_sources_frame, anchor="n")
         self.data_source_create.pack(side=tk.BOTTOM, fill=tk.X)
         self.entry_frame.pack(side=tk.BOTTOM, fill=tk.X)
-        self.chooser_frame.pack(side=tk.BOTTOM, fill=tk.X)        
-        
+        self.chooser_frame.pack(side=tk.BOTTOM, fill=tk.X)
+
         self.data_source_create.focus_set()
 
-        data_source1 = tk.Label(self.data_sources_frame, text="--- Add Data Sources Here ---", bg="lightgrey",
-            fg="black", pady=10)
+        data_source1 = tk.Label(self.data_sources_frame,
+                                text="--- Add Data Sources Here ---", bg="lightgrey",
+                                fg="black", pady=10)
         data_source1.bind("<Button-1>", self.remove_data_source)
 
         self.data_sources.append(data_source1)
@@ -99,6 +108,12 @@ class DataSourcesGUI(tk.Tk):
 
     def add_data_source(self, event=None):
         data_source_text = self.data_source_create.grab_release()
+        data_source_description = []
+        data_source_description.append(self.choice.get())
+        for entry in self.entries:
+            data_source_description.append(entry[1].get())
+
+        print("you tried to add " + data_source_description[0])
 
         if data_source_text:
             new_data_source = tk.Label(self.data_sources_frame, text=data_source_text, pady=10)
