@@ -3,6 +3,7 @@ from tkinter import filedialog
 import tkinter.messagebox as msg
 import os
 import sqlite3
+import json
 
 class DataSourcesGUI(tk.Tk):
 
@@ -29,10 +30,11 @@ class DataSourcesGUI(tk.Tk):
         self.title = "Edit Data Sources"
         self.geometry("300x600")
         self.entries = []
+        self.entries_dic = {}
 
         self.data_types = ['Excel File', 'CSV Log File', 'Files', 'Folder']
 
-        def add_button_click(*args):            
+        def add_button_click(*args):
             self.add_data_source()
 
         def choice_callback(*args):
@@ -54,9 +56,11 @@ class DataSourcesGUI(tk.Tk):
                 lab.pack(side=tk.LEFT)
                 ent.pack(side=tk.RIGHT, expand=1, fill=tk.X)
                 self.entries.append((options[i], ent))
-                
+                self.entries_dic[options[i]] = ent.get()
+            print(self.entries_dic)
 
-            self.add_button = tk.Button(self.entry_frame, text="ADD", command = add_button_click)
+
+            self.add_button = tk.Button(self.entry_frame, text="ADD", command=add_button_click)
             self.add_button.pack(side=tk.BOTTOM)
 
         self.choice = tk.StringVar(self.entry_frame)
@@ -111,22 +115,24 @@ class DataSourcesGUI(tk.Tk):
 
     def add_data_source(self, event=None):
         data_source_text = self.data_source_create.grab_release()
-        data_source_description = []
-        data_source_description.append(self.choice.get())
+        #data_source_description = []
+        #data_source_description.append(self.choice.get())
+        new_data_source_dic = {}
+        new_data_source_dic['Data Type'] = self.choice.get()
+
         for entry in self.entries:
-            data_source_description.append(entry[1].get())
+            #data_source_description.append(entry[1].get())
+            new_data_source_dic[entry[0]] = entry[1].get()
 
-        print("you tried to add " + data_source_description[0])
-
-        if data_source_description:
-            new_data_source = tk.Label(self.data_sources_frame, text=data_source_description, pady=10)
+        if new_data_source_dic:
+            new_data_source = tk.Label(self.data_sources_frame, text=new_data_source_dic, pady=10)
             self.set_data_source_colour(len(self.data_sources), new_data_source)
 
             new_data_source.bind("<Button-1>", self.remove_data_source)
             new_data_source.pack(side=tk.TOP, fill=tk.X)
 
             self.data_sources.append(new_data_source)
-        
+
         #self.data_source_create.delete(1.0, tk.END)
 
     def remove_data_source(self, event):
