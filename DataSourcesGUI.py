@@ -32,8 +32,7 @@ class DataSourcesGUI(tk.Tk):
 
         self.data_types = ['Excel File', 'CSV Log File', 'Files', 'Folder']
 
-        def add_button_click(*args):
-            print("you clicked it")
+        def add_button_click(*args):            
             self.add_data_source()
 
         def choice_callback(*args):
@@ -43,16 +42,19 @@ class DataSourcesGUI(tk.Tk):
             options = self.get_choices()
             self.entries.clear()
 
+            print(len(options))
+
             for i in range(len(options)):
                 row = tk.Frame(self.entry_frame)
-                lab = tk.Label(row,width=15, text=options[i-1], anchor='w')
+                lab = tk.Label(row,width=15, text=options[i], anchor='w')
                 ent = tk.Entry(row)
                 ent.delete(0, tk.END)
                 #ent.insert(0, options[i-1])
                 row.pack(side=tk.TOP, fill=tk.X, padx=5, pady=5)
                 lab.pack(side=tk.LEFT)
                 ent.pack(side=tk.RIGHT, expand=1, fill=tk.X)
-                self.entries.append((options[i-1], ent))
+                self.entries.append((options[i], ent))
+                
 
             self.add_button = tk.Button(self.entry_frame, text="ADD", command = add_button_click)
             self.add_button.pack(side=tk.BOTTOM)
@@ -97,8 +99,9 @@ class DataSourcesGUI(tk.Tk):
         chosen = self.choice.get()
         if chosen == 'Excel File':
             options = ["Source Name", "Path", "Id Column", "Status Column"]
-        elif chosen == 'CSV File':
+        elif chosen == 'CSV Log File':
             options = ["Source Name", "Path", "Status"]
+            print('csv file')
         elif chosen == 'Files':
             options = ["Source Name", "Path", "Sub Path", "Status"]
         else:
@@ -115,8 +118,8 @@ class DataSourcesGUI(tk.Tk):
 
         print("you tried to add " + data_source_description[0])
 
-        if data_source_text:
-            new_data_source = tk.Label(self.data_sources_frame, text=data_source_text, pady=10)
+        if data_source_description:
+            new_data_source = tk.Label(self.data_sources_frame, text=data_source_description, pady=10)
             self.set_data_source_colour(len(self.data_sources), new_data_source)
 
             new_data_source.bind("<Button-1>", self.remove_data_source)
