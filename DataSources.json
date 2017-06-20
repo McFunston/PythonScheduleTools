@@ -1,0 +1,13 @@
+{
+    "test": {
+        "Data Type": "Excel File",
+        "Path": "c:/test",
+        "Id Column": "1",
+        "Status Column": "3"
+    },
+    "test2": {
+        "Data Type": "CSV Log File",
+        "Path": "c:/test2.csv",
+        "Status": "Proof Out"
+    }
+}

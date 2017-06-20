@@ -198,12 +198,5 @@ class MyTest(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-#f = count_files(['TestData/Dockets/685543/Production/print'])
-#print(f)
-#print(f)
-#folder_list = find_folders('/Volumes/Dockets', ['689965', '689931'])
-#FOLDER_LIST = folder_append(find_folders('G:/TestWorkFolder/Dockets', ['684421', '685543']), "/Production/Print")
-#print(FOLDER_LIST)
-#FILE_COUNT = count_files(["G:/TestWorkFolder/Dockets/684421/Production/Print"])
-#print(FILE_COUNT)
+
 
