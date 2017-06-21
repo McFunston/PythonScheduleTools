@@ -108,7 +108,6 @@ class DataSourcesGUI(tk.Tk):
             options = ["Source Name", "Path", "Id Column", "Status Column"]
         elif chosen == 'CSV Log File':
             options = ["Source Name", "Path", "Status"]
-            print('csv file')
         elif chosen == 'Files':
             options = ["Source Name", "Path", "Sub Path", "Status"]
         else:
