@@ -34,7 +34,7 @@ class FileStatusByName:
 
     def check_status(self, status, job_id):
         findings = FolderChecker.get_files_containing(self.path, self.search_string)
-        if findings.count > 0:
+        if len(findings) > 0:
             return True
 
 class FileSystemStatus:
@@ -75,7 +75,7 @@ class DataSourceTests(unittest.TestCase):
     def test_excel_check_status(self):
         #Arrange
         excel_test = ExcelStatus('Prinflow-ToDo', 'Printflow-ToDo1.xls', 3, 2)
-        expected = True
+        expected = False
         #Act
         actual = excel_test.check_status("Dollco Printing-Proof In", "687556")
         #Assert
@@ -83,7 +83,7 @@ class DataSourceTests(unittest.TestCase):
 
     def test_log_file_status(self):
         #Arange
-        expected = True
+        expected = False
         log_file_test = LogFileStatus('Proof Log', 'ProofLog.csv', 'Hunt Club-Proof Out')
         #Act
         actual = log_file_test.check_status('Hunt Club-Proof Out', '690331')
@@ -105,6 +105,15 @@ class DataSourceTests(unittest.TestCase):
         test_object = FolderStatus('P Drive', 'TestData/Dockets', '/Production', '/Print', 'Proof In')
         #Act
         actual = test_object.check_status('Proof In', '685543')
+        #Assert
+        self.assertEqual(actual, expected)
+
+    def test_FileStatusByName(self):
+        #Arrange
+        expected = True
+        test_object = FileStatusByName('TestData/Dockets/684421/Production/Print', 'Test2')
+        #Act
+        actual = test_object.check_status('Files In', test_object.search_string)
         #Assert
         self.assertEqual(actual, expected)
 
