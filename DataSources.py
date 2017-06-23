@@ -28,12 +28,13 @@ class LogFileStatus:
         else: return False
 
 class FileStatusByName:
-    def __init__(self, path, search_string):
+    def __init__(self, source_name, path, status):
         self.path = path
-        self.search_string = search_string
+        self.source_name = source_name
+        self.status = status
 
     def check_status(self, status, job_id):
-        findings = FolderChecker.get_files_containing(self.path, self.search_string)
+        findings = FolderChecker.get_files_containing(self.path, job_id)
         if len(findings) > 0:
             return True
 
@@ -111,9 +112,9 @@ class DataSourceTests(unittest.TestCase):
     def test_FileStatusByName(self):
         #Arrange
         expected = True
-        test_object = FileStatusByName('TestData/Dockets/684421/Production/Print', 'Test2')
+        test_object = FileStatusByName('Plates Folder','TestData/Dockets/684421/Production/Print', 'Proof In')
         #Act
-        actual = test_object.check_status('Files In', test_object.search_string)
+        actual = test_object.check_status('Files In', 'Test2')
         #Assert
         self.assertEqual(actual, expected)
 

@@ -33,7 +33,7 @@ class DataSourcesGUI(tk.Tk):
         self.entries = []
         self.entries_dic = {}
 
-        self.data_types = ['Excel File', 'CSV Log File', 'Files', 'Folder']
+        self.data_types = ['Excel File', 'CSV Log File', 'Files', 'Folder', 'File Name']
 
         def add_button_click(*args):
             self.add_data_source()
@@ -110,8 +110,10 @@ class DataSourcesGUI(tk.Tk):
             options = ["Source Name", "Path", "Status"]
         elif chosen == 'Files':
             options = ["Source Name", "Path", "Sub Path", "Status"]
-        else:
+        elif chosen == 'Folder':
             options = ["Source Name", "Path", "Sub Path", "Folder", "Status"]
+        else:
+            options = ['Source Name', 'Path']
         return options
 
     def get_data_sources(self):
