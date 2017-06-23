@@ -27,6 +27,16 @@ class LogFileStatus:
         if candidates: return True
         else: return False
 
+class FileStatusByName:
+    def __init__(self, path, search_string):
+        self.path = path
+        self.search_string = search_string
+
+    def check_status(self, status, job_id):
+        findings = FolderChecker.get_files_containing(self.path, self.search_string)
+        if findings.count > 0:
+            return True
+
 class FileSystemStatus:
     def __init__(self, source_name, path, sub_path, status):
         self.path = path
