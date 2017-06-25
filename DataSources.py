@@ -26,24 +26,27 @@ class ExcelStatus:
 
 class LogFileStatus:
     """Data source in which the status is derived from a comma delimited log file"""
-    def __init__(self, source_name, path, status):
-        self.path = path
-        self.status = status
+    #def __init__(self, source_name, path, status):
+    def __init__(self, data_source_dictionary):
+        self.source_name = data_source_dictionary['Source Name']
+        self.path = data_source_dictionary['Path']
+        self.status = data_source_dictionary['Status']
 
     def check_status(self, status, job_id):
         """Check whether a given status is true. Required as part of interface"""
         candidates = CSVReader.find_in_csv(self.path, [job_id])
-        if candidates: return True
-        else: return False
+        #if candidates: return True
+        return bool(candidates)
 
 class FileStatusByName:
     """Data source in which the status is derived from the existence of
     files in a given folder which contain the job id in their name
     (ie does a certain folder contain files containing 687254)"""
-    def __init__(self, source_name, path, status):
-        self.path = path
-        self.source_name = source_name
-        self.status = status
+    #def __init__(self, source_name, path, status):
+    def __init__(self, data_source_dictionary):
+        self.source_name = data_source_dictionary['Source Name']
+        self.path = data_source_dictionary['Path']
+        self.status = data_source_dictionary['Status']
 
     def check_status(self, status, job_id):
         """Check whether a given status is true. Required as part of interface"""
@@ -56,27 +59,26 @@ class FileSystemStatus:
     /static_path/path_containing_job_id/static_subpath (the job folders are
     always contained in a given folder (/dockets for example) and always
     contain a given subfolder (/Production/Print for ex))"""
-    def __init__(self, source_name, path, sub_path, status):
-        self.path = path
-        self.sub_path = sub_path
-        self.status = status
-        self.source_name = source_name
+    #def __init__(self, source_name, path, sub_path, status):
+    def __init__(self, data_source_dictionary):
+        self.source_name = data_source_dictionary['Source Name']
+        self.path = data_source_dictionary['Path']
+        self.sub_path = data_source_dictionary['Sub Path']
+        self.status = data_source_dictionary['Status']
 
 class FileStatus(FileSystemStatus):
     """Data source in which the status is derived from the existence of files within a
     given root path, variable path containg a string, and a given sub path.
     (ie /Dockets/*variable*/files contains files so the status should be "Files In")"""
-    def __init__(self, source_name, path, sub_path, status):
-        super().__init__(self, path, sub_path, status)
+    def __init__(self, data_source_dictionary):
+        super().__init__(data_source_dictionary)
 
     def check_status(self, status, job_id):
         """Check whether a given status is true. Required as part of interface"""
         folders_to_check = FolderChecker.find_folders(self.path, [job_id])
         folders_to_check = FolderChecker.folder_append(folders_to_check, self.sub_path)
         print_files = FolderChecker.count_files(folders_to_check)
-        if print_files:
-            return True
-        else: return False
+        return bool(print_files)
 
 class FolderStatus(FileSystemStatus):
     """Data source in which the status is derived from the existence of a folder within a
@@ -84,9 +86,10 @@ class FolderStatus(FileSystemStatus):
     (ie /Prinect Jobs/*variable*/Sequences contains a plating folder so the
     status should be "Proof In")"""
 
-    def __init__(self, source_name, path, sub_path, folder, status):
-        super().__init__(self, path, sub_path, status)
-        self.folder = folder
+    #def __init__(self, source_name, path, sub_path, folder, status):
+    def __init__(self, data_source_dictionary):
+        super().__init__(data_source_dictionary)
+        self.folder = data_source_dictionary['Folder']
 
     def check_status(self, status, job_id):
         """Check whether a given status is true. Required as part of interface"""
@@ -116,8 +119,11 @@ class DataSourceTests(unittest.TestCase):
     def test_log_file_status(self):
         """Check that class implements check_status properly"""
         #Arange
+        test_dictionary = {'Source Name': 'Test',
+                           'Path': 'ProofLog.csv',
+                           'Status': 'Hunt Club-Proof Out'}
         expected = False
-        log_file_test = LogFileStatus('Proof Log', 'ProofLog.csv', 'Hunt Club-Proof Out')
+        log_file_test = LogFileStatus(test_dictionary)
         #Act
         actual = log_file_test.check_status('Hunt Club-Proof Out', '690331')
         #Assert
@@ -126,8 +132,13 @@ class DataSourceTests(unittest.TestCase):
     def test_file_status(self):
         """Check that class implements check_status properly"""
         #Arrange
+        test_dictionary = {'Source Name': 'Test',
+                           'Path': 'TestData/Dockets',
+                           'Sub Path': '/Production/Print',
+                           'Status': 'Files In'}
+        print(len(test_dictionary))
         expected = True
-        test_object = FileStatus('P Drive', 'TestData/Dockets', '/Production/Print', 'Files In')
+        test_object = FileStatus(test_dictionary)
         #Act
         actual = test_object.check_status('Files In', '685543')
         #Assert
@@ -136,8 +147,13 @@ class DataSourceTests(unittest.TestCase):
     def test_folder_status(self):
         """Check that class implements check_status properly"""
         #Arrange
+        test_dictionary = {'Source Name': 'Test',
+                           'Path': 'TestData/Dockets',
+                           'Sub Path': '/Production',
+                           'Folder': '/Print',
+                           'Status': 'Files In'}
         expected = True
-        test_object = FolderStatus('P Drive', 'TestData/Dockets', '/Production', '/Print', 'Proof In')
+        test_object = FolderStatus(test_dictionary)
         #Act
         actual = test_object.check_status('Proof In', '685543')
         #Assert
@@ -146,8 +162,11 @@ class DataSourceTests(unittest.TestCase):
     def test_file_status_by_name(self):
         """Check that class implements check_status properly"""
         #Arrange
+        test_dictionary = {'Source Name': 'Test',
+                           'Path': 'TestData/Dockets/684421/Production/Print',
+                           'Status': 'Proof In'}
         expected = True
-        test_object = FileStatusByName('Plates Folder', 'TestData/Dockets/684421/Production/Print', 'Proof In')
+        test_object = FileStatusByName(test_dictionary)
         #Act
         actual = test_object.check_status('Files In', 'Test2')
         #Assert
