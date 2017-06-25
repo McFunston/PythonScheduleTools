@@ -45,8 +45,6 @@ class DataSourcesGUI(tk.Tk):
             options = self.get_choices()
             self.entries.clear()
 
-            print(len(options))
-
             for i in range(len(options)):
                 row = tk.Frame(self.entry_frame)
                 lab = tk.Label(row, width=15, text=options[i], anchor='w')
@@ -59,7 +57,6 @@ class DataSourcesGUI(tk.Tk):
                 self.entries.append((options[i], ent))
                 self.entries_dic[options[i]] = ent
             #print(self.entries_dic)
-
 
             self.add_button = tk.Button(self.entry_frame, text="ADD", command=add_button_click)
             self.add_button.pack(side=tk.BOTTOM)
@@ -126,7 +123,7 @@ class DataSourcesGUI(tk.Tk):
                     for data_source in self.data_sources_dic:
                         print(data_source)
                         print(self.data_sources_dic[data_source])
-                        data_source_text = self.data_sources_dic[data_source]
+                        data_source_text = data_source
                         new_data_source = tk.Label(self.data_sources_frame, text=data_source_text, pady=10)
                         new_data_source.bind("<Button-1>", self.remove_data_source)
                         new_data_source.pack(side=tk.TOP, fill=tk.X)
@@ -149,10 +146,10 @@ class DataSourcesGUI(tk.Tk):
             source_name = new_data_source_dic['Source Name']
             del new_data_source_dic['Source Name']
             self.data_sources_dic[source_name] = new_data_source_dic
-            
+
             DataSourcesGUI.saveToJSON(self.data_sources_dic)
             self.data_sources.append(new_data_source)
-  
+
     @staticmethod
     def saveToJSON(sources):
         with open('DataSources.json', mode='w') as json_file:
@@ -166,8 +163,8 @@ class DataSourcesGUI(tk.Tk):
     def remove_data_source(self, event):
         data_source = event.widget
         if msg.askyesno("Really Delete?", "Delete " + data_source.cget("text") + "?"):
-            self.data_sources.remove(event.widget)
-            event.widget.destroy()
+            self.data_sources.remove(data_source.widget)
+            data_source.widget.destroy()
             self.recolour_data_sources()
 
     def recolour_data_sources(self):
