@@ -4,20 +4,27 @@ import pprint
 DSFFILE = 'DataSources.json'
 
 class DataSourceFactory:
-    
-    sources = list()
+
+    def __init__(self):
+        self.sources = list()
 
     def get_sources(self, id_list):
         with open(DSFFILE) as json_file:
             data_sources = json.load(json_file)
             return data_sources
-        
+
         for id in id_list:
             for key, value in data_sources:
-                if  'Excel File' in value[0]:
-                    source = DataSources.ExcelStatus(key, value[1], value[2], value[3])
-                if 'CSV Log File' in value[0]:
-                    source = DataSources.LogFileStatus(key, value[1], value[2])
-                if 'Files' in value[0]:
-                    
+                if  'Excel File' in value['Data Type']:
+                    source = DataSources.ExcelStatus(data_sources[key])
+                if 'CSV Log File' in value['Data Type']:
+                    source = DataSources.LogFileStatus(data_sources[key])
+                if 'Files' in value['Data Type']:
+                    source = DataSources.FileStatus(data_sources[key])
+                if 'Folder' in value['Data Type']:
+                    source = DataSources.FolderStatus(data_sources[key])
+                if 'File Name' in value['Data Type']:
+                    source = DataSources.FileStatusByName(data_sources[key])
+        self.sources.append(source)
+
             
