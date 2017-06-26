@@ -15,7 +15,10 @@ class ScheduleToolsGUI(tkinter.Frame):
 
         # define GUI
         tkinter.Button(self, text='Check Files In', command=self.check_files_in).pack(**button_opt)
-        tkinter.Button(self, text='Check Proofs Out', command=self.check_proofs_out).pack(**button_opt)
+        tkinter.Button(
+            self,
+            text='Check Proofs Out',
+            command=self.check_proofs_out).pack(**button_opt)
         #tkinter.Button(self, text='Check Proofs In', command=self.asksaveasfile).pack(**button_opt)
         self.l = tkinter.StringVar()
         self.l.set("test")
@@ -37,7 +40,8 @@ class ScheduleToolsGUI(tkinter.Frame):
         # This is only available on the Macintosh, and only when Navigation Services are installed.
         #options['message'] = 'message'
 
-        # if you use the multiple file version of the module functions this option is set automatically.
+        # if you use the multiple file version of the module functions
+        # this option is set automatically.
         #options['multiple'] = 1
 
         # defining options for opening a directory
@@ -50,11 +54,23 @@ class ScheduleToolsGUI(tkinter.Frame):
     def check_files_in(self):
         files_in = list()
         files_in.clear()
-        dockets_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/Dockets', '/Production/Print')
+        dockets_files = CheckStatusByFiles.check_status_by_files(
+            'Printflow-ToDo1.xls',
+            2,
+            3,
+            'Files In',
+            '/Volumes/Dockets',
+            '/Production/Print')
         if dockets_files:
             for dockets_file in dockets_files:
-                files_in.append(dockets_file)        
-        insite_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/AraxiVolume_PRINERGYEPM_J/Jobs', '/System/SubPages')
+                files_in.append(dockets_file)
+        insite_files = CheckStatusByFiles.check_status_by_files(
+            'Printflow-ToDo1.xls',
+            2,
+            3,
+            'Files In',
+            '/Volumes/AraxiVolume_PRINERGYEPM_J/Jobs',
+            '/System/SubPages')
         if insite_files != None:
             for insite_file in insite_files:
                 files_in.append(insite_file)
@@ -70,7 +86,12 @@ class ScheduleToolsGUI(tkinter.Frame):
     def check_proofs_out(self):
         proofs_out = list()
         proofs_out.clear()
-        proofs_out = CheckStatusByLog.check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'ProofLog.csv')
+        proofs_out = CheckStatusByLog.check_status_by_csv(
+            'Printflow-ToDo1.xls',
+            2,
+            3,
+            'Proof Out',
+            'ProofLog.csv')
         self.results_box.config(state="normal")
         self.results_box.delete(1.0, tkinter.END)
         #self.results_box.insert(tkinter.END, self.results_shaper(proofs_out, "proof out"))

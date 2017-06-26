@@ -111,7 +111,7 @@ def count_files(folders):
 
 def get_files_containing(path, search_string):
     """Gets a list of files in a path that contain a string
-    Args: 
+    Args:
         path: Path to check
         search_string: string to search for
     Returns: [data, file including full path]
@@ -194,7 +194,10 @@ class MyTest(unittest.TestCase):
     def test_count_files(self):
         """count_files unit test"""
         #Arrange
-        expected = [['TestData/Dockets/685543/Production/print', 1, [['Sun May  7 10:06:02 2017', 'test.pdf']]]]
+        expected = [[
+            'TestData/Dockets/685543/Production/print',
+            1,
+            [['Sun May  7 10:06:02 2017', 'test.pdf']]]]
         #Act
         actual = count_files(['TestData/Dockets/685543/Production/print'])
         #Assert
@@ -208,7 +211,7 @@ class MyTest(unittest.TestCase):
         actual = folder_exists('TestData/Dockets/685543/Production/print')
         #Assert
         self.assertEqual(actual, expected)
-    
+
     def test_get_files_containing(self):
         """get_files_containing unit test"""
         #Arrange
