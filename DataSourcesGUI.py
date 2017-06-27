@@ -2,14 +2,13 @@ import tkinter as tk
 from tkinter import filedialog
 import tkinter.messagebox as msg
 import os
-import sqlite3
 import json
 
 class DataSourcesGUI(tk.Tk):
 
     def __init__(self, data_sources=None):
         super().__init__()
-  
+
         if not data_sources:
             self.data_sources = []
             self.data_sources_dic = {}
@@ -24,7 +23,10 @@ class DataSourcesGUI(tk.Tk):
         self.chooser_frame = tk.Frame(self)
         self.chooser_frame.configure(height=10)
 
-        self.scrollbar = tk.Scrollbar(self.data_sources_canvas, orient="vertical", command=self.data_sources_canvas.yview)
+        self.scrollbar = tk.Scrollbar(
+            self.data_sources_canvas,
+            orient="vertical",
+            command=self.data_sources_canvas.yview)
 
         self.data_sources_canvas.configure(yscrollcommand=self.scrollbar.set)
 
@@ -71,7 +73,9 @@ class DataSourcesGUI(tk.Tk):
         self.data_sources_canvas.pack(side=tk.TOP, fill=tk.BOTH, expand=1)
         self.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
-        self.canvas_frame = self.data_sources_canvas.create_window((0, 0), window=self.data_sources_frame, anchor="n")
+        self.canvas_frame = self.data_sources_canvas.create_window(
+            (0, 0),
+            window=self.data_sources_frame, anchor="n")
         self.data_source_create.pack(side=tk.BOTTOM, fill=tk.X)
         self.entry_frame.pack(side=tk.BOTTOM, fill=tk.X)
         self.chooser_frame.pack(side=tk.BOTTOM, fill=tk.X)
@@ -97,7 +101,9 @@ class DataSourcesGUI(tk.Tk):
         self.bind_all("<Button-5>", self.mouse_scroll)
         self.data_sources_canvas.bind("<Configure>", self.data_sources_width)
 
-        self.colour_schemes = [{"bg": "lightgrey", "fg": "black"}, {"bg": "grey", "fg": "white"}]
+        self.colour_schemes = [
+            {"bg": "lightgrey", "fg": "black"},
+            {"bg": "grey", "fg": "white"}]
 
     def get_choices(self):
         chosen = self.choice.get()
@@ -124,7 +130,10 @@ class DataSourcesGUI(tk.Tk):
                         print(data_source)
                         print(self.data_sources_dic[data_source])
                         data_source_text = data_source
-                        new_data_source = tk.Label(self.data_sources_frame, text=data_source_text, pady=10)
+                        new_data_source = tk.Label(
+                            self.data_sources_frame,
+                            text=data_source_text,
+                            pady=10)
                         new_data_source.bind("<Button-1>", self.remove_data_source)
                         new_data_source.pack(side=tk.TOP, fill=tk.X)
 

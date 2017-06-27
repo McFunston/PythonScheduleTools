@@ -2,25 +2,25 @@ import tkinter
 from tkinter import filedialog
 import CheckStatusByFiles
 import CheckStatusByLog
-import re
 result = "test"
 class ScheduleToolsGUI(tkinter.Frame):
+    """Gui class for checking Files In and Proof Out"""
 
-    def __init__(self, root):
+    def __init__(self, ROOT):
 
-        tkinter.Frame.__init__(self, root)
+        tkinter.Frame.__init__(self, ROOT)
 
         # options for buttons
         button_opt = {'fill': tkinter.constants.BOTH, 'padx': 10, 'pady': 10}
 
         # define GUI
         tkinter.Button(self, text='Check Files In', command=self.check_files_in).pack(**button_opt)
-        tkinter.Button(self, text='Check Proofs Out', command=self.check_proofs_out).pack(**button_opt)
+        tkinter.Button(
+            self,
+            text='Check Proofs Out',
+            command=self.check_proofs_out).pack(**button_opt)
         #tkinter.Button(self, text='Check Proofs In', command=self.asksaveasfile).pack(**button_opt)
-        self.l = tkinter.StringVar()
-        self.l.set("test")
         self.results_box = tkinter.Text(self)
-        tkinter.Label(self, textvariable=self.l).pack()
         self.results_box.insert(tkinter.END, "Results will go here")
         #self.results_box.config(state="disabled")
         self.results_box.pack(fill="both", expand=1)
@@ -31,34 +31,47 @@ class ScheduleToolsGUI(tkinter.Frame):
         options['filetypes'] = [('all files', '.*'), ('text files', '.txt')]
         options['initialdir'] = 'C:\\'
         options['initialfile'] = 'myfile.txt'
-        options['parent'] = root
+        options['parent'] = ROOT
         options['title'] = 'This is a title'
 
         # This is only available on the Macintosh, and only when Navigation Services are installed.
         #options['message'] = 'message'
 
-        # if you use the multiple file version of the module functions this option is set automatically.
+        # if you use the multiple file version of the module functions
+        # this option is set automatically.
         #options['multiple'] = 1
 
         # defining options for opening a directory
         self.dir_opt = options = {}
         options['initialdir'] = 'C:\\'
         options['mustexist'] = False
-        options['parent'] = root
+        options['parent'] = ROOT
         options['title'] = 'This is a title'
 
     def check_files_in(self):
+        """Display Files In jobs in text box"""
         files_in = list()
         files_in.clear()
-        dockets_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/Dockets', '/Production/Print')
+        dockets_files = CheckStatusByFiles.check_status_by_files(
+            'Printflow-ToDo1.xls',
+            2,
+            3,
+            'Files In',
+            '/Volumes/Dockets',
+            '/Production/Print')
         if dockets_files:
             for dockets_file in dockets_files:
-                files_in.append(dockets_file)        
-        insite_files = CheckStatusByFiles.check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/AraxiVolume_PRINERGYEPM_J/Jobs', '/System/SubPages')
+                files_in.append(dockets_file)
+        insite_files = CheckStatusByFiles.check_status_by_files(
+            'Printflow-ToDo1.xls',
+            2,
+            3,
+            'Files In',
+            '/Volumes/AraxiVolume_PRINERGYEPM_J/Jobs',
+            '/System/SubPages')
         if insite_files != None:
             for insite_file in insite_files:
                 files_in.append(insite_file)
-        self.l.set("it worked")
         self.results_box.config(state="normal")
         self.results_box.delete(1.0, tkinter.END)
         for file_in in files_in:
@@ -68,9 +81,15 @@ class ScheduleToolsGUI(tkinter.Frame):
         self.results_box.config(state="disabled")
 
     def check_proofs_out(self):
+        """Display Proofs Out jobs in text box"""
         proofs_out = list()
         proofs_out.clear()
-        proofs_out = CheckStatusByLog.check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'ProofLog.csv')
+        proofs_out = CheckStatusByLog.check_status_by_csv(
+            'Printflow-ToDo1.xls',
+            2,
+            3,
+            'Proof Out',
+            'ProofLog.csv')
         self.results_box.config(state="normal")
         self.results_box.delete(1.0, tkinter.END)
         #self.results_box.insert(tkinter.END, self.results_shaper(proofs_out, "proof out"))
@@ -80,7 +99,7 @@ class ScheduleToolsGUI(tkinter.Frame):
         self.results_box.config(state="disabled")
         #return list(set(shaped_results))
 
-if __name__=='__main__':
-    root = tkinter.Tk()
-    ScheduleToolsGUI(root).pack(fill="both", expand=1)
-    root.mainloop()
+if __name__ == '__main__':
+    ROOT = tkinter.Tk()
+    ScheduleToolsGUI(ROOT).pack(fill="both", expand=1)
+    ROOT.mainloop()

@@ -22,7 +22,12 @@ class ExcelStatus:
 
     def check_status(self, status, job_id):
         """Check whether a given status is True. Required as part of interface"""
-        return_status = ExcelReader.check_job_status(status, self.path, job_id, self.id_column, self.status_column)
+        return_status = ExcelReader.check_job_status(
+            status,
+            self.path,
+            job_id,
+            self.id_column,
+            self.status_column)
         return return_status
 
 class LogFileStatus:
