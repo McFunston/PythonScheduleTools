@@ -18,6 +18,7 @@ class ExcelStatus:
         self.path = data_source_dictionary['Path']
         self.id_column = data_source_dictionary['Id Column']
         self.status_column = data_source_dictionary['Status Column']
+        self.status = data_source_dictionary['Status']
 
     def check_status(self, status, job_id):
         """Check whether a given status is True. Required as part of interface"""
@@ -108,7 +109,8 @@ class DataSourceTests(unittest.TestCase):
         test_dictionary = {'Source Name': 'Test',
                            'Path': 'Printflow-ToDo1.xls',
                            'Id Column': 3,
-                           'Status Column': 2}
+                           'Status Column': 2,
+                           'Status': 'Dollco Printing-Proof In'}
         excel_test = ExcelStatus(test_dictionary)
         expected = True
         #Act
