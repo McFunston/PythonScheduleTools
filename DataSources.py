@@ -14,7 +14,7 @@ class ExcelStatus:
     """Data source in which the status is derived from an Excel file."""
     #def __init__(self, source_name, path, id_column, status_column):
     def __init__(self, data_source_dictionary):
-        self.source_name = data_source_dictionary['Source Name']
+        self.source_name = data_source_dictionary.get('Source Name')
         self.path = data_source_dictionary['Path']
         self.id_column = data_source_dictionary['Id Column']
         self.status_column = data_source_dictionary['Status Column']
@@ -67,10 +67,10 @@ class FileSystemStatus:
     contain a given subfolder (/Production/Print for ex))"""
     #def __init__(self, source_name, path, sub_path, status):
     def __init__(self, data_source_dictionary):
-        self.source_name = data_source_dictionary['Source Name']
-        self.path = data_source_dictionary['Path']
-        self.sub_path = data_source_dictionary['Sub Path']
-        self.status = data_source_dictionary['Status']
+        self.source_name = data_source_dictionary.get('Source Name')
+        self.path = data_source_dictionary.get('Path')
+        self.sub_path = data_source_dictionary.get('Sub Path')
+        self.status = data_source_dictionary.get('Status')
 
 class FileStatus(FileSystemStatus):
     """Data source in which the status is derived from the existence of files within a
@@ -95,7 +95,7 @@ class FolderStatus(FileSystemStatus):
     #def __init__(self, source_name, path, sub_path, folder, status):
     def __init__(self, data_source_dictionary):
         super().__init__(data_source_dictionary)
-        self.folder = data_source_dictionary['Folder']
+        self.folder = data_source_dictionary.get('Folder')
 
     def check_status(self, status, job_id):
         """Check whether a given status is true. Required as part of interface"""
@@ -119,7 +119,7 @@ class DataSourceTests(unittest.TestCase):
         excel_test = ExcelStatus(test_dictionary)
         expected = True
         #Act
-        actual = excel_test.check_status('Dollco Printing-Proof In', '687583')
+        actual = excel_test.check_status('Dollco Printing-Proof In', '685597')
         #Assert
         self.assertEqual(actual, expected)
 
