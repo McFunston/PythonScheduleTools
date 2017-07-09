@@ -31,7 +31,9 @@ class ExcelStatus:
         return return_status
 
     def get_job_ids(self):
-        
+        """Return a list of job ids from the Excel file. Required as part of interface"""
+        job_ids = ExcelReader.get_all_ids(self.path, self.id_column)
+        return job_ids
 
 class LogFileStatus:
     """Data source in which the status is derived from a comma delimited log file"""
