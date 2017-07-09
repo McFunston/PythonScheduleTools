@@ -17,8 +17,6 @@ class DataSourceFactory:
 
         for id_number in id_list:
             for key, value in data_sources.items():
-                temp_dict = dict()
-                temp_dict[key] = value
                 if  'Excel File' in value['Data Type']:
                     source = DataSources.ExcelStatus(value)
                 if 'CSV Log File' in value['Data Type']:
