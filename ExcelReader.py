@@ -102,6 +102,17 @@ def get_just_ids(jobs, id_index):
     ids = list(set(ids))
     return ids
 
+def get_all_ids(path, id_column):
+    """Get all job ids from a given Excel File
+    Args:
+        path: Path to Excel file to get ids from
+        id__column: 0 based column that has ids
+    Returns: A list of job ids (string)
+    """
+    all_jobs = get_all_jobs(path)
+    all_ids = get_just_ids(all_jobs, id_column)
+    return all_ids
+
 def check_job_status(status, path, job_id, id_column, status_column):
     jobs = get_jobs_by_id(path, id_column, job_id)
     return_status = False

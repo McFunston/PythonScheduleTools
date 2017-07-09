@@ -30,6 +30,9 @@ class ExcelStatus:
             self.status_column)
         return return_status
 
+    def get_job_ids(self):
+        
+
 class LogFileStatus:
     """Data source in which the status is derived from a comma delimited log file"""
     #def __init__(self, source_name, path, status):
