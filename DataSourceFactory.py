@@ -13,7 +13,7 @@ class DataSourceFactory:
         all_sources = {}
         job_sources = {}
         with open(DSFFILE) as json_file:
-            data_sources = json.load(json_file)            
+            data_sources = json.load(json_file)
 
         for id_number in id_list:
             for key, value in data_sources.items():
