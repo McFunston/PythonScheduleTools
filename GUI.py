@@ -1,8 +1,8 @@
 import tkinter
-from tkinter import filedialog
+#from tkinter import filedialog
 import CheckStatusByFiles
 import CheckStatusByLog
-result = "test"
+
 class ScheduleToolsGUI(tkinter.Frame):
     """Gui class for checking Files In and Proof Out"""
 
