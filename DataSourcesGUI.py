@@ -4,6 +4,7 @@ import tkinter.messagebox as msg
 import os
 import json
 
+
 class DataSourcesGUI(tk.Tk):
 
     def __init__(self, data_sources=None):
@@ -35,7 +36,8 @@ class DataSourcesGUI(tk.Tk):
         self.entries = []
         self.entries_dic = {}
 
-        self.data_types = ['Excel File', 'CSV Log File', 'Files', 'Folder', 'File Name']
+        self.data_types = ['Excel File', 'CSV Log File',
+                           'Files', 'Folder', 'File Name']
 
         def add_button_click(*args):
             self.add_data_source()
@@ -58,9 +60,10 @@ class DataSourcesGUI(tk.Tk):
                 ent.pack(side=tk.RIGHT, expand=1, fill=tk.X)
                 self.entries.append((options[i], ent))
                 self.entries_dic[options[i]] = ent
-            #print(self.entries_dic)
+            # print(self.entries_dic)
 
-            self.add_button = tk.Button(self.entry_frame, text="ADD", command=add_button_click)
+            self.add_button = tk.Button(
+                self.entry_frame, text="ADD", command=add_button_click)
             self.add_button.pack(side=tk.BOTTOM)
 
         self.choice = tk.StringVar(self.entry_frame)
@@ -68,7 +71,8 @@ class DataSourcesGUI(tk.Tk):
         self.choice.trace('w', choice_callback)
         choice_callback()
 
-        self.data_source_create = tk.OptionMenu(self.chooser_frame, self.choice, *self.data_types)
+        self.data_source_create = tk.OptionMenu(
+            self.chooser_frame, self.choice, *self.data_types)
 
         self.data_sources_canvas.pack(side=tk.TOP, fill=tk.BOTH, expand=1)
         self.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
@@ -84,14 +88,14 @@ class DataSourcesGUI(tk.Tk):
 
         self.get_data_sources()
 
-        #data_source1 = tk.Label(self.data_sources_frame,
+        # data_source1 = tk.Label(self.data_sources_frame,
         #                        text="--- Add Data Sources Here ---", bg="lightgrey",
         #                        fg="black", pady=10)
         #data_source1.bind("<Button-1>", self.remove_data_source)
 
-        #self.data_sources.append(data_source1)
+        # self.data_sources.append(data_source1)
 
-        #for data_source in self.data_sources:
+        # for data_source in self.data_sources:
         #    data_source.pack(side=tk.TOP, fill=tk.X)
 
         self.bind("<Return>", self.add_data_source)
@@ -134,9 +138,9 @@ class DataSourcesGUI(tk.Tk):
                             self.data_sources_frame,
                             text=data_source_text,
                             pady=10)
-                        new_data_source.bind("<Button-1>", self.remove_data_source)
+                        new_data_source.bind(
+                            "<Button-1>", self.remove_data_source)
                         new_data_source.pack(side=tk.TOP, fill=tk.X)
-
 
     def add_data_source(self, event=None):
         data_source_text = self.data_source_create.grab_release()
@@ -147,8 +151,10 @@ class DataSourcesGUI(tk.Tk):
             new_data_source_dic[entry[0]] = entry[1].get()
 
         if new_data_source_dic:
-            new_data_source = tk.Label(self.data_sources_frame, text=new_data_source_dic, pady=10)
-            self.set_data_source_colour(len(self.data_sources), new_data_source)
+            new_data_source = tk.Label(
+                self.data_sources_frame, text=new_data_source_dic, pady=10)
+            self.set_data_source_colour(
+                len(self.data_sources), new_data_source)
             new_data_source.bind("<Button-1>", self.remove_data_source)
             new_data_source.pack(side=tk.TOP, fill=tk.X)
 
@@ -188,15 +194,18 @@ class DataSourcesGUI(tk.Tk):
         data_source.configure(fg=my_scheme_choice["fg"])
 
     def on_frame_configure(self, event=None):
-        self.data_sources_canvas.configure(scrollregion=self.data_sources_canvas.bbox("all"))
+        self.data_sources_canvas.configure(
+            scrollregion=self.data_sources_canvas.bbox("all"))
 
     def data_sources_width(self, event):
         canvas_width = event.width
-        self.data_sources_canvas.itemconfig(self.canvas_frame, width=canvas_width)
+        self.data_sources_canvas.itemconfig(
+            self.canvas_frame, width=canvas_width)
 
     def mouse_scroll(self, event):
         if event.delta:
-            self.data_sources_canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+            self.data_sources_canvas.yview_scroll(
+                int(-1 * (event.delta / 120)), "units")
         else:
             if event.num == 5:
                 move = 1
@@ -204,6 +213,7 @@ class DataSourcesGUI(tk.Tk):
                 move = -1
 
             self.data_sources_canvas.yview_scroll(move, "units")
+
 
 if __name__ == "__main__":
     if not os.path.isfile("DataSources.json"):

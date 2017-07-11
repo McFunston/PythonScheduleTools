@@ -5,6 +5,7 @@ import DataSources
 
 DSFFILE = 'TestData/TestDataSources.json'
 
+
 class DataSourceFactory:
 
     def __init__(self):
@@ -18,7 +19,7 @@ class DataSourceFactory:
 
         for id_number in id_list:
             for key, value in data_sources.items():
-                if  'Excel File' in value['Data Type']:
+                if 'Excel File' in value['Data Type']:
                     source = DataSources.ExcelStatus(value)
                 if 'CSV Log File' in value['Data Type']:
                     source = DataSources.LogFileStatus(value)
@@ -29,26 +30,29 @@ class DataSourceFactory:
                 if 'File Name' in value['Data Type']:
                     source = DataSources.FileStatusByName(value)
                 job_sources[key] = source
-            #print(id_number)
+            # print(id_number)
             all_sources[id_number] = job_sources
 
         return all_sources
 
+
 class DataSourceFactoryTests(unittest.TestCase):
     """DataSourceFactory unit tests"""
+
     def test_get_sources(self):
         """Check that DataSourceFactory can correctly instantiate a DataSource"""
-        #Arrange
+        # Arrange
         DSF = DataSourceFactory()
         mock_id_list = ['687203', '689398', '690714', '684396']
         expected = True
         sources = DSF.get_sources(mock_id_list)
 
-        #Act
-        actual = sources['689398']['P drive Files - Huntclub'].check_status('Files In', '689398')
+        # Act
+        actual = sources['689398']['P drive Files - Huntclub'].check_status(
+            'Files In', '689398')
 
-        #Assert
+        # Assert
         self.assertEqual(actual, expected)
 
-unittest.main()
 
+unittest.main()

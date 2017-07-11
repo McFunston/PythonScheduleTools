@@ -4,13 +4,15 @@ import sys
 import csv
 import CSVReader
 import FolderChecker
+
+
 def folder_watcher(folder, logfile):
     files = FolderChecker.get_file_list_with_date(folder)
     try:
         file = open(logfile, 'r')
     except IOError:
         file = open(logfile, 'w')
-        print ("ruh roh")
+        print("ruh roh")
     finally:
         file.close()
     current_log = CSVReader.read_log(logfile)
@@ -20,12 +22,13 @@ def folder_watcher(folder, logfile):
     for file in files:
         if file not in log:
             log.append(file)
-    #log.append(files_to_add)
+    # log.append(files_to_add)
     with open(logfile, 'w', newline='', encoding='latin-1') as csvfile:
         writer = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
         for file_to_add in log:
             writer.writerow(file_to_add)
-#quotechar='|'
+# quotechar='|'
+
 
 #folder_watcher("//192.168.113.50/share/", "ProofLog2.csv")
 if __name__ == "__main__":
@@ -33,4 +36,3 @@ if __name__ == "__main__":
         print("Arguments 'folder' and 'logfile' required")
     else:
         folder_watcher(sys.argv[1], sys.argv[2])
-

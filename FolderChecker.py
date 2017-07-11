@@ -9,6 +9,7 @@ from os.path import isfile, isdir, join
 import time
 import unittest
 
+
 def get_file_list(path):
     """Given a path returns a list of all files contained,
     Args: path: Path that you want to get the file list from
@@ -19,6 +20,7 @@ def get_file_list(path):
     except FileNotFoundError:
         print("Failure in get_file_list")
         return ["Bad folder structure"]
+
 
 def get_full_file_list(path):
     """Given a path returns a list of all files contained,
@@ -33,6 +35,7 @@ def get_full_file_list(path):
             #print(os.path.join(dirpath, filename))
     return file_list
 
+
 def get_file_list_with_date(path):
     """Given a path, returns a list of dates and file paths
     Args: path: Path that you want to get the file list from
@@ -44,11 +47,13 @@ def get_file_list_with_date(path):
         if file[0] != ".":
             #file = os.path.normpath(file)
             try:
-                file_with_date = [time.ctime(os.path.getmtime(file)), os.path.basename(file)]
+                file_with_date = [time.ctime(
+                    os.path.getmtime(file)), os.path.basename(file)]
                 file_list_with_date.append(file_with_date)
             except FileNotFoundError:
                 print(file + " is not a real file")
     return file_list_with_date
+
 
 def get_folder_list(path):
     """Given a path returns a list of all folders contained,
@@ -60,6 +65,7 @@ def get_folder_list(path):
     except FileNotFoundError:
         print("Failure in get_folder_list" + path)
         return
+
 
 def find_folders(path, names):
     """Returns a list of the complete paths of folders if they exists within the given path.
@@ -76,7 +82,9 @@ def find_folders(path, names):
                     fullpath = path + '/' + folder
                     found_folders.append(fullpath)
         return found_folders
-    else: return
+    else:
+        return
+
 
 def folder_append(folders, sub_folder):
     """Appends subfolder paths onto a list of folders
@@ -91,7 +99,9 @@ def folder_append(folders, sub_folder):
             folder += sub_folder
             full_folder.append(folder)
         return full_folder
-    else: return
+    else:
+        return
+
 
 def count_files(folders):
     """Count the files contained in a folder
@@ -107,7 +117,9 @@ def count_files(folders):
             if file_list:
                 folder_size.append([folder, len(file_list), file_list])
         return folder_size
-    else: return
+    else:
+        return
+
 
 def get_files_containing(path, search_string):
     """Gets a list of files in a path that contain a string
@@ -123,6 +135,7 @@ def get_files_containing(path, search_string):
             file_list.append(file)
     return file_list
 
+
 def folder_exists(folder):
     """Check it a folder exists at a given path
     Args:
@@ -134,95 +147,96 @@ def folder_exists(folder):
     else:
         return False
 
+
 class MyTest(unittest.TestCase):
     """FolderChecker.py Unit Tests"""
 
     def test_get_file_list(self):
         """get_file_list unit test"""
-        #Arrange
+        # Arrange
         expected = ['test.pdf']
-        #Act
+        # Act
         actual = get_file_list('TestData/Dockets/685543/Production/print')
-        #Assert
+        # Assert
         self.assertEqual(actual, expected)
 
     def test_get_full_file_list(self):
         """get_full_file_list unit test"""
-        #Arrange
+        # Arrange
         expected = ['TestData/Dockets/685543/Production/print\\test.pdf']
-        #Act
+        # Act
         actual = get_full_file_list('TestData/Dockets/685543/Production/print')
-        #Assert
+        # Assert
         self.assertEqual(actual, expected)
 
     def test_get_file_list_with_date(self):
         """get_file_list_with_date unit test"""
-        #Arrange
+        # Arrange
         expected = [['Sun May  7 10:06:02 2017', 'test.pdf']]
-        #Act
-        actual = get_file_list_with_date('TestData/Dockets/685543/Production/print')
-        #Assert
+        # Act
+        actual = get_file_list_with_date(
+            'TestData/Dockets/685543/Production/print')
+        # Assert
         self.assertEqual(actual, expected)
 
     def test_get_folder_list(self):
         """get_folder_list unit test"""
-        #Arrange
+        # Arrange
         expected = ['672143', '684421', '685543', '687203', '689398']
-        #Act
+        # Act
         actual = get_folder_list('TestData/Dockets')
-        #Assert
+        # Assert
         self.assertEqual(actual, expected)
 
     def test_find_folders(self):
         """find_folders unit test"""
-        #Arrange
+        # Arrange
         expected = ['TestData/Dockets/672143', 'TestData/Dockets/684421']
-        #Act
+        # Act
         actual = find_folders('TestData/Dockets', ['672143', '684421'])
-        #Assert
+        # Assert
         self.assertEqual(actual, expected)
 
     def test_folder_append(self):
         """folder_append unit test"""
-        #Arrange
+        # Arrange
         expected = ['TestData/Dockets/672143']
-        #Act
+        # Act
         actual = folder_append(['TestData/Dockets/'], '672143')
-        #Assert
+        # Assert
         self.assertEqual(actual, expected)
 
     def test_count_files(self):
         """count_files unit test"""
-        #Arrange
+        # Arrange
         expected = [[
             'TestData/Dockets/685543/Production/print',
             1,
             [['Sun May  7 10:06:02 2017', 'test.pdf']]]]
-        #Act
+        # Act
         actual = count_files(['TestData/Dockets/685543/Production/print'])
-        #Assert
+        # Assert
         self.assertEqual(actual, expected)
 
     def test_folder_exists(self):
         """folder_exists unit test"""
-        #Arrange
+        # Arrange
         expected = True
-        #Act
+        # Act
         actual = folder_exists('TestData/Dockets/685543/Production/print')
-        #Assert
+        # Assert
         self.assertEqual(actual, expected)
 
     def test_get_files_containing(self):
         """get_files_containing unit test"""
-        #Arrange
+        # Arrange
         expected = [['Sun May  7 10:06:45 2017', 'Test2.pdf']]
-        #Act
-        actual = get_files_containing('TestData/Dockets/684421/Production/Print', "Test2")
-        #Assert
+        # Act
+        actual = get_files_containing(
+            'TestData/Dockets/684421/Production/Print', "Test2")
+        # Assert
         self.assertEqual(actual, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
-
-
-

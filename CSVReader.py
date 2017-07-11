@@ -3,6 +3,7 @@
 import csv
 import pprint
 
+
 def read_log(file_name):
     try:
         csvfile = open(file_name, newline='', encoding='latin-1', mode='r')
@@ -13,6 +14,7 @@ def read_log(file_name):
     reader = csv.reader(x.replace('\0', '') for x in csvfile)
     csvfile.close
     return reader
+
 
 def find_in_csv(file_name, search_strings):
     """Find a string within a CSV file
@@ -32,6 +34,6 @@ def find_in_csv(file_name, search_strings):
 
     return findings
 #FOUND = find_in_csv('Job Log.txt', ['888888', '690381'])
-#pprint.pprint(FOUND)
+# pprint.pprint(FOUND)
 #READ = read_log("Job Log.csv")
-#print(READ)
+# print(READ)

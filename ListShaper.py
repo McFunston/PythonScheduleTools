@@ -2,12 +2,15 @@ import unittest
 import re
 from datetime import datetime
 
+
 def find_earlier(item1, item2):
     item1_date_time = datetime.strptime(item1[0], '%a %b %d %H:%M:%S %Y')
     item2_date_time = datetime.strptime(item2[0], '%a %b %d %H:%M:%S %Y')
     if item1_date_time < item2_date_time:
         return item1
-    else: return item2
+    else:
+        return item2
+
 
 def job_lister(results):
     shaped_results = list()
@@ -22,6 +25,7 @@ def job_lister(results):
         found_jobs.sort()
     return found_jobs
 
+
 def job_counter(jobs_list, job_number):
     formed_job = list()
     formed_job.append(job_number)
@@ -31,7 +35,8 @@ def job_counter(jobs_list, job_number):
             formed_job[1] += 1
             formed_job.append([job])
     return formed_job
-    
+
+
 class MyTest(unittest.TestCase):
     item1 = ['Tue May 30 09:15:42 2017', "item1r684500"]
     item2 = ['Wed May 24 15:44:57 2017', "700000item2"]
@@ -42,29 +47,31 @@ class MyTest(unittest.TestCase):
     items.append(item3)
 
     def test_find_earlier(self):
-        #Arrange
+        # Arrange
 
         expected = self.item2
-        #Act
+        # Act
         actual = find_earlier(self.item1, self.item2)
-        #Assert
+        # Assert
         self.assertEqual(actual, expected)
 
     def test_job_lister(self):
-        #Arrange
+        # Arrange
         expected = ["684500", "700000"]
-        #Act
+        # Act
         actual = job_lister(self.items)
-        #Assert
+        # Assert
         self.assertEqual(actual, expected)
 
     def test_job_counter(self):
-        #Arrange
-        expected = ["684500", 2, [['Tue May 30 09:15:42 2017', 'item1r684500']],[['Wed May 24 15:44:57 2017', 'item3r684500item2']]]
-        #Act
+        # Arrange
+        expected = ["684500", 2, [['Tue May 30 09:15:42 2017', 'item1r684500']], [
+            ['Wed May 24 15:44:57 2017', 'item3r684500item2']]]
+        # Act
         actual = job_counter(self.items, "684500")
-        #Assert
+        # Assert
         self.assertEqual(actual, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
