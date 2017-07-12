@@ -32,10 +32,10 @@ def find_in_csv(file_name, search_strings):
 
     return findings
 
-def list_jobs(file_name, job_index):
+def list_jobs(file_name):
     log = read_log(file_name)
-    log_items = [log_row[job_index] for log_row in log]
-    jobs = ListShaper.job_lister(log_items)
+    
+    jobs = ListShaper.job_lister(log)
     return jobs
 
 class CSVReader(unittest.TestCase):
@@ -48,7 +48,7 @@ class CSVReader(unittest.TestCase):
         #Assert
         self.assertEqual(actual, expected)
 
-jobs = list_jobs('TestData/ProofLog.csv', 1)
+jobs = list_jobs('TestData/ProofLog.csv')
 print(jobs)
 
 #if __name__ == '__main__':
