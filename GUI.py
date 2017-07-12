@@ -1,7 +1,9 @@
 import tkinter
+
 #from tkinter import filedialog
 import CheckStatusByFiles
 import CheckStatusByLog
+
 
 class ScheduleToolsGUI(tkinter.Frame):
     """Gui class for checking Files In and Proof Out"""

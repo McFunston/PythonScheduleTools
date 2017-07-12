@@ -3,11 +3,14 @@ All classes must share the folowing interface:
 self.source_name (property)
 self.check_status(self, status, job_id) (method)"""
 import unittest
-#from abc import ABC, abstractmethod
 
 import CSVReader
 import ExcelReader
 import FolderChecker
+
+
+#from abc import ABC, abstractmethod
+
 
 
 class ExcelStatus:

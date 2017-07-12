@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
 """Tools for extracting job info from CSV files"""
 import csv
-import pprint
+import unittest
 
+import ListShaper
 
 def read_log(file_name):
-    try:
-        csvfile = open(file_name, newline='', encoding='latin-1', mode='r')
-    except IOError:
-        return
-    finally:
-        csvfile.close
-    reader = csv.reader(x.replace('\0', '') for x in csvfile)
-    csvfile.close
-    return reader
+
+    #csvfile = open(file_name, newline='', encoding='latin-1', mode='r')
+    with open(file_name, newline='', encoding='latin-1', mode='r') as csvfile:
+        reader = csv.reader(x.replace('\0', '') for x in csvfile)    
+        log = [log_items for log_items in reader]
+    return log
 
 
 def find_in_csv(file_name, search_strings):
@@ -33,7 +31,22 @@ def find_in_csv(file_name, search_strings):
                     findings.append([r[0], r[1]])
 
     return findings
-#FOUND = find_in_csv('Job Log.txt', ['888888', '690381'])
-# pprint.pprint(FOUND)
-#READ = read_log("Job Log.csv")
-# print(READ)
+
+def list_jobs(file_name, job_index):
+    log = read_log(file_name)
+    log_items = [log_row[job_index] for log_row in log]
+    jobs = ListShaper.job_lister(log_items)
+    return jobs
+
+class CSVReader(unittest.TestCase):
+    def test_read_log(self):
+        #Arrange
+        log = read_log('TestData/ProofLog.csv')
+        expected = 'Tue May 16 12:09:08 2017'
+        #Act
+        actual = log[0][0]
+        #Assert
+        self.assertEqual(actual, expected)
+
+if __name__ == '__main__':
+    unittest.main()

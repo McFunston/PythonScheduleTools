@@ -1,8 +1,8 @@
-import tkinter as tk
-from tkinter import filedialog
-import tkinter.messagebox as msg
-import os
 import json
+import os
+import tkinter as tk
+import tkinter.messagebox as msg
+from tkinter import filedialog
 
 
 class DataSourcesGUI(tk.Tk):

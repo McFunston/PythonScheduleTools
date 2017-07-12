@@ -2,9 +2,10 @@
 """Utility to check whether a status listed in an Excel file is correct
 by checking for the existance of files (if we have files why hasn't it been statused as "FilesIn"?)
 """
-import ExcelReader
-import CSVReader
 import pprint
+
+import CSVReader
+import ExcelReader
 
 
 def check_status_by_csv(excel_filename, status_column, id_column, status, csv_file):
@@ -15,7 +16,4 @@ def check_status_by_csv(excel_filename, status_column, id_column, status, csv_fi
     candidates = CSVReader.find_in_csv(csv_file, jobs_to_check)
     return candidates
 
-#TEST = check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', 'G:/TestWorkFolder/Dockets', '/Production/Print')
-# print(TEST)
-#TEST = check_status_by_csv('Printflow-ToDo1.xls', 2, 3, 'Proof Out', 'ProofLog.csv')
-# pprint.pprint(TEST)
+
