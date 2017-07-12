@@ -17,8 +17,10 @@ def job_lister(results):
     jobs = list()
     found_jobs = list()
     for result in results:
-        r = (re.search(r"(\d{6})", result[1]))
-        jobs.append(r.groups())
+        #r = (re.search("(?<!\d)\d{6}(?!\d)", result[1]))
+        r = (re.search(r'(?<!\d)\d{6}(?!\d)', result))
+        if r != None:
+            jobs.append(r.group(0))
     for job in jobs:
         found_jobs.append(job[0])
         found_jobs = list(set(found_jobs))
