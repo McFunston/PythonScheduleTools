@@ -48,8 +48,8 @@ class CSVReader(unittest.TestCase):
         #Assert
         self.assertEqual(actual, expected)
 
-jobs = list_jobs('TestData/ProofLog.csv')
-print(jobs)
+#jobs = list_jobs('TestData/ProofLog.csv')
+#print(jobs)
 
 #if __name__ == '__main__':
 #    unittest.main()
