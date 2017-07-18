@@ -12,7 +12,6 @@ import FolderChecker
 #from abc import ABC, abstractmethod
 
 
-
 class ExcelStatus:
     """Data source in which the status is derived from an Excel file."""
     # def __init__(self, source_name, path, id_column, status_column):
@@ -54,6 +53,11 @@ class LogFileStatus:
         candidates = CSVReader.find_in_csv(self.path, [job_id])
         # if candidates: return True
         return bool(candidates)
+
+    def get_job_ids(self):
+        """Return a list of job ids from the csv file. Required as part of interface"""
+        job_ids = CSVReader.list_jobs(self.path)
+        return job_ids
 
 
 class FileStatusByName:
