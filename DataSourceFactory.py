@@ -12,7 +12,7 @@ class DataSourceFactory:
     def __init__(self):
         self.sources = dict()
 
-    def get_sources(self, id_list):
+    def make_sources(self, id_list):
         all_sources = {}
         job_sources = {}
         with open(DSFFILE) as json_file:
@@ -40,13 +40,13 @@ class DataSourceFactory:
 class DataSourceFactoryTests(unittest.TestCase):
     """DataSourceFactory unit tests"""
 
-    def test_get_sources(self):
+    def test_make_sources(self):
         """Check that DataSourceFactory can correctly instantiate a DataSource"""
         # Arrange
         DSF = DataSourceFactory()
         mock_id_list = ['687203', '689398', '690714', '684396']
         expected = True
-        sources = DSF.get_sources(mock_id_list)
+        sources = DSF.make_sources(mock_id_list)
 
         # Act
         actual = sources['689398']['P drive Files - Huntclub'].check_status(
