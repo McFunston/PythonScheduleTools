@@ -145,9 +145,10 @@ class FolderStatus(FileSystemStatus):
                 return True
             else:
                 return False
-    
+
     def get_job_ids(self):
         super().get_job_ids()
+
 
 class DataSourceTests(unittest.TestCase):
     """DataSource unit tests"""
