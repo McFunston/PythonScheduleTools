@@ -7,7 +7,7 @@ import unittest
 import CSVReader
 import ExcelReader
 import FolderChecker
-
+import ListShaper
 
 #from abc import ABC, abstractmethod
 
@@ -76,6 +76,11 @@ class FileStatusByName:
         findings = FolderChecker.get_files_containing(self.path, job_id)
         if len(findings) > 0:
             return True
+
+    def get_job_ids(self):
+        file_list = FolderChecker.get_file_list_with_date(self.path)
+        job_ids = ListShaper.job_lister(file_list)
+        return job_ids
 
 
 class FileSystemStatus:

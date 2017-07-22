@@ -112,27 +112,25 @@ class DataSourcesGUI(tk.Tk):
     def get_choices(self):
         chosen = self.choice.get()
         if chosen == 'Excel File':
-            options = ["Source Name", "Path", "Id Column", "Status Column"]
+            options = ["Source Name", "Path", "Id Column", "Status Column", "Status"]
         elif chosen == 'CSV Log File':
-            options = ["Source Name", "Path", "Status"]
+            options = ["Source Name", "Path", "Id Column", "Status"]
         elif chosen == 'Files':
             options = ["Source Name", "Path", "Sub Path", "Status"]
         elif chosen == 'Folder':
             options = ["Source Name", "Path", "Sub Path", "Folder", "Status"]
         else:
-            options = ['Source Name', 'Path']
+            options = ['Source Name', 'Path', "Status"]
         return options
 
     def get_data_sources(self):
         if os.stat("DataSources.json").st_size != 0:
-            with open('DataSources.json') as json_file:
-                print(json_file)
+            with open('DataSources.json') as json_file:                
                 data_sources = json.load(json_file)
                 if data_sources:
                     self.data_sources_dic = data_sources
                     for data_source in self.data_sources_dic:
-                        print(data_source)
-                        print(self.data_sources_dic[data_source])
+                        
                         data_source_text = data_source
                         new_data_source = tk.Label(
                             self.data_sources_frame,
