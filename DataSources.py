@@ -78,6 +78,7 @@ class FileStatusByName:
             return True
 
     def get_job_ids(self):
+        """Return a list of job ids from the files at self.path. Required as part of interface"""
         file_list = FolderChecker.get_file_list_with_date(self.path)
         job_ids = ListShaper.job_lister(file_list)
         return job_ids
@@ -97,6 +98,7 @@ class FileSystemStatus:
         self.status = data_source_dictionary.get('Status')
 
     def get_job_ids(self):
+        """Return a list of job ids from the folders at self.path. Required as part of interface"""
         folder_list = FolderChecker.get_folder_list_with_date(self.path)
         job_ids = ListShaper.job_lister(folder_list)
         return job_ids
@@ -117,6 +119,9 @@ class FileStatus(FileSystemStatus):
             folders_to_check, self.sub_path)
         print_files = FolderChecker.count_files(folders_to_check)
         return bool(print_files)
+
+    def get_job_ids(self):
+        super().get_job_ids()
 
 
 class FolderStatus(FileSystemStatus):
@@ -140,7 +145,9 @@ class FolderStatus(FileSystemStatus):
                 return True
             else:
                 return False
-
+    
+    def get_job_ids(self):
+        super().get_job_ids()
 
 class DataSourceTests(unittest.TestCase):
     """DataSource unit tests"""
