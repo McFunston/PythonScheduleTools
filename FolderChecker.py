@@ -67,10 +67,14 @@ def get_folder_list(path):
         return
 
 def get_folder_list_with_date(path):
+    """Given a path, returns a list of dates and folders
+    Args: path: Path that you want to get the file list from
+    Returns: list of [date, foldernames]
+    """
     folder_list_with_date = list()
     folder_list = [f for f in listdir(path) if isdir(join(path, f))]
     for folder in folder_list:
-        folder_with_date = [time.ctime(os.path.getmtime(path+folder)), folder]
+        folder_with_date = [time.ctime(os.path.getmtime(path+'/'+folder)), folder]
         folder_list_with_date.append(folder_with_date)
     return folder_list_with_date
 
@@ -243,7 +247,17 @@ class MyTest(unittest.TestCase):
             'TestData/Dockets/684421/Production/Print', "Test2")
         # Assert
         self.assertEqual(actual, expected)
+    def test_get_folder_list_with_date(self):
+        """get_folder_list_with_date"""
+        # Arrange
+        expected = [['Sun May  7 09:48:35 2017', 'Print']]
+        # Act
+        actual = get_folder_list_with_date("TestData/Dockets/672143/Production")
+        # Assert
+        self.assertEqual(actual, expected)
 
+#TEST = get_folder_list_with_date("TestData/Dockets/672143/Production")
+#print(TEST)
 
 if __name__ == '__main__':
     unittest.main()
