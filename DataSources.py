@@ -96,6 +96,11 @@ class FileSystemStatus:
         self.sub_path = data_source_dictionary.get('Sub Path')
         self.status = data_source_dictionary.get('Status')
 
+    def get_job_ids(self):
+        folder_list = FolderChecker.get_folder_list_with_date(self.path)
+        job_ids = ListShaper.job_lister(folder_list)
+        return job_ids
+
 
 class FileStatus(FileSystemStatus):
     """Data source in which the status is derived from the existence of files within a
