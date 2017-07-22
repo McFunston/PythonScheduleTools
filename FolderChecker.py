@@ -66,6 +66,13 @@ def get_folder_list(path):
         print("Failure in get_folder_list" + path)
         return
 
+def get_folder_list_with_date(path):
+    folder_list_with_date = list()
+    folder_list = [f for f in listdir(path) if isdir(join(path, f))]
+    for folder in folder_list:
+        folder_with_date = [time.ctime(os.path.getmtime(path+folder)), folder]
+        folder_list_with_date.append(folder_with_date)
+    return folder_list_with_date
 
 def find_folders(path, names):
     """Returns a list of the complete paths of folders if they exists within the given path.
