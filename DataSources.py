@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Classes related to data collection for job statuses
 All classes must share the folowing interface:
 self.source_name (property)
