@@ -103,11 +103,11 @@ class FolderCheckerTests(unittest.TestCase):
             # Assert
             self.assertEqual(actual, expected)
 
-class CSVReader(unittest.TestCase):
+class CSVReaderTests(unittest.TestCase):
 
     @classmethod
     def setUp(self):
-        self.csv_reader = CSVReaderClass.CSVReader
+        self.csv_rdr = CSVReaderClass.CSVReader()
         self.test_csv = 'TestData/ProofLog.csv'
 
 
@@ -115,6 +115,6 @@ class CSVReader(unittest.TestCase):
         #Arrange
         expected = [['Tue May 16 10:55:02 2017', '690060_690060_FB 001_p1-8.pdf']]
         #Act
-        actual = self.csv_reader.find_in_csv('TestData/ProofLog.csv', '690060')
+        actual = self.csv_rdr.find_in_csv(self.test_csv, '690060')
         #Assert
         self.assertEqual(actual, expected)

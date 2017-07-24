@@ -27,7 +27,7 @@ class CSVReader():
             reader = csv.reader(x.replace('\0', '') for x in csvfile)
             findings = list()
             read = [r for r in reader]
-            
+           
             for r in read:
                 if len(r) > 1 and str(search_string) in str(r[1]):
                     findings.append([r[0], r[1]])
@@ -41,4 +41,5 @@ class CSVReader():
         return jobs
 
 csv_reader = CSVReader()
-TEST = CSVReader.find_in_csv('TestData/ProofLog.csv', '690060')
+TEST = csv_reader.find_in_csv("TestData/ProofLog.csv", "690060")
+print(TEST)
