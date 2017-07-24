@@ -1,5 +1,6 @@
 import unittest
 import Services.FolderCheckerClass as FolderCheckerClass
+import Services.CSVReaderClass as CSVReaderClass
 
 class FolderCheckerTests(unittest.TestCase):
         """FolderChecker.py Unit Tests"""
@@ -101,3 +102,19 @@ class FolderCheckerTests(unittest.TestCase):
             actual = self.folder_checker.get_folder_list_with_date("TestData/Dockets/672143/Production")
             # Assert
             self.assertEqual(actual, expected)
+
+class CSVReader(unittest.TestCase):
+
+    @classmethod
+    def setUp(self):
+        self.csv_reader = CSVReaderClass.CSVReader
+        self.test_csv = 'TestData/ProofLog.csv'
+
+
+    def test_find_in_csv(self):
+        #Arrange
+        expected = [['Tue May 16 10:55:02 2017', '690060_690060_FB 001_p1-8.pdf']]
+        #Act
+        actual = self.csv_reader.find_in_csv('TestData/ProofLog.csv', '690060')
+        #Assert
+        self.assertEqual(actual, expected)
