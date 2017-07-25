@@ -6,6 +6,7 @@ import datetime
 import time
 import ListShaper
 
+
 class CSVReader():
 
     _csv_cache = {}
@@ -16,25 +17,26 @@ class CSVReader():
 
     def _check_cache(self):
         if self.path in CSVReader._csv_cache:
-            file_date = datetime.datetime.fromtimestamp(os.path.getmtime(self.path))
+            file_date = datetime.datetime.fromtimestamp(
+                os.path.getmtime(self.path))
             cache_cutoff = datetime.datetime.now() - datetime.timedelta(minutes=15)
-            if file_date > cache_cutoff:                
+            if file_date > cache_cutoff:
                 return True
 
     def _read_log(self):
 
         if not self._check_cache():
 
-            print ('Did not use cache')
+            print('Did not use cache')
 
             with open(self.path, newline='', encoding='latin-1', mode='r') as csvfile:
                 reader = csv.reader(x.replace('\0', '') for x in csvfile)
                 log = [log_items for log_items in reader]
             CSVReader._csv_cache[self.path] = log
             CSVReader._cache_date[self.path] = datetime.datetime.now()
-            
+
         else:
-            print ('Used cache')
+            print('Used cache')
             log = CSVReader._csv_cache[self.path]
 
         return log
@@ -50,7 +52,7 @@ class CSVReader():
             reader = csv.reader(x.replace('\0', '') for x in csvfile)
             findings = list()
             read = [r for r in reader]
-           
+
             for r in read:
                 if len(r) > 1 and str(search_string) in str(r[1]):
                     findings.append([r[0], r[1]])
