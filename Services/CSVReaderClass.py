@@ -1,20 +1,43 @@
 #!/usr/bin/env python3
 """Tools for extracting job info from CSV files"""
 import csv
-import unittest
-
+import os
+import datetime
+import time
 import ListShaper
 
 class CSVReader():
 
-    def _read_log(self, file_name):
+    _csv_cache = {}
+    _cache_date = {}
 
-        #csvfile = open(file_name, newline='', encoding='latin-1', mode='r')
-        with open(file_name, newline='', encoding='latin-1', mode='r') as csvfile:
-            reader = csv.reader(x.replace('\0', '') for x in csvfile)    
-            log = [log_items for log_items in reader]
+    def __init__(self, path):
+        self.path = path
+
+    def _check_cache(self):
+        if self.path in CSVReader._csv_cache:
+            file_date = datetime.datetime.fromtimestamp(os.path.getmtime(self.path))
+            cache_cutoff = datetime.datetime.now() - datetime.timedelta(minutes=15)
+            if file_date > cache_cutoff:                
+                return True
+
+    def _read_log(self):
+
+        if not self._check_cache():
+
+            print ('Did not use cache')
+
+            with open(self.path, newline='', encoding='latin-1', mode='r') as csvfile:
+                reader = csv.reader(x.replace('\0', '') for x in csvfile)
+                log = [log_items for log_items in reader]
+            CSVReader._csv_cache[self.path] = log
+            CSVReader._cache_date[self.path] = datetime.datetime.now()
+            
+        else:
+            print ('Used cache')
+            log = CSVReader._csv_cache[self.path]
+
         return log
-
 
     def find_in_csv(self, file_name, search_string):
         """Find a string within a CSV file
@@ -34,12 +57,10 @@ class CSVReader():
 
         return findings
 
-    def list_jobs(self, file_name):
-        log = self._read_log(file_name)
-        
-        jobs = ListShaper.job_lister(log)
-        return jobs
+    def get_list(self):
+        return self._read_log()
 
-csv_reader = CSVReader()
-TEST = csv_reader.find_in_csv("TestData/ProofLog.csv", "690060")
-print(TEST)
+
+test_csv = CSVReader('ProofLog.csv')
+test1 = test_csv.get_list()
+test2 = test_csv.get_list()
