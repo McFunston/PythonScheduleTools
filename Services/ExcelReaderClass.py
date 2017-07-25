@@ -2,7 +2,8 @@
 """MS Excel tools related to schedules save as workbooks"""
 
 from xlrd import open_workbook
-
+from datetime import datetime
+import time
 class ExcelReader():
 
     def __init__(self, path, job_id, id_column, date_column, status_column, status):
@@ -114,7 +115,10 @@ class ExcelReader():
         jobs = self.get_jobs_by_id(self.path, self.id_column, self.job_id)
         for job in jobs:
             if self.status in job[self.status_column]:
-                id_and_date = [job[self.date_column], job[self.id_column]]
+                dte = job[self.date_column]
+                dte = datetime.strptime(dte, '%m/%d/%Y %I:%M:%S %p')
+                
+                id_and_date = [dte, job[self.id_column]]
                 ids_with_dates.append(id_and_date)
         return ids_with_dates
 
