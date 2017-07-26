@@ -76,7 +76,7 @@ class ExcelReader():
         Returns: A list of row contents
         """
         try:
-            sheet = self.get_all_jobs(file_name)
+            sheet = self._get_all_jobs(file_name)
         except ValueError as error:
             print(error.args)
             raise
@@ -112,15 +112,15 @@ class ExcelReader():
 
     def get_list(self):
         ids_with_dates = list()
-        jobs = self.get_jobs_by_id(self.path, self.id_column, self.job_id)
+        jobs = self.get_jobs_by_status(self.path, self.status_column, self.status)
         for job in jobs:
             if self.status in job[self.status_column]:
                 dte = job[self.date_column]
                 dte = datetime.strptime(dte, '%m/%d/%Y %I:%M:%S %p')
                 
-                id_and_date = [dte, job[self.id_column]]
+                id_and_date = [dte.strftime('%c'), job[self.id_column]]
                 ids_with_dates.append(id_and_date)
         return ids_with_dates
 
-er = ExcelReader('TestData/PrintFlow-ToDo.xls', '690152', 3, 0, 2, 'Proof In')
-print(er.get_list())
+# er = ExcelReader('TestData/PrintFlow-ToDo.xls', '690152', 3, 0, 2, 'Proof Out')
+# print(er.get_list())

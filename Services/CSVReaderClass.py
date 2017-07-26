@@ -63,6 +63,7 @@ class CSVReader():
         return self._read_log()
 
 
-test_csv = CSVReader('ProofLog.csv')
-test1 = test_csv.get_list()
-test2 = test_csv.get_list()
+# test_csv = CSVReader('ProofLog.csv')
+# test1 = test_csv.get_list()
+# print(test1)
+# test2 = test_csv.get_list()
