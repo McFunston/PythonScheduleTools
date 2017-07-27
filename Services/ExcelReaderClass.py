@@ -37,7 +37,7 @@ class ExcelReader():
 
 
     def _excel_to_dict(self, file_name):
-        sheet = self._get_all_jobs(file_name)
+        sheet = self._get_all_jobs()
         excel_dict = dict()
         for row_index in range(sheet.nrows - 1):
             for column_index in range(sheet.ncols - 1):
@@ -76,7 +76,7 @@ class ExcelReader():
         Returns: A list of row contents
         """
         try:
-            sheet = self._get_all_jobs(file_name)
+            sheet = self._get_all_jobs()
         except ValueError as error:
             print(error.args)
             raise
@@ -105,7 +105,7 @@ class ExcelReader():
             id__column: 0 based column that has ids
         Returns: A list of job ids (string)
         """
-        all_jobs = self._get_all_jobs(path)
+        all_jobs = self._get_all_jobs()
         all_ids = self.get_just_ids(all_jobs, id_column)
         return all_ids
 
