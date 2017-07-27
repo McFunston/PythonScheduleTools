@@ -23,13 +23,13 @@ class ExcelReader():
         return stripped_list
 
 
-    def _get_all_jobs(self, file_name):
+    def _get_all_jobs(self):
         """Get the contents of the first worksheet of an Excel file
         Args:
         file_name: The name of the Excel file containing jobs
         Returns: Excel work sheet as xlrd.sheet.Sheet"""
         try:
-            with open_workbook(file_name) as book:
+            with open_workbook(self.path) as book:
                 sheet = book.sheet_by_index(0)
             return sheet
         except FileNotFoundError:
@@ -57,7 +57,7 @@ class ExcelReader():
 
         Returns: A list containg the rows that match the job_id"""
         try:
-            sheet = self._get_all_jobs(file_name)
+            sheet = self._get_all_jobs()
         except ValueError as error:
             print(error.args)
             raise
