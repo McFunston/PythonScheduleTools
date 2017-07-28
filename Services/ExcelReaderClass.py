@@ -4,15 +4,17 @@
 from xlrd import open_workbook
 from datetime import datetime
 import time
+import Cache
+
 class ExcelReader():
 
-    def __init__(self, path, job_id, id_column, date_column, status_column, status):
+    def __init__(self, path, id_column, date_column, status_column, status):
         self.path = path
         self.id_column = id_column
         self.date_column = date_column
         self.status_column = status_column
         self.status = status
-        self.job_id = job_id
+        
 
     def list_strip(self, list_to_strip):
         """Removes unecessary spaces from a list of cells
@@ -22,8 +24,11 @@ class ExcelReader():
         stripped_list = [x.value.strip() for x in list_to_strip]
         return stripped_list
 
+    def get_data(self):
+        cache = Cache.Cache()
+        return cache.get_list(self.path, self._get_uncached_data)
 
-    def _get_all_jobs(self):
+    def _get_uncached_data(self):
         """Get the contents of the first worksheet of an Excel file
         Args:
         file_name: The name of the Excel file containing jobs
@@ -76,7 +81,7 @@ class ExcelReader():
         Returns: A list of row contents
         """
         try:
-            sheet = self._get_all_jobs()
+            sheet = self.get_data()
         except ValueError as error:
             print(error.args)
             raise
@@ -124,3 +129,8 @@ class ExcelReader():
 
 # er = ExcelReader('TestData/PrintFlow-ToDo.xls', '690152', 3, 0, 2, 'Proof Out')
 # print(er.get_list())
+er = ExcelReader('TestData/Printflow-ToDo.xls', 3, 0, 2, 'Proof In')
+l = er.get_list()
+print(l)
+l = er.get_list()
+print(l)

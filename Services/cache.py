@@ -24,6 +24,7 @@ class Cache(metaclass=Singleton):
             ids_with_dates = self.cache[path]['List']
         else:
             ids_with_dates = fallback()
+            self.cache[path] = {}
             self.cache[path]['List'] = ids_with_dates
             self.cache[path]['Creation Date'] = datetime.datetime.now()
         return ids_with_dates
