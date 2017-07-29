@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""MS Excel tools related to schedules save as workbooks"""
+"""MS Excel tools related to schedules saved as workbooks"""
 
 from xlrd import open_workbook
 from datetime import datetime
 import time
 import Cache
+
 
 class ExcelReader():
 
@@ -14,7 +15,6 @@ class ExcelReader():
         self.date_column = date_column
         self.status_column = status_column
         self.status = status
-        
 
     def list_strip(self, list_to_strip):
         """Removes unecessary spaces from a list of cells
@@ -24,7 +24,7 @@ class ExcelReader():
         stripped_list = [x.value.strip() for x in list_to_strip]
         return stripped_list
 
-    def get_data(self):
+    def _get_data(self):
         cache = Cache.Cache()
         return cache.get_list(self.path, self._get_uncached_data)
 
@@ -40,9 +40,8 @@ class ExcelReader():
         except FileNotFoundError:
             raise ValueError("That file doesn't exist at the given location")
 
-
-    def _excel_to_dict(self, file_name):
-        sheet = self._get_all_jobs()
+    def _excel_to_dict(self):
+        sheet = self._get_data()
         excel_dict = dict()
         for row_index in range(sheet.nrows - 1):
             for column_index in range(sheet.ncols - 1):
@@ -62,7 +61,7 @@ class ExcelReader():
 
         Returns: A list containg the rows that match the job_id"""
         try:
-            sheet = self._get_all_jobs()
+            sheet = self._get_data()
         except ValueError as error:
             print(error.args)
             raise
@@ -70,7 +69,6 @@ class ExcelReader():
         jobs = [self.list_strip(row)
                 for row in rows if row[id_column].value == str(job_id)]
         return jobs
-
 
     def get_jobs_by_status(self, file_name, status_column, status):
         """Get all of the rows in an Excel file where the status column contains a certain status
@@ -81,7 +79,7 @@ class ExcelReader():
         Returns: A list of row contents
         """
         try:
-            sheet = self.get_data()
+            sheet = self._get_data()
         except ValueError as error:
             print(error.args)
             raise
@@ -89,7 +87,6 @@ class ExcelReader():
         jobs = [self.list_strip(row)
                 for row in rows if status in row[status_column].value]
         return jobs
-
 
     def get_just_ids(self, jobs, id_index):
         """Strip away everything except the job ids from a list of jobs and removes duplicates
@@ -102,7 +99,6 @@ class ExcelReader():
         ids = list(set(ids))
         return ids
 
-
     def get_all_ids(self, path, id_column):
         """Get all job ids from a given Excel File
         Args:
@@ -110,27 +106,29 @@ class ExcelReader():
             id__column: 0 based column that has ids
         Returns: A list of job ids (string)
         """
-        all_jobs = self._get_all_jobs()
+        all_jobs = self._get_data()
         all_ids = self.get_just_ids(all_jobs, id_column)
         return all_ids
 
-
     def get_list(self):
         ids_with_dates = list()
-        jobs = self.get_jobs_by_status(self.path, self.status_column, self.status)
+        jobs = self.get_jobs_by_status(
+            self.path, self.status_column, self.status)
         for job in jobs:
             if self.status in job[self.status_column]:
                 dte = job[self.date_column]
                 dte = datetime.strptime(dte, '%m/%d/%Y %I:%M:%S %p')
-                
                 id_and_date = [dte.strftime('%c'), job[self.id_column]]
                 ids_with_dates.append(id_and_date)
         return ids_with_dates
 
-# er = ExcelReader('TestData/PrintFlow-ToDo.xls', '690152', 3, 0, 2, 'Proof Out')
-# print(er.get_list())
-# er = ExcelReader('TestData/Printflow-ToDo.xls', 3, 0, 2, 'Proof In')
-# l = er.get_list()
+# fi = ExcelReader('TestData/Printflow-ToDo.xls', 3, 0, 2, 'Files In')
+# po = ExcelReader('TestData/Printflow-ToDo.xls', 3, 0, 2, 'Proof Out')
+# pi = ExcelReader('TestData/Printflow-ToDo.xls', 3, 0, 2, 'Proof In')
+
+# k = fi.get_list()
+# print(k)
+# l = po.get_list()
 # print(l)
-# l = er.get_list()
-# print(l)
+# m = pi.get_list()
+# print(m)
