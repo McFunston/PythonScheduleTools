@@ -129,8 +129,8 @@ class ExcelReader():
 
 # er = ExcelReader('TestData/PrintFlow-ToDo.xls', '690152', 3, 0, 2, 'Proof Out')
 # print(er.get_list())
-er = ExcelReader('TestData/Printflow-ToDo.xls', 3, 0, 2, 'Proof In')
-l = er.get_list()
-print(l)
-l = er.get_list()
-print(l)
+# er = ExcelReader('TestData/Printflow-ToDo.xls', 3, 0, 2, 'Proof In')
+# l = er.get_list()
+# print(l)
+# l = er.get_list()
+# print(l)

@@ -5,39 +5,22 @@ import os
 import datetime
 import time
 import ListShaper
-
+import Cache
 
 class CSVReader():
-
-    _csv_cache = {}
-    _cache_date = {}
 
     def __init__(self, path):
         self.path = path
 
-    def _check_cache(self):
-        if self.path in CSVReader._csv_cache:
-            file_date = datetime.datetime.fromtimestamp(
-                os.path.getmtime(self.path))
-            cache_cutoff = datetime.datetime.now() - datetime.timedelta(minutes=15)
-            if file_date > cache_cutoff:
-                return True
+    def get_data(self):
+        cache = Cache.Cache()
+        return cache.get_list(self.path, self._get_uncached_data)
 
-    def _read_log(self):
+    def _get_uncached_data(self):
 
-        if not self._check_cache():
-
-            print('Did not use cache')
-
-            with open(self.path, newline='', encoding='latin-1', mode='r') as csvfile:
-                reader = csv.reader(x.replace('\0', '') for x in csvfile)
-                log = [log_items for log_items in reader]
-            CSVReader._csv_cache[self.path] = log
-            CSVReader._cache_date[self.path] = datetime.datetime.now()
-
-        else:
-            print('Used cache')
-            log = CSVReader._csv_cache[self.path]
+        with open(self.path, newline='', encoding='latin-1', mode='r') as csvfile:
+            reader = csv.reader(x.replace('\0', '') for x in csvfile)
+            log = [log_items for log_items in reader]
 
         return log
 
@@ -60,10 +43,10 @@ class CSVReader():
         return findings
 
     def get_list(self):
-        return self._read_log()
+        return self.get_data()
 
 
 # test_csv = CSVReader('ProofLog.csv')
 # test1 = test_csv.get_list()
-# print(test1)
+
 # test2 = test_csv.get_list()
