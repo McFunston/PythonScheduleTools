@@ -9,8 +9,8 @@ import Cache
 
 class CSVReader():
 
-    def __init__(self, path):
-        self.path = path
+    def __init__(self, data_source):
+        self.path = data_source['Path']
 
     def get_data(self):
         cache = Cache.Cache()
@@ -21,7 +21,6 @@ class CSVReader():
         with open(self.path, newline='', encoding='latin-1', mode='r') as csvfile:
             reader = csv.reader(x.replace('\0', '') for x in csvfile)
             log = [log_items for log_items in reader]
-
         return log
 
     def get_list(self):

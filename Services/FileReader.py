@@ -10,10 +10,10 @@ import time
 import Cache
 
 
-class FileChecker():
+class FileReader():
 
-    def __init__(self, path):
-        self.path = path
+    def __init__(self, data_source):
+        self.path = data_source['Path']
 
     def _get_full_file_list(self):
         """Given a path returns a list of all files contained,
@@ -48,6 +48,4 @@ class FileChecker():
     def get_list(self):
         return self._get_data()
 
-fc = FileChecker('TestData')
-print(fc.get_list())
-print(fc.get_list())
+

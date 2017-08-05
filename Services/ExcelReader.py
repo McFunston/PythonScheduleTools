@@ -9,12 +9,12 @@ import Cache
 
 class ExcelReader():
 
-    def __init__(self, path, id_column, date_column, status_column, status):
-        self.path = path
-        self.id_column = id_column
-        self.date_column = date_column
-        self.status_column = status_column
-        self.status = status
+    def __init__(self, data_source):
+        self.path = data_source['Path']
+        self.id_column = data_source['Id Column']
+        self.date_column = data_source['Date Column']
+        self.status_column = data_source['Status Column']
+        self.status = data_source['Status']
 
     def _list_strip(self, list_to_strip):
         """Removes unecessary spaces from a list of cells

@@ -10,10 +10,10 @@ import time
 import Cache
 
 
-class FolderChecker():
+class FolderReader():
 
-    def __init__(self, path):
-        self.path = path
+    def __init__(self, data_source):
+        self.path = data_source['Path']
 
     def _get_uncached_data(self):
         """Given a path, returns a list of dates and folders
@@ -63,6 +63,3 @@ class FolderChecker():
     def get_list(self):
         return self._get_data()
 
-fc = FolderChecker('TestData')
-print(fc.get_list())
-print(fc.get_list())
