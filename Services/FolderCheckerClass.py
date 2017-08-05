@@ -33,24 +33,6 @@ class FolderChecker():
         cache = Cache.Cache()
         return cache.get_list(self.path, self._get_uncached_data)
 
-    def _find_folders(self, names):
-        """Returns a list of the complete paths of folders if they exists within the given path.
-        path -- List of paths to search
-        names -- List of partial or complete names to search for
-        Returns a list of paths as strings.
-        """
-        found_folders = list()
-        folder_candidates = self.get_folder_list()
-        if folder_candidates:
-            for name in names:
-                for folder in folder_candidates:
-                    if name in folder:
-                        fullpath = self.path + '/' + folder
-                        found_folders.append(fullpath)
-            return found_folders
-        else:
-            return
-
     def _folder_append(self, folders, sub_folder):
         """Appends subfolder paths onto a list of folders
             Args:

@@ -24,24 +24,6 @@ class CSVReader():
 
         return log
 
-    def find_in_csv(self, file_name, search_string):
-        """Find a string within a CSV file
-        Args:
-            file_name: Name of csv file to search
-            search_string: String to be searched for
-        Returns: A list of dates and print jobs
-        """
-        with open(file_name, newline='', encoding='latin-1') as csvfile:
-            reader = csv.reader(x.replace('\0', '') for x in csvfile)
-            findings = list()
-            read = [r for r in reader]
-
-            for r in read:
-                if len(r) > 1 and str(search_string) in str(r[1]):
-                    findings.append([r[0], r[1]])
-
-        return findings
-
     def get_list(self):
         return self.get_data()
 
