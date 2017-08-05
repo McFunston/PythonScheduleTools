@@ -24,5 +24,11 @@
         "Data Type": "CSV Log File",
         "Path": "Xerox-ProofLog.csv",
         "Status": "Proof Out"
+    },
+    "Dollco Plates Folder": {
+        "Source Name": "Dollco Plates Folder",
+        "Data Type": "Folder",
+        "Path": "/unknown",
+        "Status": "Proof In"
     }
 }
