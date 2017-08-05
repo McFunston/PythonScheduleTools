@@ -16,7 +16,7 @@ class ExcelReader():
         self.status_column = status_column
         self.status = status
 
-    def list_strip(self, list_to_strip):
+    def _list_strip(self, list_to_strip):
         """Removes unecessary spaces from a list of cells
         Args:
         list_to_strip: A list of cells
@@ -51,25 +51,6 @@ class ExcelReader():
                 excel_dict[cell_location] = cell_value
         return excel_dict
 
-    def get_jobs_by_id(self, file_name, id_column, job_id):
-        """Gets the rows in a workbook that relate to a given job
-
-        Args:
-            file_name: The name of the Excel file containing jobs
-            id_column: Column containg job identifier (job#, invoice#, etc)
-            job_id: A string to search for that is unique to the job being searched for
-
-        Returns: A list containg the rows that match the job_id"""
-        try:
-            sheet = self._get_data()
-        except ValueError as error:
-            print(error.args)
-            raise
-        rows = sheet.get_rows()
-        jobs = [self.list_strip(row)
-                for row in rows if row[id_column].value == str(job_id)]
-        return jobs
-
     def get_jobs_by_status(self, file_name, status_column, status):
         """Get all of the rows in an Excel file where the status column contains a certain status
         Args:
@@ -84,7 +65,7 @@ class ExcelReader():
             print(error.args)
             raise
         rows = sheet.get_rows()
-        jobs = [self.list_strip(row)
+        jobs = [self._list_strip(row)
                 for row in rows if status in row[status_column].value]
         return jobs
 
@@ -98,17 +79,6 @@ class ExcelReader():
         ids = [job[id_index] for job in jobs]
         ids = list(set(ids))
         return ids
-
-    def get_all_ids(self, path, id_column):
-        """Get all job ids from a given Excel File
-        Args:
-            path: Path to Excel file to get ids from
-            id__column: 0 based column that has ids
-        Returns: A list of job ids (string)
-        """
-        all_jobs = self._get_data()
-        all_ids = self.get_just_ids(all_jobs, id_column)
-        return all_ids
 
     def get_list(self):
         ids_with_dates = list()
