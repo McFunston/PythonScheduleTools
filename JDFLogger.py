@@ -34,8 +34,8 @@ def jdf_logger(folder, logfile):
 jdf_logger('/Volumes/Dockets/Impositions', 'jdfs.csv')
 
 #folder_watcher("//192.168.113.50/share/", "ProofLog2.csv")
-# if __name__ == "__main__":
-#     if len(sys.argv) != 3:
-#         print("Arguments 'folder' and 'logfile' required")
-#     else:
-#         folder_watcher(sys.argv[1], sys.argv[2])
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Arguments 'folder' and 'logfile' required")
+    else:
+        jdf_logger(sys.argv[1], sys.argv[2])
