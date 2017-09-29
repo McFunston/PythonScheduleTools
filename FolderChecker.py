@@ -29,7 +29,7 @@ def get_full_file_list(path):
     Returns: list of string (file names)"""
     file_list = list()
     for dirpath, dirnames, filenames in os.walk(path):
-        for filename in [f for f in filenames if f.endswith(".pdf")]:
+        for filename in [f for f in filenames if f.endswith(".pdf") or f.endswith(".tif")]:
             if filename[0] != ".":
                 file_list.append(os.path.join(dirpath, filename))
             #print(os.path.join(dirpath, filename))

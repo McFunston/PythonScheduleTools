@@ -3,6 +3,7 @@ import tkinter
 #from tkinter import filedialog
 import CheckStatusByFiles
 import CheckStatusByLog
+import FolderWatcher
 
 
 class ScheduleToolsGUI(tkinter.Frame):
@@ -21,7 +22,7 @@ class ScheduleToolsGUI(tkinter.Frame):
             self,
             text='Check Proofs Out',
             command=self.check_proofs_out).pack(**button_opt)
-        #tkinter.Button(self, text='Check Proofs In', command=self.asksaveasfile).pack(**button_opt)
+        tkinter.Button(self, text='Check Proofs In', command=self.check_proofs_in).pack(**button_opt)
         self.results_box = tkinter.Text(self)
         self.results_box.insert(tkinter.END, "Results will go here")
         #self.results_box.config(state="disabled")
@@ -100,6 +101,35 @@ class ScheduleToolsGUI(tkinter.Frame):
             self.results_box.insert(tkinter.END, '\n\n')
         self.results_box.config(state="disabled")
         #return list(set(shaped_results))
+
+    def check_proofs_in(self):
+        """Display Proofs In jobs in text box"""
+        proofs_in = list()
+        dollco = list()
+        huntclub = list()
+        proofs_in.clear
+        FolderWatcher.folder_watcher("/Volumes/Prepress-2/Plates","dcplates.csv")
+
+        dollco = CheckStatusByLog.check_status_by_csv(
+            'Printflow-ToDo1.xls',
+            2,
+            3,
+            'Proof In',
+            'dcplates.csv')
+        huntclub = CheckStatusByLog.check_status_by_csv(
+            'Printflow-ToDo1.xls',
+            2,
+            3,
+            'Proof In',
+            'hcplates.csv')
+        proofs_in = dollco + huntclub
+        self.results_box.config(state="normal")
+        self.results_box.delete(1.0, tkinter.END)
+        for plate in proofs_in:
+            if plate:
+                self.results_box.insert(tkinter.END, plate)
+                self.results_box.insert(tkinter.END, '\n\n')
+        self.results_box.config(state="disabled")
 
 if __name__ == '__main__':
     ROOT = tkinter.Tk()

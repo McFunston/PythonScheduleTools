@@ -19,6 +19,15 @@ def check_status_by_files(excel_filename, status_column, id_column, status, root
         candidates = [job for job in jobs if int(job[1]) > 0]
         return candidates
 
+def check_status_by_files_simple(excel_filename, status_column, id_column, status, path):
+    jobs_to_check = ExcelReader.get_jobs_by_status(
+        excel_filename, status_column, status)
+    jobs_to_check = ExcelReader.get_just_ids(jobs_to_check, id_column)
+    jobs = FolderChecker.count_files(path)
+    if jobs:
+        candidates = [job for job in jobs if int(job[1]) > 0]
+        return candidates
+
 #TEST = check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', 'G:/TestWorkFolder/Dockets', '/Production/Print')
 # print(TEST)
 #TEST = check_status_by_files('Printflow-ToDo1.xls', 2, 3, 'Files In', '/Volumes/Dockets', '/Production/Print')
