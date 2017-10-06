@@ -93,6 +93,18 @@ class ScheduleToolsGUI(tkinter.Frame):
             3,
             'Proof Out',
             'ProofLog.csv')
+        csr_proofs_out = CheckStatusByFiles.check_status_by_files(
+            'Printflow-ToDo1.xls',
+            2,
+            3,
+            'Proof Out',
+            '/Volumes/Dockets',
+            '/Prepress/PDF Proof'
+        )
+        if csr_proofs_out:
+            for csr_proof in csr_proofs_out:
+                proofs_out.append(csr_proof)
+        
         self.results_box.config(state="normal")
         self.results_box.delete(1.0, tkinter.END)
         #self.results_box.insert(tkinter.END, self.results_shaper(proofs_out, "proof out"))

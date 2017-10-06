@@ -12667,3 +12667,1730 @@ Wed Sep 27 17:03:43 2017,694110PHR_1_GEN-4pg_Sig002_F_Black.tif
 Wed Sep 27 17:04:25 2017,694110PHR_1_GEN-4pg_Sig002_F_Cyan.tif
 Wed Sep 27 17:05:03 2017,694110PHR_1_GEN-4pg_Sig002_F_Magenta.tif
 Wed Sep 27 17:05:43 2017,694110PHR_1_GEN-4pg_Sig002_F_Yellow.tif
+Thu Sep 28 18:10:43 2017,692994Sg1 16pg_Sig003_B_Black.tif
+Thu Sep 28 18:10:59 2017,692994Sg1 16pg_Sig003_B_Cyan.tif
+Thu Sep 28 18:11:14 2017,692994Sg1 16pg_Sig003_B_Magenta.tif
+Thu Sep 28 18:11:30 2017,692994Sg1 16pg_Sig003_B_Yellow.tif
+Thu Sep 28 18:09:31 2017,692994Sg1 16pg_Sig003_F_Black.tif
+Thu Sep 28 18:09:51 2017,692994Sg1 16pg_Sig003_F_Cyan.tif
+Thu Sep 28 18:10:10 2017,692994Sg1 16pg_Sig003_F_Magenta.tif
+Thu Sep 28 18:10:29 2017,692994Sg1 16pg_Sig003_F_Yellow.tif
+Thu Sep 28 18:13:12 2017,692994Sg2 4pg_Sig004_B_Black.tif
+Thu Sep 28 18:13:21 2017,692994Sg2 4pg_Sig004_B_Cyan.tif
+Thu Sep 28 18:13:31 2017,692994Sg2 4pg_Sig004_B_Magenta.tif
+Thu Sep 28 18:13:39 2017,692994Sg2 4pg_Sig004_B_Yellow.tif
+Thu Sep 28 18:11:56 2017,692994Sg2 4pg_Sig004_F_Black.tif
+Thu Sep 28 18:12:19 2017,692994Sg2 4pg_Sig004_F_Cyan.tif
+Thu Sep 28 18:12:40 2017,692994Sg2 4pg_Sig004_F_Magenta.tif
+Thu Sep 28 18:13:02 2017,692994Sg2 4pg_Sig004_F_Yellow.tif
+Thu Sep 28 18:14:49 2017,692994Sg3 16pg_Sig005_B_Black.tif
+Thu Sep 28 18:15:02 2017,692994Sg3 16pg_Sig005_B_Cyan.tif
+Thu Sep 28 18:15:15 2017,692994Sg3 16pg_Sig005_B_Magenta.tif
+Thu Sep 28 18:15:28 2017,692994Sg3 16pg_Sig005_B_Yellow.tif
+Thu Sep 28 18:13:56 2017,692994Sg3 16pg_Sig005_F_Black.tif
+Thu Sep 28 18:14:11 2017,692994Sg3 16pg_Sig005_F_Cyan.tif
+Thu Sep 28 18:14:23 2017,692994Sg3 16pg_Sig005_F_Magenta.tif
+Thu Sep 28 18:14:36 2017,692994Sg3 16pg_Sig005_F_Yellow.tif
+Thu Sep 28 18:17:01 2017,692994Sg4 16pg_Sig006_B_Black.tif
+Thu Sep 28 18:17:21 2017,692994Sg4 16pg_Sig006_B_Cyan.tif
+Thu Sep 28 18:17:41 2017,692994Sg4 16pg_Sig006_B_Magenta.tif
+Thu Sep 28 18:18:02 2017,692994Sg4 16pg_Sig006_B_Yellow.tif
+Thu Sep 28 18:15:49 2017,692994Sg4 16pg_Sig006_F_Black.tif
+Thu Sep 28 18:16:07 2017,692994Sg4 16pg_Sig006_F_Cyan.tif
+Thu Sep 28 18:16:25 2017,692994Sg4 16pg_Sig006_F_Magenta.tif
+Thu Sep 28 18:16:44 2017,692994Sg4 16pg_Sig006_F_Yellow.tif
+Fri Sep 29 03:21:50 2017,693493Sg2-16pg_Sig002_B_Black.tif
+Fri Sep 29 03:21:59 2017,693493Sg2-16pg_Sig002_B_Cyan.tif
+Fri Sep 29 03:22:07 2017,693493Sg2-16pg_Sig002_B_Magenta.tif
+Fri Sep 29 03:22:16 2017,693493Sg2-16pg_Sig002_B_Yellow.tif
+Fri Sep 29 03:20:56 2017,693493Sg2-16pg_Sig002_F_Black.tif
+Fri Sep 29 03:21:11 2017,693493Sg2-16pg_Sig002_F_Cyan.tif
+Fri Sep 29 03:21:24 2017,693493Sg2-16pg_Sig002_F_Magenta.tif
+Fri Sep 29 03:21:38 2017,693493Sg2-16pg_Sig002_F_Yellow.tif
+Fri Sep 29 03:23:43 2017,693493Sg3-16pg_Sig003_B_Black.tif
+Fri Sep 29 03:24:00 2017,693493Sg3-16pg_Sig003_B_Cyan.tif
+Fri Sep 29 03:24:16 2017,693493Sg3-16pg_Sig003_B_Magenta.tif
+Fri Sep 29 03:24:35 2017,693493Sg3-16pg_Sig003_B_Yellow.tif
+Fri Sep 29 03:22:36 2017,693493Sg3-16pg_Sig003_F_Black.tif
+Fri Sep 29 03:22:55 2017,693493Sg3-16pg_Sig003_F_Cyan.tif
+Fri Sep 29 03:23:10 2017,693493Sg3-16pg_Sig003_F_Magenta.tif
+Fri Sep 29 03:23:26 2017,693493Sg3-16pg_Sig003_F_Yellow.tif
+Fri Sep 29 03:25:48 2017,693493Sg4-16pg_Sig004_B_Black.tif
+Fri Sep 29 03:26:09 2017,693493Sg4-16pg_Sig004_B_Cyan.tif
+Fri Sep 29 03:26:27 2017,693493Sg4-16pg_Sig004_B_Magenta.tif
+Fri Sep 29 03:26:47 2017,693493Sg4-16pg_Sig004_B_Yellow.tif
+Fri Sep 29 03:24:46 2017,693493Sg4-16pg_Sig004_F_Black.tif
+Fri Sep 29 03:25:01 2017,693493Sg4-16pg_Sig004_F_Cyan.tif
+Fri Sep 29 03:25:14 2017,693493Sg4-16pg_Sig004_F_Magenta.tif
+Fri Sep 29 03:25:29 2017,693493Sg4-16pg_Sig004_F_Yellow.tif
+Thu Sep 28 15:25:25 2017,694321Sig.1 16pg_Sig001_B_Black.tif
+Thu Sep 28 15:25:57 2017,694321Sig.1 16pg_Sig001_B_Cyan.tif
+Thu Sep 28 15:26:27 2017,694321Sig.1 16pg_Sig001_B_Magenta.tif
+Thu Sep 28 15:26:59 2017,694321Sig.1 16pg_Sig001_B_Yellow.tif
+Thu Sep 28 15:23:32 2017,694321Sig.1 16pg_Sig001_F_Black.tif
+Thu Sep 28 15:24:01 2017,694321Sig.1 16pg_Sig001_F_Cyan.tif
+Thu Sep 28 15:24:26 2017,694321Sig.1 16pg_Sig001_F_Magenta.tif
+Thu Sep 28 15:24:56 2017,694321Sig.1 16pg_Sig001_F_Yellow.tif
+Thu Sep 28 19:44:47 2017,691571Sg1-24pg_Sig001_B_Black.tif
+Thu Sep 28 19:45:14 2017,691571Sg1-24pg_Sig001_B_Cyan.tif
+Thu Sep 28 19:45:41 2017,691571Sg1-24pg_Sig001_B_Magenta.tif
+Thu Sep 28 19:46:11 2017,691571Sg1-24pg_Sig001_B_Yellow.tif
+Thu Sep 28 19:42:59 2017,691571Sg1-24pg_Sig001_F_Black.tif
+Thu Sep 28 19:43:27 2017,691571Sg1-24pg_Sig001_F_Cyan.tif
+Thu Sep 28 19:43:54 2017,691571Sg1-24pg_Sig001_F_Magenta.tif
+Thu Sep 28 19:44:23 2017,691571Sg1-24pg_Sig001_F_Yellow.tif
+Thu Sep 28 19:48:26 2017,691571Sg2-16pg-2up parallel_Sig002_B_Black.tif
+Thu Sep 28 19:48:44 2017,691571Sg2-16pg-2up parallel_Sig002_B_Cyan.tif
+Thu Sep 28 19:49:04 2017,691571Sg2-16pg-2up parallel_Sig002_B_Magenta.tif
+Thu Sep 28 19:49:25 2017,691571Sg2-16pg-2up parallel_Sig002_B_Yellow.tif
+Thu Sep 28 19:46:54 2017,691571Sg2-16pg-2up parallel_Sig002_F_Black.tif
+Thu Sep 28 19:47:17 2017,691571Sg2-16pg-2up parallel_Sig002_F_Cyan.tif
+Thu Sep 28 19:47:42 2017,691571Sg2-16pg-2up parallel_Sig002_F_Magenta.tif
+Thu Sep 28 19:48:09 2017,691571Sg2-16pg-2up parallel_Sig002_F_Yellow.tif
+Thu Sep 28 21:53:01 2017,693731Sig-1_Sig001_B_Black.tif
+Thu Sep 28 21:53:30 2017,693731Sig-1_Sig001_B_Cyan.tif
+Thu Sep 28 21:53:57 2017,693731Sig-1_Sig001_B_Magenta.tif
+Thu Sep 28 21:54:27 2017,693731Sig-1_Sig001_B_Yellow.tif
+Thu Sep 28 21:51:15 2017,693731Sig-1_Sig001_F_Black.tif
+Thu Sep 28 21:51:44 2017,693731Sig-1_Sig001_F_Cyan.tif
+Thu Sep 28 21:52:08 2017,693731Sig-1_Sig001_F_Magenta.tif
+Thu Sep 28 21:52:34 2017,693731Sig-1_Sig001_F_Yellow.tif
+Thu Sep 28 22:48:00 2017,693733Sig-1_Sig001_B_Black.tif
+Thu Sep 28 22:48:19 2017,693733Sig-1_Sig001_B_Cyan.tif
+Thu Sep 28 22:48:36 2017,693733Sig-1_Sig001_B_Magenta.tif
+Thu Sep 28 22:48:56 2017,693733Sig-1_Sig001_B_Yellow.tif
+Thu Sep 28 22:46:23 2017,693733Sig-1_Sig001_F_Black.tif
+Thu Sep 28 22:46:49 2017,693733Sig-1_Sig001_F_Cyan.tif
+Thu Sep 28 22:47:13 2017,693733Sig-1_Sig001_F_Magenta.tif
+Thu Sep 28 22:47:39 2017,693733Sig-1_Sig001_F_Yellow.tif
+Thu Sep 28 20:37:21 2017,693734Sig-1_Sig001_B_Black.tif
+Thu Sep 28 20:37:52 2017,693734Sig-1_Sig001_B_Cyan.tif
+Thu Sep 28 20:38:19 2017,693734Sig-1_Sig001_B_Magenta.tif
+Thu Sep 28 20:38:49 2017,693734Sig-1_Sig001_B_Yellow.tif
+Thu Sep 28 20:35:31 2017,693734Sig-1_Sig001_F_Black.tif
+Thu Sep 28 20:35:59 2017,693734Sig-1_Sig001_F_Cyan.tif
+Thu Sep 28 20:36:24 2017,693734Sig-1_Sig001_F_Magenta.tif
+Thu Sep 28 20:36:52 2017,693734Sig-1_Sig001_F_Yellow.tif
+Thu Sep 28 16:59:32 2017,6937352 diff 16pg ea._Sig001_B_Black.tif
+Thu Sep 28 16:59:58 2017,6937352 diff 16pg ea._Sig001_B_Cyan.tif
+Thu Sep 28 17:00:23 2017,6937352 diff 16pg ea._Sig001_B_Magenta.tif
+Thu Sep 28 17:00:48 2017,6937352 diff 16pg ea._Sig001_B_Yellow.tif
+Thu Sep 28 16:57:54 2017,6937352 diff 16pg ea._Sig001_F_Black.tif
+Thu Sep 28 16:58:19 2017,6937352 diff 16pg ea._Sig001_F_Cyan.tif
+Thu Sep 28 16:58:42 2017,6937352 diff 16pg ea._Sig001_F_Magenta.tif
+Thu Sep 28 16:59:08 2017,6937352 diff 16pg ea._Sig001_F_Yellow.tif
+Thu Sep 28 23:07:40 2017,693737Sig-1_Sig001_B_Black.tif
+Thu Sep 28 23:08:15 2017,693737Sig-1_Sig001_B_Cyan.tif
+Thu Sep 28 23:08:45 2017,693737Sig-1_Sig001_B_Magenta.tif
+Thu Sep 28 23:09:18 2017,693737Sig-1_Sig001_B_Yellow.tif
+Thu Sep 28 23:05:39 2017,693737Sig-1_Sig001_F_Black.tif
+Thu Sep 28 23:06:10 2017,693737Sig-1_Sig001_F_Cyan.tif
+Thu Sep 28 23:06:38 2017,693737Sig-1_Sig001_F_Magenta.tif
+Thu Sep 28 23:07:07 2017,693737Sig-1_Sig001_F_Yellow.tif
+Thu Sep 28 20:53:18 2017,693738Sig-1_Sig001_B_Black.tif
+Thu Sep 28 20:53:43 2017,693738Sig-1_Sig001_B_Cyan.tif
+Thu Sep 28 20:54:05 2017,693738Sig-1_Sig001_B_Magenta.tif
+Thu Sep 28 20:54:30 2017,693738Sig-1_Sig001_B_Yellow.tif
+Thu Sep 28 20:51:52 2017,693738Sig-1_Sig001_F_Black.tif
+Thu Sep 28 20:52:15 2017,693738Sig-1_Sig001_F_Cyan.tif
+Thu Sep 28 20:52:35 2017,693738Sig-1_Sig001_F_Magenta.tif
+Thu Sep 28 20:52:56 2017,693738Sig-1_Sig001_F_Yellow.tif
+Thu Sep 28 20:56:14 2017,693738Sig-2_Sig002_B_Black.tif
+Thu Sep 28 20:56:37 2017,693738Sig-2_Sig002_B_Cyan.tif
+Thu Sep 28 20:56:59 2017,693738Sig-2_Sig002_B_Magenta.tif
+Thu Sep 28 20:57:24 2017,693738Sig-2_Sig002_B_Yellow.tif
+Thu Sep 28 20:54:51 2017,693738Sig-2_Sig002_F_Black.tif
+Thu Sep 28 20:55:12 2017,693738Sig-2_Sig002_F_Cyan.tif
+Thu Sep 28 20:55:31 2017,693738Sig-2_Sig002_F_Magenta.tif
+Thu Sep 28 20:55:52 2017,693738Sig-2_Sig002_F_Yellow.tif
+Thu Sep 28 20:59:14 2017,693738Sig-3_Sig003_B_Black.tif
+Thu Sep 28 20:59:37 2017,693738Sig-3_Sig003_B_Cyan.tif
+Thu Sep 28 20:59:58 2017,693738Sig-3_Sig003_B_Magenta.tif
+Thu Sep 28 21:00:22 2017,693738Sig-3_Sig003_B_Yellow.tif
+Thu Sep 28 20:57:49 2017,693738Sig-3_Sig003_F_Black.tif
+Thu Sep 28 20:58:12 2017,693738Sig-3_Sig003_F_Cyan.tif
+Thu Sep 28 20:58:31 2017,693738Sig-3_Sig003_F_Magenta.tif
+Thu Sep 28 20:58:53 2017,693738Sig-3_Sig003_F_Yellow.tif
+Thu Sep 28 16:38:12 2017,694005Sig-1_Sig001_B_Black.tif
+Thu Sep 28 16:38:31 2017,694005Sig-1_Sig001_B_Cyan.tif
+Thu Sep 28 16:38:48 2017,694005Sig-1_Sig001_B_Magenta.tif
+Thu Sep 28 16:39:08 2017,694005Sig-1_Sig001_B_Yellow.tif
+Thu Sep 28 16:36:43 2017,694005Sig-1_Sig001_F_Black.tif
+Thu Sep 28 16:37:07 2017,694005Sig-1_Sig001_F_Cyan.tif
+Thu Sep 28 16:37:30 2017,694005Sig-1_Sig001_F_Magenta.tif
+Thu Sep 28 16:37:53 2017,694005Sig-1_Sig001_F_Yellow.tif
+Fri Sep 29 14:23:30 2017,692850Sig.1 16pg_Sig002_B_Black.tif
+Fri Sep 29 14:23:50 2017,692850Sig.1 16pg_Sig002_B_Cyan.tif
+Fri Sep 29 14:24:09 2017,692850Sig.1 16pg_Sig002_B_Magenta.tif
+Fri Sep 29 14:24:35 2017,692850Sig.1 16pg_Sig002_B_Yellow.tif
+Fri Sep 29 14:22:14 2017,692850Sig.1 16pg_Sig002_F_Black.tif
+Fri Sep 29 14:22:33 2017,692850Sig.1 16pg_Sig002_F_Cyan.tif
+Fri Sep 29 14:22:52 2017,692850Sig.1 16pg_Sig002_F_Magenta.tif
+Fri Sep 29 14:23:14 2017,692850Sig.1 16pg_Sig002_F_Yellow.tif
+Fri Sep 29 14:27:26 2017,692850Sig.2 16pg_Sig003_B_Black.tif
+Fri Sep 29 14:27:46 2017,692850Sig.2 16pg_Sig003_B_Cyan.tif
+Fri Sep 29 14:28:08 2017,692850Sig.2 16pg_Sig003_B_Magenta.tif
+Fri Sep 29 14:28:38 2017,692850Sig.2 16pg_Sig003_B_Yellow.tif
+Fri Sep 29 14:25:38 2017,692850Sig.2 16pg_Sig003_F_Black.tif
+Fri Sep 29 14:26:06 2017,692850Sig.2 16pg_Sig003_F_Cyan.tif
+Fri Sep 29 14:26:34 2017,692850Sig.2 16pg_Sig003_F_Magenta.tif
+Fri Sep 29 14:27:07 2017,692850Sig.2 16pg_Sig003_F_Yellow.tif
+Fri Sep 29 14:31:31 2017,692850Sig.3 16pg_Sig004_B_Black.tif
+Fri Sep 29 14:31:57 2017,692850Sig.3 16pg_Sig004_B_Cyan.tif
+Fri Sep 29 14:32:20 2017,692850Sig.3 16pg_Sig004_B_Magenta.tif
+Fri Sep 29 14:32:46 2017,692850Sig.3 16pg_Sig004_B_Yellow.tif
+Fri Sep 29 14:29:44 2017,692850Sig.3 16pg_Sig004_F_Black.tif
+Fri Sep 29 14:30:11 2017,692850Sig.3 16pg_Sig004_F_Cyan.tif
+Fri Sep 29 14:30:34 2017,692850Sig.3 16pg_Sig004_F_Magenta.tif
+Fri Sep 29 14:30:59 2017,692850Sig.3 16pg_Sig004_F_Yellow.tif
+Fri Sep 29 14:33:54 2017,692850Sig.4 16pg_Sig005_F_Black.tif
+Fri Sep 29 12:28:46 2017,693835Discount 16pg_Sig002_B_Black.tif
+Fri Sep 29 12:29:04 2017,693835Discount 16pg_Sig002_B_Cyan.tif
+Fri Sep 29 12:29:25 2017,693835Discount 16pg_Sig002_B_Magenta.tif
+Fri Sep 29 12:29:45 2017,693835Discount 16pg_Sig002_B_Yellow.tif
+Fri Sep 29 12:27:25 2017,693835Discount 16pg_Sig002_F_Black.tif
+Fri Sep 29 12:27:43 2017,693835Discount 16pg_Sig002_F_Cyan.tif
+Fri Sep 29 12:28:05 2017,693835Discount 16pg_Sig002_F_Magenta.tif
+Fri Sep 29 12:28:26 2017,693835Discount 16pg_Sig002_F_Yellow.tif
+Fri Sep 29 12:25:58 2017,693835Market 16pg_Sig001_B_Black.tif
+Fri Sep 29 12:26:16 2017,693835Market 16pg_Sig001_B_Cyan.tif
+Fri Sep 29 12:26:36 2017,693835Market 16pg_Sig001_B_Magenta.tif
+Fri Sep 29 12:26:57 2017,693835Market 16pg_Sig001_B_Yellow.tif
+Fri Sep 29 12:24:36 2017,693835Market 16pg_Sig001_F_Black.tif
+Fri Sep 29 12:24:55 2017,693835Market 16pg_Sig001_F_Cyan.tif
+Fri Sep 29 12:25:16 2017,693835Market 16pg_Sig001_F_Magenta.tif
+Fri Sep 29 12:25:38 2017,693835Market 16pg_Sig001_F_Yellow.tif
+Thu Sep 28 01:16:27 2017,692980sig.1 16pg_sig002_b_black.tif
+Thu Sep 28 01:16:47 2017,692980sig.1 16pg_sig002_b_cyan.tif
+Thu Sep 28 01:17:05 2017,692980sig.1 16pg_sig002_b_magenta.tif
+Thu Sep 28 01:17:25 2017,692980sig.1 16pg_sig002_b_yellow.tif
+Thu Sep 28 01:15:04 2017,692980sig.1 16pg_sig002_f_black.tif
+Thu Sep 28 01:15:26 2017,692980sig.1 16pg_sig002_f_cyan.tif
+Thu Sep 28 01:15:47 2017,692980sig.1 16pg_sig002_f_magenta.tif
+Thu Sep 28 01:16:11 2017,692980sig.1 16pg_sig002_f_yellow.tif
+Thu Sep 28 01:19:43 2017,692980sig.2 16pg_sig003_b_black.tif
+Thu Sep 28 01:20:15 2017,692980sig.2 16pg_sig003_b_cyan.tif
+Thu Sep 28 01:20:46 2017,692980sig.2 16pg_sig003_b_magenta.tif
+Thu Sep 28 01:21:20 2017,692980sig.2 16pg_sig003_b_yellow.tif
+Thu Sep 28 01:17:57 2017,692980sig.2 16pg_sig003_f_black.tif
+Thu Sep 28 01:18:26 2017,692980sig.2 16pg_sig003_f_cyan.tif
+Thu Sep 28 01:18:53 2017,692980sig.2 16pg_sig003_f_magenta.tif
+Thu Sep 28 01:19:20 2017,692980sig.2 16pg_sig003_f_yellow.tif
+Thu Sep 28 01:23:13 2017,692980sig.3 16pg_sig004_b_black.tif
+Thu Sep 28 01:23:37 2017,692980sig.3 16pg_sig004_b_cyan.tif
+Thu Sep 28 01:24:01 2017,692980sig.3 16pg_sig004_b_magenta.tif
+Thu Sep 28 01:24:28 2017,692980sig.3 16pg_sig004_b_yellow.tif
+Thu Sep 28 01:21:45 2017,692980sig.3 16pg_sig004_f_black.tif
+Thu Sep 28 01:22:07 2017,692980sig.3 16pg_sig004_f_cyan.tif
+Thu Sep 28 01:22:28 2017,692980sig.3 16pg_sig004_f_magenta.tif
+Thu Sep 28 01:22:51 2017,692980sig.3 16pg_sig004_f_yellow.tif
+Thu Sep 28 01:26:21 2017,692980sig.4 16pg_sig005_b_black.tif
+Thu Sep 28 01:26:35 2017,692980sig.4 16pg_sig005_b_cyan.tif
+Thu Sep 28 01:26:49 2017,692980sig.4 16pg_sig005_b_magenta.tif
+Thu Sep 28 01:27:10 2017,692980sig.4 16pg_sig005_b_yellow.tif
+Thu Sep 28 01:25:08 2017,692980sig.4 16pg_sig005_f_black.tif
+Thu Sep 28 01:25:26 2017,692980sig.4 16pg_sig005_f_cyan.tif
+Thu Sep 28 01:25:45 2017,692980sig.4 16pg_sig005_f_magenta.tif
+Thu Sep 28 01:26:09 2017,692980sig.4 16pg_sig005_f_yellow.tif
+Thu Sep 28 01:28:56 2017,692980sig.5 16pg_sig006_b_black.tif
+Thu Sep 28 01:29:14 2017,692980sig.5 16pg_sig006_b_cyan.tif
+Thu Sep 28 01:29:32 2017,692980sig.5 16pg_sig006_b_magenta.tif
+Thu Sep 28 01:29:50 2017,692980sig.5 16pg_sig006_b_yellow.tif
+Thu Sep 28 01:27:36 2017,692980sig.5 16pg_sig006_f_black.tif
+Thu Sep 28 01:27:58 2017,692980sig.5 16pg_sig006_f_cyan.tif
+Thu Sep 28 01:28:18 2017,692980sig.5 16pg_sig006_f_magenta.tif
+Thu Sep 28 01:28:40 2017,692980sig.5 16pg_sig006_f_yellow.tif
+Thu Sep 28 01:31:39 2017,692980sig.6 16pg_sig007_b_black.tif
+Thu Sep 28 01:31:55 2017,692980sig.6 16pg_sig007_b_cyan.tif
+Thu Sep 28 01:32:10 2017,692980sig.6 16pg_sig007_b_magenta.tif
+Thu Sep 28 01:32:28 2017,692980sig.6 16pg_sig007_b_yellow.tif
+Thu Sep 28 01:30:12 2017,692980sig.6 16pg_sig007_f_black.tif
+Thu Sep 28 01:30:36 2017,692980sig.6 16pg_sig007_f_cyan.tif
+Thu Sep 28 01:30:59 2017,692980sig.6 16pg_sig007_f_magenta.tif
+Thu Sep 28 01:31:23 2017,692980sig.6 16pg_sig007_f_yellow.tif
+Thu Sep 28 18:10:43 2017,692994sg1 16pg_sig003_b_black.tif
+Thu Sep 28 18:10:59 2017,692994sg1 16pg_sig003_b_cyan.tif
+Thu Sep 28 18:11:14 2017,692994sg1 16pg_sig003_b_magenta.tif
+Thu Sep 28 18:11:30 2017,692994sg1 16pg_sig003_b_yellow.tif
+Thu Sep 28 18:09:31 2017,692994sg1 16pg_sig003_f_black.tif
+Thu Sep 28 18:09:51 2017,692994sg1 16pg_sig003_f_cyan.tif
+Thu Sep 28 18:10:10 2017,692994sg1 16pg_sig003_f_magenta.tif
+Thu Sep 28 18:10:29 2017,692994sg1 16pg_sig003_f_yellow.tif
+Thu Sep 28 18:13:12 2017,692994sg2 4pg_sig004_b_black.tif
+Thu Sep 28 18:13:21 2017,692994sg2 4pg_sig004_b_cyan.tif
+Thu Sep 28 18:13:31 2017,692994sg2 4pg_sig004_b_magenta.tif
+Thu Sep 28 18:13:39 2017,692994sg2 4pg_sig004_b_yellow.tif
+Thu Sep 28 18:11:56 2017,692994sg2 4pg_sig004_f_black.tif
+Thu Sep 28 18:12:19 2017,692994sg2 4pg_sig004_f_cyan.tif
+Thu Sep 28 18:12:40 2017,692994sg2 4pg_sig004_f_magenta.tif
+Thu Sep 28 18:13:02 2017,692994sg2 4pg_sig004_f_yellow.tif
+Thu Sep 28 18:14:49 2017,692994sg3 16pg_sig005_b_black.tif
+Thu Sep 28 18:15:02 2017,692994sg3 16pg_sig005_b_cyan.tif
+Thu Sep 28 18:15:15 2017,692994sg3 16pg_sig005_b_magenta.tif
+Thu Sep 28 18:15:28 2017,692994sg3 16pg_sig005_b_yellow.tif
+Thu Sep 28 18:13:56 2017,692994sg3 16pg_sig005_f_black.tif
+Thu Sep 28 18:14:11 2017,692994sg3 16pg_sig005_f_cyan.tif
+Thu Sep 28 18:14:23 2017,692994sg3 16pg_sig005_f_magenta.tif
+Thu Sep 28 18:14:36 2017,692994sg3 16pg_sig005_f_yellow.tif
+Thu Sep 28 18:17:01 2017,692994sg4 16pg_sig006_b_black.tif
+Thu Sep 28 18:17:21 2017,692994sg4 16pg_sig006_b_cyan.tif
+Thu Sep 28 18:17:41 2017,692994sg4 16pg_sig006_b_magenta.tif
+Thu Sep 28 18:18:02 2017,692994sg4 16pg_sig006_b_yellow.tif
+Thu Sep 28 18:15:49 2017,692994sg4 16pg_sig006_f_black.tif
+Thu Sep 28 18:16:07 2017,692994sg4 16pg_sig006_f_cyan.tif
+Thu Sep 28 18:16:25 2017,692994sg4 16pg_sig006_f_magenta.tif
+Thu Sep 28 18:16:44 2017,692994sg4 16pg_sig006_f_yellow.tif
+Thu Sep 28 15:25:25 2017,694321sig.1 16pg_sig001_b_black.tif
+Thu Sep 28 15:25:57 2017,694321sig.1 16pg_sig001_b_cyan.tif
+Thu Sep 28 15:26:27 2017,694321sig.1 16pg_sig001_b_magenta.tif
+Thu Sep 28 15:26:59 2017,694321sig.1 16pg_sig001_b_yellow.tif
+Thu Sep 28 15:23:32 2017,694321sig.1 16pg_sig001_f_black.tif
+Thu Sep 28 15:24:01 2017,694321sig.1 16pg_sig001_f_cyan.tif
+Thu Sep 28 15:24:26 2017,694321sig.1 16pg_sig001_f_magenta.tif
+Thu Sep 28 15:24:56 2017,694321sig.1 16pg_sig001_f_yellow.tif
+Sat Sep 30 11:35:54 2017,691456sig.1 16pg_sig001_b_black.tif
+Sat Sep 30 11:36:18 2017,691456sig.1 16pg_sig001_b_cyan.tif
+Sat Sep 30 11:36:40 2017,691456sig.1 16pg_sig001_b_magenta.tif
+Sat Sep 30 11:36:59 2017,691456sig.1 16pg_sig001_b_yellow.tif
+Sat Sep 30 11:34:23 2017,691456sig.1 16pg_sig001_f_black.tif
+Sat Sep 30 11:34:44 2017,691456sig.1 16pg_sig001_f_cyan.tif
+Sat Sep 30 11:35:04 2017,691456sig.1 16pg_sig001_f_magenta.tif
+Sat Sep 30 11:35:24 2017,691456sig.1 16pg_sig001_f_yellow.tif
+Sat Sep 30 11:38:47 2017,691456sig.2 16pg_sig002_b_black.tif
+Sat Sep 30 11:39:09 2017,691456sig.2 16pg_sig002_b_cyan.tif
+Sat Sep 30 11:39:29 2017,691456sig.2 16pg_sig002_b_magenta.tif
+Sat Sep 30 11:39:52 2017,691456sig.2 16pg_sig002_b_yellow.tif
+Sat Sep 30 11:37:19 2017,691456sig.2 16pg_sig002_f_black.tif
+Sat Sep 30 11:37:37 2017,691456sig.2 16pg_sig002_f_cyan.tif
+Sat Sep 30 11:37:53 2017,691456sig.2 16pg_sig002_f_magenta.tif
+Sat Sep 30 11:38:11 2017,691456sig.2 16pg_sig002_f_yellow.tif
+Sat Sep 30 11:41:45 2017,691456sig.3 16pg_sig003_b_black.tif
+Sat Sep 30 11:42:05 2017,691456sig.3 16pg_sig003_b_cyan.tif
+Sat Sep 30 11:42:23 2017,691456sig.3 16pg_sig003_b_magenta.tif
+Sat Sep 30 11:42:44 2017,691456sig.3 16pg_sig003_b_yellow.tif
+Sat Sep 30 11:40:18 2017,691456sig.3 16pg_sig003_f_black.tif
+Sat Sep 30 11:40:40 2017,691456sig.3 16pg_sig003_f_cyan.tif
+Sat Sep 30 11:41:01 2017,691456sig.3 16pg_sig003_f_magenta.tif
+Sat Sep 30 11:41:24 2017,691456sig.3 16pg_sig003_f_yellow.tif
+Sat Sep 30 11:44:44 2017,691456sig.4 16pg_sig004_b_black.tif
+Sat Sep 30 11:45:05 2017,691456sig.4 16pg_sig004_b_cyan.tif
+Sat Sep 30 11:45:23 2017,691456sig.4 16pg_sig004_b_magenta.tif
+Sat Sep 30 11:45:45 2017,691456sig.4 16pg_sig004_b_yellow.tif
+Sat Sep 30 11:43:13 2017,691456sig.4 16pg_sig004_f_black.tif
+Sat Sep 30 11:43:35 2017,691456sig.4 16pg_sig004_f_cyan.tif
+Sat Sep 30 11:43:58 2017,691456sig.4 16pg_sig004_f_magenta.tif
+Sat Sep 30 11:44:21 2017,691456sig.4 16pg_sig004_f_yellow.tif
+Fri Sep 29 19:39:11 2017,692716Mauve_Sig003_B_Black.tif
+Fri Sep 29 19:39:23 2017,692716Mauve_Sig003_B_Cyan.tif
+Fri Sep 29 19:39:39 2017,692716Mauve_Sig003_B_Magenta.tif
+Fri Sep 29 19:42:33 2017,692716Mauve_Sig003_B_Perf.tif
+Fri Sep 29 19:39:51 2017,692716Mauve_Sig003_B_Yellow.tif
+Fri Sep 29 19:37:58 2017,692716Mauve_Sig003_F_Black.tif
+Fri Sep 29 19:38:16 2017,692716Mauve_Sig003_F_Cyan.tif
+Fri Sep 29 19:38:36 2017,692716Mauve_Sig003_F_Magenta.tif
+Fri Sep 29 19:42:30 2017,692716Mauve_Sig003_F_Perf.tif
+Fri Sep 29 19:38:54 2017,692716Mauve_Sig003_F_Yellow.tif
+Fri Sep 29 19:41:24 2017,692716Orange_Sig004_B_Black.tif
+Fri Sep 29 19:41:36 2017,692716Orange_Sig004_B_Cyan.tif
+Fri Sep 29 19:41:53 2017,692716Orange_Sig004_B_Magenta.tif
+Fri Sep 29 19:42:51 2017,692716Orange_Sig004_B_Perf.tif
+Fri Sep 29 19:42:05 2017,692716Orange_Sig004_B_Yellow.tif
+Fri Sep 29 19:40:11 2017,692716Orange_Sig004_F_Black.tif
+Fri Sep 29 19:40:29 2017,692716Orange_Sig004_F_Cyan.tif
+Fri Sep 29 19:40:49 2017,692716Orange_Sig004_F_Magenta.tif
+Fri Sep 29 19:42:47 2017,692716Orange_Sig004_F_Perf.tif
+Fri Sep 29 19:41:07 2017,692716Orange_Sig004_F_Yellow.tif
+Fri Sep 29 19:37:00 2017,692716Pink_Sig002_B_Black.tif
+Fri Sep 29 19:37:12 2017,692716Pink_Sig002_B_Cyan.tif
+Fri Sep 29 19:37:28 2017,692716Pink_Sig002_B_Magenta.tif
+Fri Sep 29 19:42:23 2017,692716Pink_Sig002_B_Perf.tif
+Fri Sep 29 19:37:39 2017,692716Pink_Sig002_B_Yellow.tif
+Fri Sep 29 19:35:48 2017,692716Pink_Sig002_F_Black.tif
+Fri Sep 29 19:36:06 2017,692716Pink_Sig002_F_Cyan.tif
+Fri Sep 29 19:36:25 2017,692716Pink_Sig002_F_Magenta.tif
+Fri Sep 29 19:42:20 2017,692716Pink_Sig002_F_Perf.tif
+Fri Sep 29 19:36:43 2017,692716Pink_Sig002_F_Yellow.tif
+Fri Sep 29 19:34:47 2017,692716Yellow_Sig001_B_Black.tif
+Fri Sep 29 19:35:00 2017,692716Yellow_Sig001_B_Cyan.tif
+Fri Sep 29 19:35:17 2017,692716Yellow_Sig001_B_Magenta.tif
+Fri Sep 29 19:42:13 2017,692716Yellow_Sig001_B_Perf.tif
+Fri Sep 29 19:35:29 2017,692716Yellow_Sig001_B_Yellow.tif
+Fri Sep 29 19:33:34 2017,692716Yellow_Sig001_F_Black.tif
+Fri Sep 29 19:33:52 2017,692716Yellow_Sig001_F_Cyan.tif
+Fri Sep 29 19:34:12 2017,692716Yellow_Sig001_F_Magenta.tif
+Fri Sep 29 19:42:10 2017,692716Yellow_Sig001_F_Perf.tif
+Fri Sep 29 19:34:30 2017,692716Yellow_Sig001_F_Yellow.tif
+Fri Sep 29 19:59:19 2017,693130Sig.1 16pg_Sig001_B_Black.tif
+Fri Sep 29 19:59:41 2017,693130Sig.1 16pg_Sig001_B_Cyan.tif
+Fri Sep 29 20:00:04 2017,693130Sig.1 16pg_Sig001_B_Magenta.tif
+Fri Sep 29 20:00:28 2017,693130Sig.1 16pg_Sig001_B_Yellow.tif
+Fri Sep 29 19:57:40 2017,693130Sig.1 16pg_Sig001_F_Black.tif
+Fri Sep 29 19:58:03 2017,693130Sig.1 16pg_Sig001_F_Cyan.tif
+Fri Sep 29 19:58:26 2017,693130Sig.1 16pg_Sig001_F_Magenta.tif
+Fri Sep 29 19:58:49 2017,693130Sig.1 16pg_Sig001_F_Yellow.tif
+Fri Sep 29 20:02:07 2017,693130Sig.2 16pg_Sig002_B_Black.tif
+Fri Sep 29 20:02:23 2017,693130Sig.2 16pg_Sig002_B_Cyan.tif
+Fri Sep 29 20:02:38 2017,693130Sig.2 16pg_Sig002_B_Magenta.tif
+Fri Sep 29 20:02:53 2017,693130Sig.2 16pg_Sig002_B_Yellow.tif
+Fri Sep 29 20:00:47 2017,693130Sig.2 16pg_Sig002_F_Black.tif
+Fri Sep 29 20:01:08 2017,693130Sig.2 16pg_Sig002_F_Cyan.tif
+Fri Sep 29 20:01:30 2017,693130Sig.2 16pg_Sig002_F_Magenta.tif
+Fri Sep 29 20:01:49 2017,693130Sig.2 16pg_Sig002_F_Yellow.tif
+Fri Sep 29 20:04:34 2017,693130Sig.3 16pg_Sig003_B_Black.tif
+Fri Sep 29 20:04:52 2017,693130Sig.3 16pg_Sig003_B_Cyan.tif
+Fri Sep 29 20:05:10 2017,693130Sig.3 16pg_Sig003_B_Magenta.tif
+Fri Sep 29 20:05:30 2017,693130Sig.3 16pg_Sig003_B_Yellow.tif
+Fri Sep 29 20:03:16 2017,693130Sig.3 16pg_Sig003_F_Black.tif
+Fri Sep 29 20:03:34 2017,693130Sig.3 16pg_Sig003_F_Cyan.tif
+Fri Sep 29 20:03:53 2017,693130Sig.3 16pg_Sig003_F_Magenta.tif
+Fri Sep 29 20:04:12 2017,693130Sig.3 16pg_Sig003_F_Yellow.tif
+Fri Sep 29 20:07:19 2017,693130Sig.4 16pg_Sig004_B_Black.tif
+Fri Sep 29 20:07:41 2017,693130Sig.4 16pg_Sig004_B_Cyan.tif
+Fri Sep 29 20:07:59 2017,693130Sig.4 16pg_Sig004_B_Magenta.tif
+Fri Sep 29 20:08:21 2017,693130Sig.4 16pg_Sig004_B_Yellow.tif
+Fri Sep 29 20:05:54 2017,693130Sig.4 16pg_Sig004_F_Black.tif
+Fri Sep 29 20:06:16 2017,693130Sig.4 16pg_Sig004_F_Cyan.tif
+Fri Sep 29 20:06:36 2017,693130Sig.4 16pg_Sig004_F_Magenta.tif
+Fri Sep 29 20:06:58 2017,693130Sig.4 16pg_Sig004_F_Yellow.tif
+Fri Sep 29 20:10:21 2017,693130Sig.5 16pg_Sig005_B_Black.tif
+Fri Sep 29 20:10:46 2017,693130Sig.5 16pg_Sig005_B_Cyan.tif
+Fri Sep 29 20:11:07 2017,693130Sig.5 16pg_Sig005_B_Magenta.tif
+Fri Sep 29 20:11:31 2017,693130Sig.5 16pg_Sig005_B_Yellow.tif
+Fri Sep 29 20:08:46 2017,693130Sig.5 16pg_Sig005_F_Black.tif
+Fri Sep 29 20:09:10 2017,693130Sig.5 16pg_Sig005_F_Cyan.tif
+Fri Sep 29 20:09:32 2017,693130Sig.5 16pg_Sig005_F_Magenta.tif
+Fri Sep 29 20:09:56 2017,693130Sig.5 16pg_Sig005_F_Yellow.tif
+Fri Sep 29 20:13:17 2017,693130Sig.6 16pg_Sig006_B_Black.tif
+Fri Sep 29 20:13:39 2017,693130Sig.6 16pg_Sig006_B_Cyan.tif
+Fri Sep 29 20:13:59 2017,693130Sig.6 16pg_Sig006_B_Magenta.tif
+Fri Sep 29 20:14:22 2017,693130Sig.6 16pg_Sig006_B_Yellow.tif
+Fri Sep 29 20:11:53 2017,693130Sig.6 16pg_Sig006_F_Black.tif
+Fri Sep 29 20:12:14 2017,693130Sig.6 16pg_Sig006_F_Cyan.tif
+Fri Sep 29 20:12:35 2017,693130Sig.6 16pg_Sig006_F_Magenta.tif
+Fri Sep 29 20:12:56 2017,693130Sig.6 16pg_Sig006_F_Yellow.tif
+Fri Sep 29 20:16:02 2017,693130Sig.7 16pg_Sig007_B_Black.tif
+Fri Sep 29 20:16:20 2017,693130Sig.7 16pg_Sig007_B_Cyan.tif
+Fri Sep 29 20:16:39 2017,693130Sig.7 16pg_Sig007_B_Magenta.tif
+Fri Sep 29 20:17:01 2017,693130Sig.7 16pg_Sig007_B_Yellow.tif
+Fri Sep 29 20:14:39 2017,693130Sig.7 16pg_Sig007_F_Black.tif
+Fri Sep 29 20:15:00 2017,693130Sig.7 16pg_Sig007_F_Cyan.tif
+Fri Sep 29 20:15:20 2017,693130Sig.7 16pg_Sig007_F_Magenta.tif
+Fri Sep 29 20:15:41 2017,693130Sig.7 16pg_Sig007_F_Yellow.tif
+Fri Sep 29 18:51:09 2017,693278JA-01-E-Mailer_Sig001_B_Black.tif
+Fri Sep 29 18:51:33 2017,693278JA-01-E-Mailer_Sig001_B_Cyan.tif
+Fri Sep 29 18:52:00 2017,693278JA-01-E-Mailer_Sig001_B_Magenta.tif
+Fri Sep 29 18:52:34 2017,693278JA-01-E-Mailer_Sig001_B_Yellow.tif
+Fri Sep 29 18:49:06 2017,693278JA-01-E-Mailer_Sig001_F_Black.tif
+Fri Sep 29 18:49:31 2017,693278JA-01-E-Mailer_Sig001_F_Cyan.tif
+Fri Sep 29 18:50:02 2017,693278JA-01-E-Mailer_Sig001_F_Magenta.tif
+Fri Sep 29 18:50:39 2017,693278JA-01-E-Mailer_Sig001_F_Yellow.tif
+Fri Sep 29 18:55:11 2017,693278JA-02-F-Mailer_Sig002_B_Black.tif
+Fri Sep 29 18:55:36 2017,693278JA-02-F-Mailer_Sig002_B_Cyan.tif
+Fri Sep 29 18:56:05 2017,693278JA-02-F-Mailer_Sig002_B_Magenta.tif
+Fri Sep 29 18:56:41 2017,693278JA-02-F-Mailer_Sig002_B_Yellow.tif
+Fri Sep 29 18:53:04 2017,693278JA-02-F-Mailer_Sig002_F_Black.tif
+Fri Sep 29 18:53:28 2017,693278JA-02-F-Mailer_Sig002_F_Cyan.tif
+Fri Sep 29 18:53:57 2017,693278JA-02-F-Mailer_Sig002_F_Magenta.tif
+Fri Sep 29 18:54:31 2017,693278JA-02-F-Mailer_Sig002_F_Yellow.tif
+Fri Sep 29 18:59:10 2017,693278JA-03-E-LON-Mailer_Sig003_B_Black.tif
+Fri Sep 29 18:59:35 2017,693278JA-03-E-LON-Mailer_Sig003_B_Cyan.tif
+Fri Sep 29 19:00:03 2017,693278JA-03-E-LON-Mailer_Sig003_B_Magenta.tif
+Fri Sep 29 19:00:40 2017,693278JA-03-E-LON-Mailer_Sig003_B_Yellow.tif
+Fri Sep 29 18:57:11 2017,693278JA-03-E-LON-Mailer_Sig003_F_Black.tif
+Fri Sep 29 18:57:36 2017,693278JA-03-E-LON-Mailer_Sig003_F_Cyan.tif
+Fri Sep 29 18:58:04 2017,693278JA-03-E-LON-Mailer_Sig003_F_Magenta.tif
+Fri Sep 29 18:58:38 2017,693278JA-03-E-LON-Mailer_Sig003_F_Yellow.tif
+Sat Sep 30 02:16:52 2017,691871Eng-Sg1-16pg_Sig001_B_Black.tif
+Sat Sep 30 02:17:15 2017,691871Eng-Sg1-16pg_Sig001_B_Cyan.tif
+Sat Sep 30 02:17:36 2017,691871Eng-Sg1-16pg_Sig001_B_Magenta.tif
+Sat Sep 30 02:18:00 2017,691871Eng-Sg1-16pg_Sig001_B_Yellow.tif
+Sat Sep 30 02:15:17 2017,691871Eng-Sg1-16pg_Sig001_F_Black.tif
+Sat Sep 30 02:15:44 2017,691871Eng-Sg1-16pg_Sig001_F_Cyan.tif
+Sat Sep 30 02:16:08 2017,691871Eng-Sg1-16pg_Sig001_F_Magenta.tif
+Sat Sep 30 02:16:32 2017,691871Eng-Sg1-16pg_Sig001_F_Yellow.tif
+Sat Sep 30 02:19:53 2017,691871Eng-Sg2-16pg_Sig002_B_Black.tif
+Sat Sep 30 02:20:15 2017,691871Eng-Sg2-16pg_Sig002_B_Cyan.tif
+Sat Sep 30 02:20:35 2017,691871Eng-Sg2-16pg_Sig002_B_Magenta.tif
+Sat Sep 30 02:20:57 2017,691871Eng-Sg2-16pg_Sig002_B_Yellow.tif
+Sat Sep 30 02:18:22 2017,691871Eng-Sg2-16pg_Sig002_F_Black.tif
+Sat Sep 30 02:18:48 2017,691871Eng-Sg2-16pg_Sig002_F_Cyan.tif
+Sat Sep 30 02:19:10 2017,691871Eng-Sg2-16pg_Sig002_F_Magenta.tif
+Sat Sep 30 02:19:35 2017,691871Eng-Sg2-16pg_Sig002_F_Yellow.tif
+Sat Sep 30 02:22:58 2017,691871Eng-Sg3-16pg_Sig003_B_Black.tif
+Sat Sep 30 02:23:29 2017,691871Eng-Sg3-16pg_Sig003_B_Cyan.tif
+Sat Sep 30 02:23:56 2017,691871Eng-Sg3-16pg_Sig003_B_Magenta.tif
+Sat Sep 30 02:24:22 2017,691871Eng-Sg3-16pg_Sig003_B_Yellow.tif
+Sat Sep 30 02:21:21 2017,691871Eng-Sg3-16pg_Sig003_F_Black.tif
+Sat Sep 30 02:21:48 2017,691871Eng-Sg3-16pg_Sig003_F_Cyan.tif
+Sat Sep 30 02:22:10 2017,691871Eng-Sg3-16pg_Sig003_F_Magenta.tif
+Sat Sep 30 02:22:34 2017,691871Eng-Sg3-16pg_Sig003_F_Yellow.tif
+Sat Sep 30 02:26:47 2017,691871Eng-Sg4-16pg_Sig004_B_Black.tif
+Sat Sep 30 02:27:16 2017,691871Eng-Sg4-16pg_Sig004_B_Cyan.tif
+Sat Sep 30 02:27:41 2017,691871Eng-Sg4-16pg_Sig004_B_Magenta.tif
+Sat Sep 30 02:28:07 2017,691871Eng-Sg4-16pg_Sig004_B_Yellow.tif
+Sat Sep 30 02:24:55 2017,691871Eng-Sg4-16pg_Sig004_F_Black.tif
+Sat Sep 30 02:25:23 2017,691871Eng-Sg4-16pg_Sig004_F_Cyan.tif
+Sat Sep 30 02:25:52 2017,691871Eng-Sg4-16pg_Sig004_F_Magenta.tif
+Sat Sep 30 02:26:23 2017,691871Eng-Sg4-16pg_Sig004_F_Yellow.tif
+Sat Sep 30 02:30:07 2017,691871Eng-Sg5-16pg_Sig005_B_Black.tif
+Sat Sep 30 02:30:30 2017,691871Eng-Sg5-16pg_Sig005_B_Cyan.tif
+Sat Sep 30 02:30:51 2017,691871Eng-Sg5-16pg_Sig005_B_Magenta.tif
+Sat Sep 30 02:31:17 2017,691871Eng-Sg5-16pg_Sig005_B_Yellow.tif
+Sat Sep 30 02:28:31 2017,691871Eng-Sg5-16pg_Sig005_F_Black.tif
+Sat Sep 30 02:28:57 2017,691871Eng-Sg5-16pg_Sig005_F_Cyan.tif
+Sat Sep 30 02:29:20 2017,691871Eng-Sg5-16pg_Sig005_F_Magenta.tif
+Sat Sep 30 02:29:46 2017,691871Eng-Sg5-16pg_Sig005_F_Yellow.tif
+Sat Sep 30 02:33:27 2017,691871Eng-Sg6-16pg_Sig006_B_Black.tif
+Sat Sep 30 02:33:50 2017,691871Eng-Sg6-16pg_Sig006_B_Cyan.tif
+Sat Sep 30 02:34:13 2017,691871Eng-Sg6-16pg_Sig006_B_Magenta.tif
+Sat Sep 30 02:34:37 2017,691871Eng-Sg6-16pg_Sig006_B_Yellow.tif
+Sat Sep 30 02:31:45 2017,691871Eng-Sg6-16pg_Sig006_F_Black.tif
+Sat Sep 30 02:32:11 2017,691871Eng-Sg6-16pg_Sig006_F_Cyan.tif
+Sat Sep 30 02:32:37 2017,691871Eng-Sg6-16pg_Sig006_F_Magenta.tif
+Sat Sep 30 02:33:06 2017,691871Eng-Sg6-16pg_Sig006_F_Yellow.tif
+Sat Sep 30 02:36:45 2017,691871Eng-Sg7-16pg_Sig007_B_Black.tif
+Sat Sep 30 02:37:10 2017,691871Eng-Sg7-16pg_Sig007_B_Cyan.tif
+Sat Sep 30 02:37:33 2017,691871Eng-Sg7-16pg_Sig007_B_Magenta.tif
+Sat Sep 30 02:37:57 2017,691871Eng-Sg7-16pg_Sig007_B_Yellow.tif
+Sat Sep 30 02:35:02 2017,691871Eng-Sg7-16pg_Sig007_F_Black.tif
+Sat Sep 30 02:35:31 2017,691871Eng-Sg7-16pg_Sig007_F_Cyan.tif
+Sat Sep 30 02:35:57 2017,691871Eng-Sg7-16pg_Sig007_F_Magenta.tif
+Sat Sep 30 02:36:23 2017,691871Eng-Sg7-16pg_Sig007_F_Yellow.tif
+Sat Sep 30 02:39:56 2017,691871Eng-Sg8-16pg_Sig008_B_Black.tif
+Sat Sep 30 02:40:15 2017,691871Eng-Sg8-16pg_Sig008_B_Cyan.tif
+Sat Sep 30 02:40:32 2017,691871Eng-Sg8-16pg_Sig008_B_Magenta.tif
+Sat Sep 30 02:40:53 2017,691871Eng-Sg8-16pg_Sig008_B_Yellow.tif
+Sat Sep 30 02:38:21 2017,691871Eng-Sg8-16pg_Sig008_F_Black.tif
+Sat Sep 30 02:38:48 2017,691871Eng-Sg8-16pg_Sig008_F_Cyan.tif
+Sat Sep 30 02:39:11 2017,691871Eng-Sg8-16pg_Sig008_F_Magenta.tif
+Sat Sep 30 02:39:38 2017,691871Eng-Sg8-16pg_Sig008_F_Yellow.tif
+Sat Sep 30 02:42:52 2017,691871Fre-Sg1-16pg_Sig009_B_Black.tif
+Sat Sep 30 02:43:14 2017,691871Fre-Sg1-16pg_Sig009_B_Cyan.tif
+Sat Sep 30 02:43:35 2017,691871Fre-Sg1-16pg_Sig009_B_Magenta.tif
+Sat Sep 30 02:44:00 2017,691871Fre-Sg1-16pg_Sig009_B_Yellow.tif
+Sat Sep 30 02:41:21 2017,691871Fre-Sg1-16pg_Sig009_F_Black.tif
+Sat Sep 30 02:41:47 2017,691871Fre-Sg1-16pg_Sig009_F_Cyan.tif
+Sat Sep 30 02:42:08 2017,691871Fre-Sg1-16pg_Sig009_F_Magenta.tif
+Sat Sep 30 02:42:31 2017,691871Fre-Sg1-16pg_Sig009_F_Yellow.tif
+Sat Sep 30 02:45:52 2017,691871Fre-Sg2-16pg_Sig010_B_Black.tif
+Sat Sep 30 02:46:14 2017,691871Fre-Sg2-16pg_Sig010_B_Cyan.tif
+Sat Sep 30 02:46:34 2017,691871Fre-Sg2-16pg_Sig010_B_Magenta.tif
+Sat Sep 30 02:46:56 2017,691871Fre-Sg2-16pg_Sig010_B_Yellow.tif
+Sat Sep 30 02:44:22 2017,691871Fre-Sg2-16pg_Sig010_F_Black.tif
+Sat Sep 30 02:44:47 2017,691871Fre-Sg2-16pg_Sig010_F_Cyan.tif
+Sat Sep 30 02:45:10 2017,691871Fre-Sg2-16pg_Sig010_F_Magenta.tif
+Sat Sep 30 02:45:35 2017,691871Fre-Sg2-16pg_Sig010_F_Yellow.tif
+Sat Sep 30 02:48:58 2017,691871Fre-Sg3-16pg_Sig011_B_Black.tif
+Sat Sep 30 02:49:31 2017,691871Fre-Sg3-16pg_Sig011_B_Cyan.tif
+Sat Sep 30 02:49:57 2017,691871Fre-Sg3-16pg_Sig011_B_Magenta.tif
+Sat Sep 30 02:50:23 2017,691871Fre-Sg3-16pg_Sig011_B_Yellow.tif
+Sat Sep 30 02:47:20 2017,691871Fre-Sg3-16pg_Sig011_F_Black.tif
+Sat Sep 30 02:47:47 2017,691871Fre-Sg3-16pg_Sig011_F_Cyan.tif
+Sat Sep 30 02:48:10 2017,691871Fre-Sg3-16pg_Sig011_F_Magenta.tif
+Sat Sep 30 02:48:34 2017,691871Fre-Sg3-16pg_Sig011_F_Yellow.tif
+Sat Sep 30 02:52:49 2017,691871Fre-Sg4-16pg_Sig012_B_Black.tif
+Sat Sep 30 02:53:17 2017,691871Fre-Sg4-16pg_Sig012_B_Cyan.tif
+Sat Sep 30 02:53:42 2017,691871Fre-Sg4-16pg_Sig012_B_Magenta.tif
+Sat Sep 30 02:54:08 2017,691871Fre-Sg4-16pg_Sig012_B_Yellow.tif
+Sat Sep 30 02:50:57 2017,691871Fre-Sg4-16pg_Sig012_F_Black.tif
+Sat Sep 30 02:51:24 2017,691871Fre-Sg4-16pg_Sig012_F_Cyan.tif
+Sat Sep 30 02:51:53 2017,691871Fre-Sg4-16pg_Sig012_F_Magenta.tif
+Sat Sep 30 02:52:25 2017,691871Fre-Sg4-16pg_Sig012_F_Yellow.tif
+Sat Sep 30 02:56:08 2017,691871Fre-Sg5-16pg_Sig013_B_Black.tif
+Sat Sep 30 02:56:32 2017,691871Fre-Sg5-16pg_Sig013_B_Cyan.tif
+Sat Sep 30 02:56:53 2017,691871Fre-Sg5-16pg_Sig013_B_Magenta.tif
+Sat Sep 30 02:57:19 2017,691871Fre-Sg5-16pg_Sig013_B_Yellow.tif
+Sat Sep 30 02:54:34 2017,691871Fre-Sg5-16pg_Sig013_F_Black.tif
+Sat Sep 30 02:54:59 2017,691871Fre-Sg5-16pg_Sig013_F_Cyan.tif
+Sat Sep 30 02:55:22 2017,691871Fre-Sg5-16pg_Sig013_F_Magenta.tif
+Sat Sep 30 02:55:48 2017,691871Fre-Sg5-16pg_Sig013_F_Yellow.tif
+Sat Sep 30 02:59:27 2017,691871Fre-Sg6-16pg_Sig014_B_Black.tif
+Sat Sep 30 02:59:50 2017,691871Fre-Sg6-16pg_Sig014_B_Cyan.tif
+Sat Sep 30 03:00:13 2017,691871Fre-Sg6-16pg_Sig014_B_Magenta.tif
+Sat Sep 30 03:00:37 2017,691871Fre-Sg6-16pg_Sig014_B_Yellow.tif
+Sat Sep 30 02:57:46 2017,691871Fre-Sg6-16pg_Sig014_F_Black.tif
+Sat Sep 30 02:58:12 2017,691871Fre-Sg6-16pg_Sig014_F_Cyan.tif
+Sat Sep 30 02:58:38 2017,691871Fre-Sg6-16pg_Sig014_F_Magenta.tif
+Sat Sep 30 02:59:06 2017,691871Fre-Sg6-16pg_Sig014_F_Yellow.tif
+Sat Sep 30 03:02:46 2017,691871Fre-Sg7-16pg_Sig015_B_Black.tif
+Sat Sep 30 03:03:11 2017,691871Fre-Sg7-16pg_Sig015_B_Cyan.tif
+Sat Sep 30 03:03:33 2017,691871Fre-Sg7-16pg_Sig015_B_Magenta.tif
+Sat Sep 30 03:03:57 2017,691871Fre-Sg7-16pg_Sig015_B_Yellow.tif
+Sat Sep 30 03:01:02 2017,691871Fre-Sg7-16pg_Sig015_F_Black.tif
+Sat Sep 30 03:01:31 2017,691871Fre-Sg7-16pg_Sig015_F_Cyan.tif
+Sat Sep 30 03:01:58 2017,691871Fre-Sg7-16pg_Sig015_F_Magenta.tif
+Sat Sep 30 03:02:24 2017,691871Fre-Sg7-16pg_Sig015_F_Yellow.tif
+Sat Sep 30 03:05:58 2017,691871Fre-Sg8-16pg_Sig016_B_Black.tif
+Sat Sep 30 03:06:18 2017,691871Fre-Sg8-16pg_Sig016_B_Cyan.tif
+Sat Sep 30 03:06:36 2017,691871Fre-Sg8-16pg_Sig016_B_Magenta.tif
+Sat Sep 30 03:06:58 2017,691871Fre-Sg8-16pg_Sig016_B_Yellow.tif
+Sat Sep 30 03:04:22 2017,691871Fre-Sg8-16pg_Sig016_F_Black.tif
+Sat Sep 30 03:04:49 2017,691871Fre-Sg8-16pg_Sig016_F_Cyan.tif
+Sat Sep 30 03:05:12 2017,691871Fre-Sg8-16pg_Sig016_F_Magenta.tif
+Sat Sep 30 03:05:40 2017,691871Fre-Sg8-16pg_Sig016_F_Yellow.tif
+Sat Sep 30 05:42:22 2017,692181Sg1-32pg_Sig001_B_Black.tif
+Sat Sep 30 05:42:44 2017,692181Sg1-32pg_Sig001_B_Cyan.tif
+Sat Sep 30 05:43:05 2017,692181Sg1-32pg_Sig001_B_Magenta.tif
+Sat Sep 30 05:43:27 2017,692181Sg1-32pg_Sig001_B_Yellow.tif
+Sat Sep 30 05:41:00 2017,692181Sg1-32pg_Sig001_F_Black.tif
+Sat Sep 30 05:41:22 2017,692181Sg1-32pg_Sig001_F_Cyan.tif
+Sat Sep 30 05:41:42 2017,692181Sg1-32pg_Sig001_F_Magenta.tif
+Sat Sep 30 05:42:03 2017,692181Sg1-32pg_Sig001_F_Yellow.tif
+Sat Sep 30 05:46:12 2017,692181Sg2-32pg_Sig002_B_Black.tif
+Sat Sep 30 05:46:45 2017,692181Sg2-32pg_Sig002_B_Cyan.tif
+Sat Sep 30 05:47:13 2017,692181Sg2-32pg_Sig002_B_Magenta.tif
+Sat Sep 30 05:47:42 2017,692181Sg2-32pg_Sig002_B_Yellow.tif
+Sat Sep 30 05:44:25 2017,692181Sg2-32pg_Sig002_F_Black.tif
+Sat Sep 30 05:44:54 2017,692181Sg2-32pg_Sig002_F_Cyan.tif
+Sat Sep 30 05:45:20 2017,692181Sg2-32pg_Sig002_F_Magenta.tif
+Sat Sep 30 05:45:46 2017,692181Sg2-32pg_Sig002_F_Yellow.tif
+Sat Sep 30 05:49:41 2017,692181Sg3-32pg_Sig003_B_Black.tif
+Sat Sep 30 05:50:06 2017,692181Sg3-32pg_Sig003_B_Cyan.tif
+Sat Sep 30 05:50:29 2017,692181Sg3-32pg_Sig003_B_Magenta.tif
+Sat Sep 30 05:50:51 2017,692181Sg3-32pg_Sig003_B_Yellow.tif
+Sat Sep 30 05:48:05 2017,692181Sg3-32pg_Sig003_F_Black.tif
+Sat Sep 30 05:48:32 2017,692181Sg3-32pg_Sig003_F_Cyan.tif
+Sat Sep 30 05:48:57 2017,692181Sg3-32pg_Sig003_F_Magenta.tif
+Sat Sep 30 05:49:21 2017,692181Sg3-32pg_Sig003_F_Yellow.tif
+Sat Sep 30 05:52:57 2017,692181Sg4-32pg_Sig004_B_Black.tif
+Sat Sep 30 05:53:27 2017,692181Sg4-32pg_Sig004_B_Cyan.tif
+Sat Sep 30 05:53:55 2017,692181Sg4-32pg_Sig004_B_Magenta.tif
+Sat Sep 30 05:54:22 2017,692181Sg4-32pg_Sig004_B_Yellow.tif
+Sat Sep 30 05:51:16 2017,692181Sg4-32pg_Sig004_F_Black.tif
+Sat Sep 30 05:51:44 2017,692181Sg4-32pg_Sig004_F_Cyan.tif
+Sat Sep 30 05:52:10 2017,692181Sg4-32pg_Sig004_F_Magenta.tif
+Sat Sep 30 05:52:34 2017,692181Sg4-32pg_Sig004_F_Yellow.tif
+Sat Sep 30 05:56:52 2017,692181Sg5-32pg_Sig005_B_Black.tif
+Sat Sep 30 05:57:25 2017,692181Sg5-32pg_Sig005_B_Cyan.tif
+Sat Sep 30 05:57:57 2017,692181Sg5-32pg_Sig005_B_Magenta.tif
+Sat Sep 30 05:58:27 2017,692181Sg5-32pg_Sig005_B_Yellow.tif
+Sat Sep 30 05:54:55 2017,692181Sg5-32pg_Sig005_F_Black.tif
+Sat Sep 30 05:55:26 2017,692181Sg5-32pg_Sig005_F_Cyan.tif
+Sat Sep 30 05:55:56 2017,692181Sg5-32pg_Sig005_F_Magenta.tif
+Sat Sep 30 05:56:25 2017,692181Sg5-32pg_Sig005_F_Yellow.tif
+Sat Sep 30 06:00:30 2017,692181Sg6-32pg_Sig006_B_Black.tif
+Sat Sep 30 06:00:51 2017,692181Sg6-32pg_Sig006_B_Cyan.tif
+Sat Sep 30 06:01:10 2017,692181Sg6-32pg_Sig006_B_Magenta.tif
+Sat Sep 30 06:01:29 2017,692181Sg6-32pg_Sig006_B_Yellow.tif
+Sat Sep 30 05:58:52 2017,692181Sg6-32pg_Sig006_F_Black.tif
+Sat Sep 30 05:59:22 2017,692181Sg6-32pg_Sig006_F_Cyan.tif
+Sat Sep 30 05:59:47 2017,692181Sg6-32pg_Sig006_F_Magenta.tif
+Sat Sep 30 06:00:12 2017,692181Sg6-32pg_Sig006_F_Yellow.tif
+Sat Sep 30 03:09:04 2017,693563Sig.1 16pg_Sig001_B_Black.tif
+Sat Sep 30 03:09:25 2017,693563Sig.1 16pg_Sig001_B_Cyan.tif
+Sat Sep 30 03:09:49 2017,693563Sig.1 16pg_Sig001_B_Magenta.tif
+Sat Sep 30 03:10:14 2017,693563Sig.1 16pg_Sig001_B_Yellow.tif
+Sat Sep 30 03:07:20 2017,693563Sig.1 16pg_Sig001_F_Black.tif
+Sat Sep 30 03:07:51 2017,693563Sig.1 16pg_Sig001_F_Cyan.tif
+Sat Sep 30 03:08:18 2017,693563Sig.1 16pg_Sig001_F_Magenta.tif
+Sat Sep 30 03:08:46 2017,693563Sig.1 16pg_Sig001_F_Yellow.tif
+Sat Sep 30 03:11:55 2017,693563Sig.2 16pg_Sig002_B_Black.tif
+Sat Sep 30 03:12:15 2017,693563Sig.2 16pg_Sig002_B_Cyan.tif
+Sat Sep 30 03:12:35 2017,693563Sig.2 16pg_Sig002_B_Magenta.tif
+Sat Sep 30 03:12:54 2017,693563Sig.2 16pg_Sig002_B_Yellow.tif
+Sat Sep 30 03:10:44 2017,693563Sig.2 16pg_Sig002_F_Black.tif
+Sat Sep 30 03:11:03 2017,693563Sig.2 16pg_Sig002_F_Cyan.tif
+Sat Sep 30 03:11:20 2017,693563Sig.2 16pg_Sig002_F_Magenta.tif
+Sat Sep 30 03:11:38 2017,693563Sig.2 16pg_Sig002_F_Yellow.tif
+Sat Sep 30 03:15:07 2017,693563Sig.3 16pg_Sig003_B_Black.tif
+Sat Sep 30 03:15:30 2017,693563Sig.3 16pg_Sig003_B_Cyan.tif
+Sat Sep 30 03:15:53 2017,693563Sig.3 16pg_Sig003_B_Magenta.tif
+Sat Sep 30 03:16:17 2017,693563Sig.3 16pg_Sig003_B_Yellow.tif
+Sat Sep 30 03:13:20 2017,693563Sig.3 16pg_Sig003_F_Black.tif
+Sat Sep 30 03:13:50 2017,693563Sig.3 16pg_Sig003_F_Cyan.tif
+Sat Sep 30 03:14:19 2017,693563Sig.3 16pg_Sig003_F_Magenta.tif
+Sat Sep 30 03:14:47 2017,693563Sig.3 16pg_Sig003_F_Yellow.tif
+Sat Sep 30 03:17:58 2017,693563Sig.4 16pg_Sig004_B_Black.tif
+Sat Sep 30 03:18:22 2017,693563Sig.4 16pg_Sig004_B_Cyan.tif
+Sat Sep 30 03:18:46 2017,693563Sig.4 16pg_Sig004_B_Magenta.tif
+Sat Sep 30 03:19:07 2017,693563Sig.4 16pg_Sig004_B_Yellow.tif
+Sat Sep 30 03:16:35 2017,693563Sig.4 16pg_Sig004_F_Black.tif
+Sat Sep 30 03:16:58 2017,693563Sig.4 16pg_Sig004_F_Cyan.tif
+Sat Sep 30 03:17:20 2017,693563Sig.4 16pg_Sig004_F_Magenta.tif
+Sat Sep 30 03:17:41 2017,693563Sig.4 16pg_Sig004_F_Yellow.tif
+Fri Sep 29 19:02:16 2017,688936Sg1-16pg_Sig001_B_Black.tif
+Fri Sep 29 19:02:35 2017,688936Sg1-16pg_Sig001_B_Cyan.tif
+Fri Sep 29 19:02:54 2017,688936Sg1-16pg_Sig001_B_Magenta.tif
+Fri Sep 29 19:03:09 2017,688936Sg1-16pg_Sig001_B_Yellow.tif
+Fri Sep 29 19:01:08 2017,688936Sg1-16pg_Sig001_F_Black.tif
+Fri Sep 29 19:01:28 2017,688936Sg1-16pg_Sig001_F_Cyan.tif
+Fri Sep 29 19:01:46 2017,688936Sg1-16pg_Sig001_F_Magenta.tif
+Fri Sep 29 19:02:02 2017,688936Sg1-16pg_Sig001_F_Yellow.tif
+Fri Sep 29 19:04:43 2017,688936Sg2-16pg_Sig002_B_Black.tif
+Fri Sep 29 19:05:07 2017,688936Sg2-16pg_Sig002_B_Cyan.tif
+Fri Sep 29 19:05:29 2017,688936Sg2-16pg_Sig002_B_Magenta.tif
+Fri Sep 29 19:05:51 2017,688936Sg2-16pg_Sig002_B_Yellow.tif
+Fri Sep 29 19:03:32 2017,688936Sg2-16pg_Sig002_F_Black.tif
+Fri Sep 29 19:03:50 2017,688936Sg2-16pg_Sig002_F_Cyan.tif
+Fri Sep 29 19:04:08 2017,688936Sg2-16pg_Sig002_F_Magenta.tif
+Fri Sep 29 19:04:23 2017,688936Sg2-16pg_Sig002_F_Yellow.tif
+Fri Sep 29 19:06:48 2017,688936Sg3-16pg_Sig003_B_Black.tif
+Fri Sep 29 19:07:04 2017,688936Sg3-16pg_Sig003_B_Cyan.tif
+Fri Sep 29 19:07:19 2017,688936Sg3-16pg_Sig003_B_Magenta.tif
+Fri Sep 29 19:07:32 2017,688936Sg3-16pg_Sig003_B_Yellow.tif
+Fri Sep 29 19:06:06 2017,688936Sg3-16pg_Sig003_F_Black.tif
+Fri Sep 29 19:06:17 2017,688936Sg3-16pg_Sig003_F_Cyan.tif
+Fri Sep 29 19:06:27 2017,688936Sg3-16pg_Sig003_F_Magenta.tif
+Fri Sep 29 19:06:35 2017,688936Sg3-16pg_Sig003_F_Yellow.tif
+Fri Sep 29 19:09:22 2017,688936Sg4-16pg_Sig004_B_Black.tif
+Fri Sep 29 19:09:43 2017,688936Sg4-16pg_Sig004_B_Cyan.tif
+Fri Sep 29 19:10:01 2017,688936Sg4-16pg_Sig004_B_Magenta.tif
+Fri Sep 29 19:10:18 2017,688936Sg4-16pg_Sig004_B_Yellow.tif
+Fri Sep 29 19:08:05 2017,688936Sg4-16pg_Sig004_F_Black.tif
+Fri Sep 29 19:08:31 2017,688936Sg4-16pg_Sig004_F_Cyan.tif
+Fri Sep 29 19:08:51 2017,688936Sg4-16pg_Sig004_F_Magenta.tif
+Fri Sep 29 19:09:07 2017,688936Sg4-16pg_Sig004_F_Yellow.tif
+Fri Sep 29 19:11:52 2017,688936Sg5-16pg_Sig005_B_Black.tif
+Fri Sep 29 19:12:12 2017,688936Sg5-16pg_Sig005_B_Cyan.tif
+Fri Sep 29 19:12:31 2017,688936Sg5-16pg_Sig005_B_Magenta.tif
+Fri Sep 29 19:12:50 2017,688936Sg5-16pg_Sig005_B_Yellow.tif
+Fri Sep 29 19:10:42 2017,688936Sg5-16pg_Sig005_F_Black.tif
+Fri Sep 29 19:11:02 2017,688936Sg5-16pg_Sig005_F_Cyan.tif
+Fri Sep 29 19:11:20 2017,688936Sg5-16pg_Sig005_F_Magenta.tif
+Fri Sep 29 19:11:36 2017,688936Sg5-16pg_Sig005_F_Yellow.tif
+Fri Sep 29 19:14:25 2017,688936Sg6-8pg_Sig006_B_Black.tif
+Fri Sep 29 19:14:44 2017,688936Sg6-8pg_Sig006_B_Cyan.tif
+Fri Sep 29 19:14:59 2017,688936Sg6-8pg_Sig006_B_Magenta.tif
+Fri Sep 29 19:15:16 2017,688936Sg6-8pg_Sig006_B_Yellow.tif
+Fri Sep 29 19:13:14 2017,688936Sg6-8pg_Sig006_F_Black.tif
+Fri Sep 29 19:13:35 2017,688936Sg6-8pg_Sig006_F_Cyan.tif
+Fri Sep 29 19:13:56 2017,688936Sg6-8pg_Sig006_F_Magenta.tif
+Fri Sep 29 19:14:13 2017,688936Sg6-8pg_Sig006_F_Yellow.tif
+Fri Sep 29 17:37:07 2017,692203Sig-1_Sig001_B_Black.tif
+Fri Sep 29 17:37:17 2017,692203Sig-1_Sig001_B_Cyan.tif
+Fri Sep 29 17:37:23 2017,692203Sig-1_Sig001_B_Magenta.tif
+Fri Sep 29 17:37:33 2017,692203Sig-1_Sig001_B_Yellow.tif
+Fri Sep 29 17:36:25 2017,692203Sig-1_Sig001_F_Black.tif
+Fri Sep 29 17:36:37 2017,692203Sig-1_Sig001_F_Cyan.tif
+Fri Sep 29 17:36:44 2017,692203Sig-1_Sig001_F_Magenta.tif
+Fri Sep 29 17:36:57 2017,692203Sig-1_Sig001_F_Yellow.tif
+Fri Sep 29 17:38:20 2017,692203Sig-2_Sig002_B_Black.tif
+Fri Sep 29 17:38:28 2017,692203Sig-2_Sig002_B_Cyan.tif
+Fri Sep 29 17:38:34 2017,692203Sig-2_Sig002_B_Magenta.tif
+Fri Sep 29 17:38:44 2017,692203Sig-2_Sig002_B_Yellow.tif
+Fri Sep 29 17:37:46 2017,692203Sig-2_Sig002_F_Black.tif
+Fri Sep 29 17:37:54 2017,692203Sig-2_Sig002_F_Cyan.tif
+Fri Sep 29 17:38:00 2017,692203Sig-2_Sig002_F_Magenta.tif
+Fri Sep 29 17:38:10 2017,692203Sig-2_Sig002_F_Yellow.tif
+Fri Sep 29 17:17:45 2017,692221Sig-1-Calgary_Sig004_B_Black.tif
+Fri Sep 29 17:17:27 2017,692221Sig-1-Calgary_Sig004_F_Black.tif
+Fri Sep 29 17:09:35 2017,692221Sig-1-Montreal_Sig001_B_Black.tif
+Fri Sep 29 17:09:44 2017,692221Sig-1-Montreal_Sig001_B_Cyan.tif
+Fri Sep 29 17:09:50 2017,692221Sig-1-Montreal_Sig001_B_Magenta.tif
+Fri Sep 29 17:10:00 2017,692221Sig-1-Montreal_Sig001_B_Yellow.tif
+Fri Sep 29 17:08:52 2017,692221Sig-1-Montreal_Sig001_F_Black.tif
+Fri Sep 29 17:09:01 2017,692221Sig-1-Montreal_Sig001_F_Cyan.tif
+Fri Sep 29 17:09:08 2017,692221Sig-1-Montreal_Sig001_F_Magenta.tif
+Fri Sep 29 17:09:20 2017,692221Sig-1-Montreal_Sig001_F_Yellow.tif
+Fri Sep 29 17:14:24 2017,692221Sig-1-Regina_Sig002_B_Black.tif
+Fri Sep 29 17:13:56 2017,692221Sig-1-Regina_Sig002_F_Black.tif
+Fri Sep 29 17:16:15 2017,692221Sig-1-Windsor_Sig003_B_Black.tif
+Fri Sep 29 17:15:59 2017,692221Sig-1-Windsor_Sig003_F_Black.tif
+Fri Sep 29 17:18:36 2017,692221Sig-2-Calgary_Sig008_B_Black.tif
+Fri Sep 29 17:18:10 2017,692221Sig-2-Calgary_Sig008_F_Black.tif
+Fri Sep 29 17:11:11 2017,692221Sig-2-Montreal_Sig005_B_Black.tif
+Fri Sep 29 17:11:19 2017,692221Sig-2-Montreal_Sig005_B_Cyan.tif
+Fri Sep 29 17:11:27 2017,692221Sig-2-Montreal_Sig005_B_Magenta.tif
+Fri Sep 29 17:11:41 2017,692221Sig-2-Montreal_Sig005_B_Yellow.tif
+Fri Sep 29 17:10:24 2017,692221Sig-2-Montreal_Sig005_F_Black.tif
+Fri Sep 29 17:10:32 2017,692221Sig-2-Montreal_Sig005_F_Cyan.tif
+Fri Sep 29 17:10:38 2017,692221Sig-2-Montreal_Sig005_F_Magenta.tif
+Fri Sep 29 17:10:51 2017,692221Sig-2-Montreal_Sig005_F_Yellow.tif
+Fri Sep 29 17:15:33 2017,692221Sig-2-Regina_Sig006_B_Black.tif
+Fri Sep 29 17:14:57 2017,692221Sig-2-Regina_Sig006_F_Black.tif
+Fri Sep 29 17:17:00 2017,692221Sig-2-Windsor_Sig007_B_Black.tif
+Fri Sep 29 17:16:39 2017,692221Sig-2-Windsor_Sig007_F_Black.tif
+Fri Sep 29 14:35:37 2017,692850Sig.4 16pg_Sig005_B_Black.tif
+Fri Sep 29 14:35:58 2017,692850Sig.4 16pg_Sig005_B_Cyan.tif
+Fri Sep 29 14:36:20 2017,692850Sig.4 16pg_Sig005_B_Magenta.tif
+Fri Sep 29 14:36:44 2017,692850Sig.4 16pg_Sig005_B_Yellow.tif
+Fri Sep 29 14:34:23 2017,692850Sig.4 16pg_Sig005_F_Cyan.tif
+Fri Sep 29 14:34:49 2017,692850Sig.4 16pg_Sig005_F_Magenta.tif
+Fri Sep 29 14:35:18 2017,692850Sig.4 16pg_Sig005_F_Yellow.tif
+Wed Sep 27 13:38:17 2017,693811sg1-16pg_sig001_b_black.tif
+Wed Sep 27 13:38:31 2017,693811sg1-16pg_sig001_b_cyan.tif
+Wed Sep 27 13:38:43 2017,693811sg1-16pg_sig001_b_magenta.tif
+Wed Sep 27 13:38:55 2017,693811sg1-16pg_sig001_b_yellow.tif
+Wed Sep 27 13:37:20 2017,693811sg1-16pg_sig001_f_black.tif
+Wed Sep 27 13:37:37 2017,693811sg1-16pg_sig001_f_cyan.tif
+Wed Sep 27 13:37:51 2017,693811sg1-16pg_sig001_f_magenta.tif
+Wed Sep 27 13:38:05 2017,693811sg1-16pg_sig001_f_yellow.tif
+Wed Sep 27 14:28:38 2017,693811sg10-16pg_sig010_b_black.tif
+Wed Sep 27 14:28:46 2017,693811sg10-16pg_sig010_b_cyan.tif
+Wed Sep 27 14:28:54 2017,693811sg10-16pg_sig010_b_magenta.tif
+Wed Sep 27 14:29:02 2017,693811sg10-16pg_sig010_b_yellow.tif
+Wed Sep 27 14:27:57 2017,693811sg10-16pg_sig010_f_black.tif
+Wed Sep 27 14:28:07 2017,693811sg10-16pg_sig010_f_cyan.tif
+Wed Sep 27 14:28:15 2017,693811sg10-16pg_sig010_f_magenta.tif
+Wed Sep 27 14:28:24 2017,693811sg10-16pg_sig010_f_yellow.tif
+Wed Sep 27 14:23:31 2017,693811sg11-16pg_sig011_b_black.tif
+Wed Sep 27 14:23:19 2017,693811sg11-16pg_sig011_f_black.tif
+Wed Sep 27 14:29:27 2017,693811sg12-16pg_sig012_b_black.tif
+Wed Sep 27 14:29:14 2017,693811sg12-16pg_sig012_f_black.tif
+Wed Sep 27 14:29:52 2017,693811sg13-16pg_sig013_b_black.tif
+Wed Sep 27 14:29:39 2017,693811sg13-16pg_sig013_f_black.tif
+Wed Sep 27 14:30:16 2017,693811sg14-16pg_sig014_b_black.tif
+Wed Sep 27 14:30:03 2017,693811sg14-16pg_sig014_f_black.tif
+Wed Sep 27 14:30:39 2017,693811sg15-16pg_sig015_b_black.tif
+Wed Sep 27 14:30:28 2017,693811sg15-16pg_sig015_f_black.tif
+Wed Sep 27 14:31:03 2017,693811sg16-16pg_sig016_b_black.tif
+Wed Sep 27 14:30:51 2017,693811sg16-16pg_sig016_f_black.tif
+Wed Sep 27 14:31:18 2017,693811sg17-16pg_sig017_b_black.tif
+Wed Sep 27 14:31:10 2017,693811sg17-16pg_sig017_f_black.tif
+Wed Sep 27 13:39:56 2017,693811sg2-16pg_sig002_b_black.tif
+Wed Sep 27 13:40:11 2017,693811sg2-16pg_sig002_b_cyan.tif
+Wed Sep 27 13:40:24 2017,693811sg2-16pg_sig002_b_magenta.tif
+Wed Sep 27 13:40:36 2017,693811sg2-16pg_sig002_b_yellow.tif
+Wed Sep 27 13:39:08 2017,693811sg2-16pg_sig002_f_black.tif
+Wed Sep 27 13:39:21 2017,693811sg2-16pg_sig002_f_cyan.tif
+Wed Sep 27 13:39:31 2017,693811sg2-16pg_sig002_f_magenta.tif
+Wed Sep 27 13:39:42 2017,693811sg2-16pg_sig002_f_yellow.tif
+Wed Sep 27 13:41:51 2017,693811sg3-16pg_sig003_b_black.tif
+Wed Sep 27 13:42:05 2017,693811sg3-16pg_sig003_b_cyan.tif
+Wed Sep 27 13:42:18 2017,693811sg3-16pg_sig003_b_magenta.tif
+Wed Sep 27 13:42:29 2017,693811sg3-16pg_sig003_b_yellow.tif
+Wed Sep 27 13:40:53 2017,693811sg3-16pg_sig003_f_black.tif
+Wed Sep 27 13:41:08 2017,693811sg3-16pg_sig003_f_cyan.tif
+Wed Sep 27 13:41:23 2017,693811sg3-16pg_sig003_f_magenta.tif
+Wed Sep 27 13:41:37 2017,693811sg3-16pg_sig003_f_yellow.tif
+Wed Sep 27 13:43:25 2017,693811sg4-16pg_sig004_b_black.tif
+Wed Sep 27 13:43:36 2017,693811sg4-16pg_sig004_b_cyan.tif
+Wed Sep 27 13:43:48 2017,693811sg4-16pg_sig004_b_magenta.tif
+Wed Sep 27 13:44:00 2017,693811sg4-16pg_sig004_b_yellow.tif
+Wed Sep 27 13:42:41 2017,693811sg4-16pg_sig004_f_black.tif
+Wed Sep 27 13:42:52 2017,693811sg4-16pg_sig004_f_cyan.tif
+Wed Sep 27 13:43:01 2017,693811sg4-16pg_sig004_f_magenta.tif
+Wed Sep 27 13:43:10 2017,693811sg4-16pg_sig004_f_yellow.tif
+Wed Sep 27 13:44:57 2017,693811sg5-16pg_sig005_b_black.tif
+Wed Sep 27 13:45:07 2017,693811sg5-16pg_sig005_b_cyan.tif
+Wed Sep 27 13:45:16 2017,693811sg5-16pg_sig005_b_magenta.tif
+Wed Sep 27 13:45:25 2017,693811sg5-16pg_sig005_b_yellow.tif
+Wed Sep 27 13:44:13 2017,693811sg5-16pg_sig005_f_black.tif
+Wed Sep 27 13:44:24 2017,693811sg5-16pg_sig005_f_cyan.tif
+Wed Sep 27 13:44:34 2017,693811sg5-16pg_sig005_f_magenta.tif
+Wed Sep 27 13:44:45 2017,693811sg5-16pg_sig005_f_yellow.tif
+Wed Sep 27 13:46:18 2017,693811sg6-16pg_sig006_b_black.tif
+Wed Sep 27 13:46:30 2017,693811sg6-16pg_sig006_b_cyan.tif
+Wed Sep 27 13:46:40 2017,693811sg6-16pg_sig006_b_magenta.tif
+Wed Sep 27 13:46:51 2017,693811sg6-16pg_sig006_b_yellow.tif
+Wed Sep 27 13:45:36 2017,693811sg6-16pg_sig006_f_black.tif
+Wed Sep 27 13:45:47 2017,693811sg6-16pg_sig006_f_cyan.tif
+Wed Sep 27 13:45:56 2017,693811sg6-16pg_sig006_f_magenta.tif
+Wed Sep 27 13:46:05 2017,693811sg6-16pg_sig006_f_yellow.tif
+Wed Sep 27 14:24:27 2017,693811sg7-16pg_sig007_b_black.tif
+Wed Sep 27 14:24:38 2017,693811sg7-16pg_sig007_b_cyan.tif
+Wed Sep 27 14:24:50 2017,693811sg7-16pg_sig007_b_magenta.tif
+Wed Sep 27 14:25:00 2017,693811sg7-16pg_sig007_b_yellow.tif
+Wed Sep 27 14:23:44 2017,693811sg7-16pg_sig007_f_black.tif
+Wed Sep 27 14:23:54 2017,693811sg7-16pg_sig007_f_cyan.tif
+Wed Sep 27 14:24:04 2017,693811sg7-16pg_sig007_f_magenta.tif
+Wed Sep 27 14:24:14 2017,693811sg7-16pg_sig007_f_yellow.tif
+Wed Sep 27 14:25:53 2017,693811sg8-16pg_sig008_b_black.tif
+Wed Sep 27 14:26:03 2017,693811sg8-16pg_sig008_b_cyan.tif
+Wed Sep 27 14:26:12 2017,693811sg8-16pg_sig008_b_magenta.tif
+Wed Sep 27 14:26:22 2017,693811sg8-16pg_sig008_b_yellow.tif
+Wed Sep 27 14:25:12 2017,693811sg8-16pg_sig008_f_black.tif
+Wed Sep 27 14:25:22 2017,693811sg8-16pg_sig008_f_cyan.tif
+Wed Sep 27 14:25:31 2017,693811sg8-16pg_sig008_f_magenta.tif
+Wed Sep 27 14:25:40 2017,693811sg8-16pg_sig008_f_yellow.tif
+Wed Sep 27 14:27:16 2017,693811sg9-16pg_sig009_b_black.tif
+Wed Sep 27 14:27:26 2017,693811sg9-16pg_sig009_b_cyan.tif
+Wed Sep 27 14:27:35 2017,693811sg9-16pg_sig009_b_magenta.tif
+Wed Sep 27 14:27:44 2017,693811sg9-16pg_sig009_b_yellow.tif
+Wed Sep 27 14:26:35 2017,693811sg9-16pg_sig009_f_black.tif
+Wed Sep 27 14:26:45 2017,693811sg9-16pg_sig009_f_cyan.tif
+Wed Sep 27 14:26:54 2017,693811sg9-16pg_sig009_f_magenta.tif
+Wed Sep 27 14:27:04 2017,693811sg9-16pg_sig009_f_yellow.tif
+Mon Oct  2 10:25:47 2017,694424JR News 4pg_Sig001_B_Black.tif
+Mon Oct  2 10:26:10 2017,694424JR News 4pg_Sig001_B_Cyan.tif
+Mon Oct  2 10:26:30 2017,694424JR News 4pg_Sig001_B_Magenta.tif
+Mon Oct  2 10:26:50 2017,694424JR News 4pg_Sig001_B_Yellow.tif
+Mon Oct  2 10:24:29 2017,694424JR News 4pg_Sig001_F_Black.tif
+Mon Oct  2 10:24:52 2017,694424JR News 4pg_Sig001_F_Cyan.tif
+Mon Oct  2 10:25:12 2017,694424JR News 4pg_Sig001_F_Magenta.tif
+Mon Oct  2 10:25:34 2017,694424JR News 4pg_Sig001_F_Yellow.tif
+Mon Oct  2 10:28:36 2017,694424SR News 3 panel_Sig002_B_Black.tif
+Mon Oct  2 10:29:02 2017,694424SR News 3 panel_Sig002_B_Cyan.tif
+Mon Oct  2 10:29:21 2017,694424SR News 3 panel_Sig002_B_Magenta.tif
+Mon Oct  2 10:29:48 2017,694424SR News 3 panel_Sig002_B_Yellow.tif
+Mon Oct  2 10:27:15 2017,694424SR News 3 panel_Sig002_F_Black.tif
+Mon Oct  2 10:27:38 2017,694424SR News 3 panel_Sig002_F_Cyan.tif
+Mon Oct  2 10:27:58 2017,694424SR News 3 panel_Sig002_F_Magenta.tif
+Mon Oct  2 10:28:25 2017,694424SR News 3 panel_Sig002_F_Yellow.tif
+Mon Oct  2 11:00:57 2017,692181Sg1-32pg_Sig001_B_Black.tif
+Mon Oct  2 11:01:19 2017,692181Sg1-32pg_Sig001_B_Cyan.tif
+Mon Oct  2 11:01:41 2017,692181Sg1-32pg_Sig001_B_Magenta.tif
+Mon Oct  2 11:02:04 2017,692181Sg1-32pg_Sig001_B_Yellow.tif
+Mon Oct  2 10:59:34 2017,692181Sg1-32pg_Sig001_F_Black.tif
+Mon Oct  2 10:59:56 2017,692181Sg1-32pg_Sig001_F_Cyan.tif
+Mon Oct  2 11:00:17 2017,692181Sg1-32pg_Sig001_F_Magenta.tif
+Mon Oct  2 11:00:37 2017,692181Sg1-32pg_Sig001_F_Yellow.tif
+Tue Oct  3 01:25:44 2017,691875Cant-Sg8-16pg_Sig017_B_Black.tif
+Tue Oct  3 01:26:06 2017,691875Cant-Sg8-16pg_Sig017_B_Cyan.tif
+Tue Oct  3 01:26:27 2017,691875Cant-Sg8-16pg_Sig017_B_Magenta.tif
+Tue Oct  3 01:26:49 2017,691875Cant-Sg8-16pg_Sig017_B_Yellow.tif
+Tue Oct  3 01:23:54 2017,691875Cant-Sg8-16pg_Sig017_F_Black.tif
+Tue Oct  3 01:24:27 2017,691875Cant-Sg8-16pg_Sig017_F_Cyan.tif
+Tue Oct  3 01:24:53 2017,691875Cant-Sg8-16pg_Sig017_F_Magenta.tif
+Tue Oct  3 01:25:23 2017,691875Cant-Sg8-16pg_Sig017_F_Yellow.tif
+Tue Oct  3 00:56:24 2017,691875Eng-Sg8-16pg_Sig008_B_Black.tif
+Tue Oct  3 00:56:47 2017,691875Eng-Sg8-16pg_Sig008_B_Cyan.tif
+Tue Oct  3 00:57:07 2017,691875Eng-Sg8-16pg_Sig008_B_Magenta.tif
+Tue Oct  3 00:57:30 2017,691875Eng-Sg8-16pg_Sig008_B_Yellow.tif
+Tue Oct  3 00:54:36 2017,691875Eng-Sg8-16pg_Sig008_F_Black.tif
+Tue Oct  3 00:55:08 2017,691875Eng-Sg8-16pg_Sig008_F_Cyan.tif
+Tue Oct  3 00:55:35 2017,691875Eng-Sg8-16pg_Sig008_F_Magenta.tif
+Tue Oct  3 00:56:04 2017,691875Eng-Sg8-16pg_Sig008_F_Yellow.tif
+Tue Oct  3 00:08:25 2017,694332Sg1 4pg_Sig001_B_Black.tif
+Tue Oct  3 00:08:35 2017,694332Sg1 4pg_Sig001_B_Cyan.tif
+Tue Oct  3 00:08:46 2017,694332Sg1 4pg_Sig001_B_Magenta.tif
+Tue Oct  3 00:08:56 2017,694332Sg1 4pg_Sig001_B_Yellow.tif
+Tue Oct  3 00:06:53 2017,694332Sg1 4pg_Sig001_F_Black.tif
+Tue Oct  3 00:07:17 2017,694332Sg1 4pg_Sig001_F_Cyan.tif
+Tue Oct  3 00:07:43 2017,694332Sg1 4pg_Sig001_F_Magenta.tif
+Tue Oct  3 00:08:12 2017,694332Sg1 4pg_Sig001_F_Yellow.tif
+Tue Oct  3 00:10:34 2017,694332Sg2 8pg_Sig002_B_Black.tif
+Tue Oct  3 00:10:54 2017,694332Sg2 8pg_Sig002_B_Cyan.tif
+Tue Oct  3 00:11:15 2017,694332Sg2 8pg_Sig002_B_Magenta.tif
+Tue Oct  3 00:11:37 2017,694332Sg2 8pg_Sig002_B_Yellow.tif
+Tue Oct  3 00:09:16 2017,694332Sg2 8pg_Sig002_F_Black.tif
+Tue Oct  3 00:09:35 2017,694332Sg2 8pg_Sig002_F_Cyan.tif
+Tue Oct  3 00:09:54 2017,694332Sg2 8pg_Sig002_F_Magenta.tif
+Tue Oct  3 00:10:14 2017,694332Sg2 8pg_Sig002_F_Yellow.tif
+Mon Oct  2 20:58:57 2017,689603Sg1-16pg_Sig001_B_Black.tif
+Mon Oct  2 20:59:08 2017,689603Sg1-16pg_Sig001_B_Cyan.tif
+Mon Oct  2 20:59:19 2017,689603Sg1-16pg_Sig001_B_Magenta.tif
+Mon Oct  2 20:59:30 2017,689603Sg1-16pg_Sig001_B_Yellow.tif
+Mon Oct  2 20:58:08 2017,689603Sg1-16pg_Sig001_F_Black.tif
+Mon Oct  2 20:58:20 2017,689603Sg1-16pg_Sig001_F_Cyan.tif
+Mon Oct  2 20:58:31 2017,689603Sg1-16pg_Sig001_F_Magenta.tif
+Mon Oct  2 20:58:43 2017,689603Sg1-16pg_Sig001_F_Yellow.tif
+Mon Oct  2 21:01:59 2017,689603Sg2-16pg_Sig002_B_Black.tif
+Mon Oct  2 21:02:11 2017,689603Sg2-16pg_Sig002_B_Cyan.tif
+Mon Oct  2 21:02:22 2017,689603Sg2-16pg_Sig002_B_Magenta.tif
+Mon Oct  2 21:02:33 2017,689603Sg2-16pg_Sig002_B_Yellow.tif
+Mon Oct  2 21:01:09 2017,689603Sg2-16pg_Sig002_F_Black.tif
+Mon Oct  2 21:01:23 2017,689603Sg2-16pg_Sig002_F_Cyan.tif
+Mon Oct  2 21:01:33 2017,689603Sg2-16pg_Sig002_F_Magenta.tif
+Mon Oct  2 21:01:44 2017,689603Sg2-16pg_Sig002_F_Yellow.tif
+Mon Oct  2 21:03:53 2017,689603Sg3-16pg_Sig003_B_Black.tif
+Mon Oct  2 21:04:03 2017,689603Sg3-16pg_Sig003_B_Cyan.tif
+Mon Oct  2 21:04:13 2017,689603Sg3-16pg_Sig003_B_Magenta.tif
+Mon Oct  2 21:04:23 2017,689603Sg3-16pg_Sig003_B_Yellow.tif
+Mon Oct  2 21:02:52 2017,689603Sg3-16pg_Sig003_F_Black.tif
+Mon Oct  2 21:03:10 2017,689603Sg3-16pg_Sig003_F_Cyan.tif
+Mon Oct  2 21:03:25 2017,689603Sg3-16pg_Sig003_F_Magenta.tif
+Mon Oct  2 21:03:42 2017,689603Sg3-16pg_Sig003_F_Yellow.tif
+Mon Oct  2 21:00:22 2017,689603Sg4-8pg_Sig004_B_Black.tif
+Mon Oct  2 21:00:33 2017,689603Sg4-8pg_Sig004_B_Cyan.tif
+Mon Oct  2 21:00:42 2017,689603Sg4-8pg_Sig004_B_Magenta.tif
+Mon Oct  2 21:00:53 2017,689603Sg4-8pg_Sig004_B_Yellow.tif
+Mon Oct  2 20:59:40 2017,689603Sg4-8pg_Sig004_F_Black.tif
+Mon Oct  2 20:59:51 2017,689603Sg4-8pg_Sig004_F_Cyan.tif
+Mon Oct  2 21:00:00 2017,689603Sg4-8pg_Sig004_F_Magenta.tif
+Mon Oct  2 21:00:09 2017,689603Sg4-8pg_Sig004_F_Yellow.tif
+Mon Oct  2 21:05:31 2017,689603Sg5-16pg_Sig005_B_Black.tif
+Mon Oct  2 21:05:45 2017,689603Sg5-16pg_Sig005_B_Cyan.tif
+Mon Oct  2 21:05:58 2017,689603Sg5-16pg_Sig005_B_Magenta.tif
+Mon Oct  2 21:06:12 2017,689603Sg5-16pg_Sig005_B_Yellow.tif
+Mon Oct  2 21:04:38 2017,689603Sg5-16pg_Sig005_F_Black.tif
+Mon Oct  2 21:04:51 2017,689603Sg5-16pg_Sig005_F_Cyan.tif
+Mon Oct  2 21:05:05 2017,689603Sg5-16pg_Sig005_F_Magenta.tif
+Mon Oct  2 21:05:16 2017,689603Sg5-16pg_Sig005_F_Yellow.tif
+Tue Oct  3 00:59:40 2017,691875Cant-Sg1-16pg_Sig010_B_Black.tif
+Tue Oct  3 01:00:08 2017,691875Cant-Sg1-16pg_Sig010_B_Cyan.tif
+Tue Oct  3 01:00:35 2017,691875Cant-Sg1-16pg_Sig010_B_Magenta.tif
+Tue Oct  3 01:01:04 2017,691875Cant-Sg1-16pg_Sig010_B_Yellow.tif
+Tue Oct  3 00:57:58 2017,691875Cant-Sg1-16pg_Sig010_F_Black.tif
+Tue Oct  3 00:58:24 2017,691875Cant-Sg1-16pg_Sig010_F_Cyan.tif
+Tue Oct  3 00:58:47 2017,691875Cant-Sg1-16pg_Sig010_F_Magenta.tif
+Tue Oct  3 00:59:13 2017,691875Cant-Sg1-16pg_Sig010_F_Yellow.tif
+Tue Oct  3 01:05:51 2017,691875Cant-Sg2-16pg_Sig011_B_Black.tif
+Tue Oct  3 01:06:17 2017,691875Cant-Sg2-16pg_Sig011_B_Cyan.tif
+Tue Oct  3 01:06:43 2017,691875Cant-Sg2-16pg_Sig011_B_Magenta.tif
+Tue Oct  3 01:07:09 2017,691875Cant-Sg2-16pg_Sig011_B_Yellow.tif
+Tue Oct  3 01:04:27 2017,691875Cant-Sg2-16pg_Sig011_F_Black.tif
+Tue Oct  3 01:04:48 2017,691875Cant-Sg2-16pg_Sig011_F_Cyan.tif
+Tue Oct  3 01:05:07 2017,691875Cant-Sg2-16pg_Sig011_F_Magenta.tif
+Tue Oct  3 01:05:29 2017,691875Cant-Sg2-16pg_Sig011_F_Yellow.tif
+Tue Oct  3 01:28:46 2017,691875Cant-Sg3-16pg_Sig012_B_Black.tif
+Tue Oct  3 01:29:07 2017,691875Cant-Sg3-16pg_Sig012_B_Cyan.tif
+Tue Oct  3 01:29:29 2017,691875Cant-Sg3-16pg_Sig012_B_Magenta.tif
+Tue Oct  3 01:29:52 2017,691875Cant-Sg3-16pg_Sig012_B_Yellow.tif
+Tue Oct  3 01:27:13 2017,691875Cant-Sg3-16pg_Sig012_F_Black.tif
+Tue Oct  3 01:27:38 2017,691875Cant-Sg3-16pg_Sig012_F_Cyan.tif
+Tue Oct  3 01:28:00 2017,691875Cant-Sg3-16pg_Sig012_F_Magenta.tif
+Tue Oct  3 01:28:24 2017,691875Cant-Sg3-16pg_Sig012_F_Yellow.tif
+Tue Oct  3 01:09:17 2017,691875Cant-Sg4-16pg_Sig013_B_Black.tif
+Tue Oct  3 01:09:42 2017,691875Cant-Sg4-16pg_Sig013_B_Cyan.tif
+Tue Oct  3 01:10:06 2017,691875Cant-Sg4-16pg_Sig013_B_Magenta.tif
+Tue Oct  3 01:10:33 2017,691875Cant-Sg4-16pg_Sig013_B_Yellow.tif
+Tue Oct  3 01:07:36 2017,691875Cant-Sg4-16pg_Sig013_F_Black.tif
+Tue Oct  3 01:08:02 2017,691875Cant-Sg4-16pg_Sig013_F_Cyan.tif
+Tue Oct  3 01:08:27 2017,691875Cant-Sg4-16pg_Sig013_F_Magenta.tif
+Tue Oct  3 01:08:54 2017,691875Cant-Sg4-16pg_Sig013_F_Yellow.tif
+Tue Oct  3 01:15:14 2017,691875Cant-Sg5-16pg_Sig014_B_Black.tif
+Tue Oct  3 01:15:36 2017,691875Cant-Sg5-16pg_Sig014_B_Cyan.tif
+Tue Oct  3 01:15:57 2017,691875Cant-Sg5-16pg_Sig014_B_Magenta.tif
+Tue Oct  3 01:16:19 2017,691875Cant-Sg5-16pg_Sig014_B_Yellow.tif
+Tue Oct  3 01:13:58 2017,691875Cant-Sg5-16pg_Sig014_F_Black.tif
+Tue Oct  3 01:14:19 2017,691875Cant-Sg5-16pg_Sig014_F_Cyan.tif
+Tue Oct  3 01:14:36 2017,691875Cant-Sg5-16pg_Sig014_F_Magenta.tif
+Tue Oct  3 01:14:56 2017,691875Cant-Sg5-16pg_Sig014_F_Yellow.tif
+Tue Oct  3 01:31:46 2017,691875Cant-Sg6-16pg_Sig015_B_Black.tif
+Tue Oct  3 01:32:09 2017,691875Cant-Sg6-16pg_Sig015_B_Cyan.tif
+Tue Oct  3 01:32:32 2017,691875Cant-Sg6-16pg_Sig015_B_Magenta.tif
+Tue Oct  3 01:32:57 2017,691875Cant-Sg6-16pg_Sig015_B_Yellow.tif
+Tue Oct  3 01:30:17 2017,691875Cant-Sg6-16pg_Sig015_F_Black.tif
+Tue Oct  3 01:30:40 2017,691875Cant-Sg6-16pg_Sig015_F_Cyan.tif
+Tue Oct  3 01:31:00 2017,691875Cant-Sg6-16pg_Sig015_F_Magenta.tif
+Tue Oct  3 01:31:23 2017,691875Cant-Sg6-16pg_Sig015_F_Yellow.tif
+Tue Oct  3 01:18:30 2017,691875Cant-Sg7-16pg_Sig016_B_Black.tif
+Tue Oct  3 01:18:52 2017,691875Cant-Sg7-16pg_Sig016_B_Cyan.tif
+Tue Oct  3 01:19:13 2017,691875Cant-Sg7-16pg_Sig016_B_Magenta.tif
+Tue Oct  3 01:19:37 2017,691875Cant-Sg7-16pg_Sig016_B_Yellow.tif
+Tue Oct  3 01:16:44 2017,691875Cant-Sg7-16pg_Sig016_F_Black.tif
+Tue Oct  3 01:17:14 2017,691875Cant-Sg7-16pg_Sig016_F_Cyan.tif
+Tue Oct  3 01:17:40 2017,691875Cant-Sg7-16pg_Sig016_F_Magenta.tif
+Tue Oct  3 01:18:09 2017,691875Cant-Sg7-16pg_Sig016_F_Yellow.tif
+Tue Oct  3 00:39:15 2017,691875Eng-Sg1-16pg_Sig001_B_Black.tif
+Tue Oct  3 00:39:46 2017,691875Eng-Sg1-16pg_Sig001_B_Cyan.tif
+Tue Oct  3 00:40:18 2017,691875Eng-Sg1-16pg_Sig001_B_Magenta.tif
+Tue Oct  3 00:40:53 2017,691875Eng-Sg1-16pg_Sig001_B_Yellow.tif
+Tue Oct  3 00:37:21 2017,691875Eng-Sg1-16pg_Sig001_F_Black.tif
+Tue Oct  3 00:37:49 2017,691875Eng-Sg1-16pg_Sig001_F_Cyan.tif
+Tue Oct  3 00:38:15 2017,691875Eng-Sg1-16pg_Sig001_F_Magenta.tif
+Tue Oct  3 00:38:44 2017,691875Eng-Sg1-16pg_Sig001_F_Yellow.tif
+Tue Oct  3 00:42:49 2017,691875Eng-Sg2-16pg_Sig002_B_Black.tif
+Tue Oct  3 00:43:20 2017,691875Eng-Sg2-16pg_Sig002_B_Cyan.tif
+Tue Oct  3 00:43:53 2017,691875Eng-Sg2-16pg_Sig002_B_Magenta.tif
+Tue Oct  3 00:44:24 2017,691875Eng-Sg2-16pg_Sig002_B_Yellow.tif
+Tue Oct  3 00:41:13 2017,691875Eng-Sg2-16pg_Sig002_F_Black.tif
+Tue Oct  3 00:41:35 2017,691875Eng-Sg2-16pg_Sig002_F_Cyan.tif
+Tue Oct  3 00:41:58 2017,691875Eng-Sg2-16pg_Sig002_F_Magenta.tif
+Tue Oct  3 00:42:23 2017,691875Eng-Sg2-16pg_Sig002_F_Yellow.tif
+Tue Oct  3 01:03:00 2017,691875Eng-Sg3-16pg_Sig003_B_Black.tif
+Tue Oct  3 01:03:21 2017,691875Eng-Sg3-16pg_Sig003_B_Cyan.tif
+Tue Oct  3 01:03:43 2017,691875Eng-Sg3-16pg_Sig003_B_Magenta.tif
+Tue Oct  3 01:04:06 2017,691875Eng-Sg3-16pg_Sig003_B_Yellow.tif
+Tue Oct  3 01:01:29 2017,691875Eng-Sg3-16pg_Sig003_F_Black.tif
+Tue Oct  3 01:01:53 2017,691875Eng-Sg3-16pg_Sig003_F_Cyan.tif
+Tue Oct  3 01:02:15 2017,691875Eng-Sg3-16pg_Sig003_F_Magenta.tif
+Tue Oct  3 01:02:39 2017,691875Eng-Sg3-16pg_Sig003_F_Yellow.tif
+Tue Oct  3 00:46:42 2017,691875Eng-Sg4-16pg_Sig004_B_Black.tif
+Tue Oct  3 00:47:08 2017,691875Eng-Sg4-16pg_Sig004_B_Cyan.tif
+Tue Oct  3 00:47:34 2017,691875Eng-Sg4-16pg_Sig004_B_Magenta.tif
+Tue Oct  3 00:48:01 2017,691875Eng-Sg4-16pg_Sig004_B_Yellow.tif
+Tue Oct  3 00:44:55 2017,691875Eng-Sg4-16pg_Sig004_F_Black.tif
+Tue Oct  3 00:45:23 2017,691875Eng-Sg4-16pg_Sig004_F_Cyan.tif
+Tue Oct  3 00:45:49 2017,691875Eng-Sg4-16pg_Sig004_F_Magenta.tif
+Tue Oct  3 00:46:18 2017,691875Eng-Sg4-16pg_Sig004_F_Yellow.tif
+Tue Oct  3 00:49:45 2017,691875Eng-Sg5-16pg_Sig005_B_Black.tif
+Tue Oct  3 00:50:08 2017,691875Eng-Sg5-16pg_Sig005_B_Cyan.tif
+Tue Oct  3 00:50:28 2017,691875Eng-Sg5-16pg_Sig005_B_Magenta.tif
+Tue Oct  3 00:50:51 2017,691875Eng-Sg5-16pg_Sig005_B_Yellow.tif
+Tue Oct  3 00:48:25 2017,691875Eng-Sg5-16pg_Sig005_F_Black.tif
+Tue Oct  3 00:48:47 2017,691875Eng-Sg5-16pg_Sig005_F_Cyan.tif
+Tue Oct  3 00:49:05 2017,691875Eng-Sg5-16pg_Sig005_F_Magenta.tif
+Tue Oct  3 00:49:26 2017,691875Eng-Sg5-16pg_Sig005_F_Yellow.tif
+Tue Oct  3 01:12:24 2017,691875Eng-Sg6-16pg_Sig006_B_Black.tif
+Tue Oct  3 01:12:47 2017,691875Eng-Sg6-16pg_Sig006_B_Cyan.tif
+Tue Oct  3 01:13:10 2017,691875Eng-Sg6-16pg_Sig006_B_Magenta.tif
+Tue Oct  3 01:13:35 2017,691875Eng-Sg6-16pg_Sig006_B_Yellow.tif
+Tue Oct  3 01:10:56 2017,691875Eng-Sg6-16pg_Sig006_F_Black.tif
+Tue Oct  3 01:11:19 2017,691875Eng-Sg6-16pg_Sig006_F_Cyan.tif
+Tue Oct  3 01:11:39 2017,691875Eng-Sg6-16pg_Sig006_F_Magenta.tif
+Tue Oct  3 01:12:01 2017,691875Eng-Sg6-16pg_Sig006_F_Yellow.tif
+Tue Oct  3 00:52:58 2017,691875Eng-Sg7-16pg_Sig007_B_Black.tif
+Tue Oct  3 00:53:21 2017,691875Eng-Sg7-16pg_Sig007_B_Cyan.tif
+Tue Oct  3 00:53:42 2017,691875Eng-Sg7-16pg_Sig007_B_Magenta.tif
+Tue Oct  3 00:54:06 2017,691875Eng-Sg7-16pg_Sig007_B_Yellow.tif
+Tue Oct  3 00:51:15 2017,691875Eng-Sg7-16pg_Sig007_F_Black.tif
+Tue Oct  3 00:51:45 2017,691875Eng-Sg7-16pg_Sig007_F_Cyan.tif
+Tue Oct  3 00:52:10 2017,691875Eng-Sg7-16pg_Sig007_F_Magenta.tif
+Tue Oct  3 00:52:38 2017,691875Eng-Sg7-16pg_Sig007_F_Yellow.tif
+Tue Oct  3 11:08:53 2017,691875Cant-Sg9-16pg_Sig018_B_Black.tif
+Tue Oct  3 11:09:20 2017,691875Cant-Sg9-16pg_Sig018_B_Cyan.tif
+Tue Oct  3 11:09:44 2017,691875Cant-Sg9-16pg_Sig018_B_Magenta.tif
+Tue Oct  3 11:10:10 2017,691875Cant-Sg9-16pg_Sig018_B_Yellow.tif
+Tue Oct  3 11:06:53 2017,691875Cant-Sg9-16pg_Sig018_F_Black.tif
+Tue Oct  3 11:07:25 2017,691875Cant-Sg9-16pg_Sig018_F_Cyan.tif
+Tue Oct  3 11:07:56 2017,691875Cant-Sg9-16pg_Sig018_F_Magenta.tif
+Tue Oct  3 11:08:30 2017,691875Cant-Sg9-16pg_Sig018_F_Yellow.tif
+Tue Oct  3 11:05:04 2017,691875Eng-Sg9-16pg_Sig009_B_Black.tif
+Tue Oct  3 11:05:29 2017,691875Eng-Sg9-16pg_Sig009_B_Cyan.tif
+Tue Oct  3 11:05:52 2017,691875Eng-Sg9-16pg_Sig009_B_Magenta.tif
+Tue Oct  3 11:06:17 2017,691875Eng-Sg9-16pg_Sig009_B_Yellow.tif
+Tue Oct  3 11:03:05 2017,691875Eng-Sg9-16pg_Sig009_F_Black.tif
+Tue Oct  3 11:03:36 2017,691875Eng-Sg9-16pg_Sig009_F_Cyan.tif
+Tue Oct  3 11:04:08 2017,691875Eng-Sg9-16pg_Sig009_F_Magenta.tif
+Tue Oct  3 11:04:42 2017,691875Eng-Sg9-16pg_Sig009_F_Yellow.tif
+Wed Oct  4 07:10:03 2017,692689FB 001_Sig001_B_Black.tif
+Wed Oct  4 07:10:14 2017,692689FB 001_Sig001_B_Cyan.tif
+Wed Oct  4 07:10:22 2017,692689FB 001_Sig001_B_Magenta.tif
+Wed Oct  4 07:10:30 2017,692689FB 001_Sig001_B_Yellow.tif
+Wed Oct  4 07:09:08 2017,692689FB 001_Sig001_F_Black.tif
+Wed Oct  4 07:09:21 2017,692689FB 001_Sig001_F_Cyan.tif
+Wed Oct  4 07:09:39 2017,692689FB 001_Sig001_F_Magenta.tif
+Wed Oct  4 07:09:56 2017,692689FB 001_Sig001_F_Yellow.tif
+Tue Oct  3 18:23:20 2017,6932742pg Test004_Sig002_F_Black.tif
+Tue Oct  3 18:23:32 2017,6932742pg Test004_Sig002_F_Cyan.tif
+Tue Oct  3 18:23:45 2017,6932742pg Test004_Sig002_F_Magenta.tif
+Tue Oct  3 18:24:00 2017,6932742pg Test004_Sig002_F_Varnish.tif
+Tue Oct  3 18:23:57 2017,6932742pg Test004_Sig002_F_Yellow.tif
+Tue Oct  3 18:21:17 2017,6932742pg Test_Sig002_F_Black (2).tif
+Tue Oct  3 18:21:30 2017,6932742pg Test_Sig002_F_Cyan (2).tif
+Tue Oct  3 18:21:43 2017,6932742pg Test_Sig002_F_Magenta (2).tif
+Tue Oct  3 18:21:57 2017,6932742pg Test_Sig002_F_Varnish (2).tif
+Tue Oct  3 18:21:55 2017,6932742pg Test_Sig002_F_Yellow (2).tif
+Tue Oct  3 18:24:52 2017,693274Sig-003_Sig001_B_Varnish.tif
+Tue Oct  3 18:23:01 2017,693274Sig-003_Sig001_F_Varnish.tif
+Tue Oct  3 18:24:14 2017,693274Sig-1_Sig001_B_Black.tif
+Tue Oct  3 18:24:28 2017,693274Sig-1_Sig001_B_Cyan.tif
+Tue Oct  3 18:24:37 2017,693274Sig-1_Sig001_B_Magenta.tif
+Tue Oct  3 18:24:49 2017,693274Sig-1_Sig001_B_Yellow.tif
+Tue Oct  3 18:22:15 2017,693274Sig-1_Sig001_F_Black.tif
+Tue Oct  3 18:22:32 2017,693274Sig-1_Sig001_F_Cyan.tif
+Tue Oct  3 18:22:43 2017,693274Sig-1_Sig001_F_Magenta.tif
+Tue Oct  3 18:22:58 2017,693274Sig-1_Sig001_F_Yellow.tif
+Wed Oct  4 01:31:33 2017,692068Sg2-16pg_Sig002_B_Black.tif
+Wed Oct  4 01:31:47 2017,692068Sg2-16pg_Sig002_B_Cyan.tif
+Wed Oct  4 01:32:04 2017,692068Sg2-16pg_Sig002_B_Magenta.tif
+Wed Oct  4 01:32:21 2017,692068Sg2-16pg_Sig002_B_Yellow.tif
+Wed Oct  4 01:30:27 2017,692068Sg2-16pg_Sig002_F_Black.tif
+Wed Oct  4 01:30:46 2017,692068Sg2-16pg_Sig002_F_Cyan.tif
+Wed Oct  4 01:31:02 2017,692068Sg2-16pg_Sig002_F_Magenta.tif
+Wed Oct  4 01:31:18 2017,692068Sg2-16pg_Sig002_F_Yellow.tif
+Wed Oct  4 01:33:11 2017,692068Sg3-16pg_Sig003_B_Black.tif
+Wed Oct  4 01:33:21 2017,692068Sg3-16pg_Sig003_B_Cyan.tif
+Wed Oct  4 01:33:33 2017,692068Sg3-16pg_Sig003_B_Magenta.tif
+Wed Oct  4 01:33:42 2017,692068Sg3-16pg_Sig003_B_Yellow.tif
+Wed Oct  4 01:32:30 2017,692068Sg3-16pg_Sig003_F_Black.tif
+Wed Oct  4 01:32:40 2017,692068Sg3-16pg_Sig003_F_Cyan.tif
+Wed Oct  4 01:32:50 2017,692068Sg3-16pg_Sig003_F_Magenta.tif
+Wed Oct  4 01:33:02 2017,692068Sg3-16pg_Sig003_F_Yellow.tif
+Wed Oct  4 01:34:54 2017,692068Sg4-16pg_Sig004_B_Black.tif
+Wed Oct  4 01:35:13 2017,692068Sg4-16pg_Sig004_B_Cyan.tif
+Wed Oct  4 01:35:29 2017,692068Sg4-16pg_Sig004_B_Magenta.tif
+Wed Oct  4 01:35:48 2017,692068Sg4-16pg_Sig004_B_Yellow.tif
+Wed Oct  4 01:33:55 2017,692068Sg4-16pg_Sig004_F_Black.tif
+Wed Oct  4 01:34:11 2017,692068Sg4-16pg_Sig004_F_Cyan.tif
+Wed Oct  4 01:34:24 2017,692068Sg4-16pg_Sig004_F_Magenta.tif
+Wed Oct  4 01:34:38 2017,692068Sg4-16pg_Sig004_F_Yellow.tif
+Tue Oct  3 21:42:21 2017,692664Sg1-16pg_Sig001_B_Black.tif
+Tue Oct  3 21:42:43 2017,692664Sg1-16pg_Sig001_B_Cyan.tif
+Tue Oct  3 21:43:04 2017,692664Sg1-16pg_Sig001_B_Magenta.tif
+Tue Oct  3 21:43:24 2017,692664Sg1-16pg_Sig001_B_Yellow.tif
+Tue Oct  3 21:41:03 2017,692664Sg1-16pg_Sig001_F_Black.tif
+Tue Oct  3 21:41:23 2017,692664Sg1-16pg_Sig001_F_Cyan.tif
+Tue Oct  3 21:41:44 2017,692664Sg1-16pg_Sig001_F_Magenta.tif
+Tue Oct  3 21:42:04 2017,692664Sg1-16pg_Sig001_F_Yellow.tif
+Tue Oct  3 21:37:23 2017,692664Sg2-16pg_Sig002_B_Black.tif
+Tue Oct  3 21:37:48 2017,692664Sg2-16pg_Sig002_B_Cyan.tif
+Tue Oct  3 21:38:10 2017,692664Sg2-16pg_Sig002_B_Magenta.tif
+Tue Oct  3 21:38:34 2017,692664Sg2-16pg_Sig002_B_Yellow.tif
+Tue Oct  3 21:36:03 2017,692664Sg2-16pg_Sig002_F_Black.tif
+Tue Oct  3 21:36:23 2017,692664Sg2-16pg_Sig002_F_Cyan.tif
+Tue Oct  3 21:36:43 2017,692664Sg2-16pg_Sig002_F_Magenta.tif
+Tue Oct  3 21:37:03 2017,692664Sg2-16pg_Sig002_F_Yellow.tif
+Tue Oct  3 21:46:56 2017,692664Sg3-16pg_Sig003_B_Black.tif
+Tue Oct  3 21:47:15 2017,692664Sg3-16pg_Sig003_B_Cyan.tif
+Tue Oct  3 21:47:32 2017,692664Sg3-16pg_Sig003_B_Magenta.tif
+Tue Oct  3 21:47:51 2017,692664Sg3-16pg_Sig003_B_Yellow.tif
+Tue Oct  3 21:45:43 2017,692664Sg3-16pg_Sig003_F_Black.tif
+Tue Oct  3 21:46:02 2017,692664Sg3-16pg_Sig003_F_Cyan.tif
+Tue Oct  3 21:46:20 2017,692664Sg3-16pg_Sig003_F_Magenta.tif
+Tue Oct  3 21:46:38 2017,692664Sg3-16pg_Sig003_F_Yellow.tif
+Tue Oct  3 21:44:35 2017,692664Sg4-16pg_Sig004_B_Black.tif
+Tue Oct  3 21:44:52 2017,692664Sg4-16pg_Sig004_B_Cyan.tif
+Tue Oct  3 21:45:08 2017,692664Sg4-16pg_Sig004_B_Magenta.tif
+Tue Oct  3 21:45:23 2017,692664Sg4-16pg_Sig004_B_Yellow.tif
+Tue Oct  3 21:43:39 2017,692664Sg4-16pg_Sig004_F_Black.tif
+Tue Oct  3 21:43:53 2017,692664Sg4-16pg_Sig004_F_Cyan.tif
+Tue Oct  3 21:44:07 2017,692664Sg4-16pg_Sig004_F_Magenta.tif
+Tue Oct  3 21:44:21 2017,692664Sg4-16pg_Sig004_F_Yellow.tif
+Tue Oct  3 21:39:47 2017,692664Sg5-16pg_Sig005_B_Black.tif
+Tue Oct  3 21:40:06 2017,692664Sg5-16pg_Sig005_B_Cyan.tif
+Tue Oct  3 21:40:24 2017,692664Sg5-16pg_Sig005_B_Magenta.tif
+Tue Oct  3 21:40:43 2017,692664Sg5-16pg_Sig005_B_Yellow.tif
+Tue Oct  3 21:38:48 2017,692664Sg5-16pg_Sig005_F_Black.tif
+Tue Oct  3 21:39:02 2017,692664Sg5-16pg_Sig005_F_Cyan.tif
+Tue Oct  3 21:39:15 2017,692664Sg5-16pg_Sig005_F_Magenta.tif
+Tue Oct  3 21:39:29 2017,692664Sg5-16pg_Sig005_F_Yellow.tif
+Tue Oct  3 21:49:22 2017,692664Sg6-16pg_Sig006_B_Black.tif
+Tue Oct  3 21:49:41 2017,692664Sg6-16pg_Sig006_B_Cyan.tif
+Tue Oct  3 21:49:55 2017,692664Sg6-16pg_Sig006_B_Magenta.tif
+Tue Oct  3 21:50:12 2017,692664Sg6-16pg_Sig006_B_Yellow.tif
+Tue Oct  3 21:48:18 2017,692664Sg6-16pg_Sig006_F_Black.tif
+Tue Oct  3 21:48:35 2017,692664Sg6-16pg_Sig006_F_Cyan.tif
+Tue Oct  3 21:48:52 2017,692664Sg6-16pg_Sig006_F_Magenta.tif
+Tue Oct  3 21:49:08 2017,692664Sg6-16pg_Sig006_F_Yellow.tif
+Wed Oct  4 01:37:34 2017,693042Sg1-8pg_Sig001_B_Black.tif
+Wed Oct  4 01:38:03 2017,693042Sg1-8pg_Sig001_B_Cyan.tif
+Wed Oct  4 01:38:26 2017,693042Sg1-8pg_Sig001_B_Magenta.tif
+Wed Oct  4 01:38:49 2017,693042Sg1-8pg_Sig001_B_Yellow.tif
+Wed Oct  4 01:36:12 2017,693042Sg1-8pg_Sig001_F_Black.tif
+Wed Oct  4 01:36:34 2017,693042Sg1-8pg_Sig001_F_Cyan.tif
+Wed Oct  4 01:36:50 2017,693042Sg1-8pg_Sig001_F_Magenta.tif
+Wed Oct  4 01:37:12 2017,693042Sg1-8pg_Sig001_F_Yellow.tif
+Wed Oct  4 01:40:37 2017,693042Sg2-16pg_Sig002_B_Black.tif
+Wed Oct  4 01:40:57 2017,693042Sg2-16pg_Sig002_B_Cyan.tif
+Wed Oct  4 01:41:15 2017,693042Sg2-16pg_Sig002_B_Magenta.tif
+Wed Oct  4 01:41:35 2017,693042Sg2-16pg_Sig002_B_Yellow.tif
+Wed Oct  4 01:39:13 2017,693042Sg2-16pg_Sig002_F_Black.tif
+Wed Oct  4 01:39:37 2017,693042Sg2-16pg_Sig002_F_Cyan.tif
+Wed Oct  4 01:39:56 2017,693042Sg2-16pg_Sig002_F_Magenta.tif
+Wed Oct  4 01:40:19 2017,693042Sg2-16pg_Sig002_F_Yellow.tif
+Tue Oct  3 18:02:11 2017,694492Sig.16pg Eng.005_Sig003_B_Black.tif
+Tue Oct  3 18:02:19 2017,694492Sig.16pg Eng.005_Sig003_B_Cyan.tif
+Tue Oct  3 18:02:27 2017,694492Sig.16pg Eng.005_Sig003_B_Magenta.tif
+Tue Oct  3 18:02:35 2017,694492Sig.16pg Eng.005_Sig003_B_Yellow.tif
+Tue Oct  3 18:01:43 2017,694492Sig.16pg Eng.005_Sig003_F_Black.tif
+Tue Oct  3 18:01:49 2017,694492Sig.16pg Eng.005_Sig003_F_Cyan.tif
+Tue Oct  3 18:01:56 2017,694492Sig.16pg Eng.005_Sig003_F_Magenta.tif
+Tue Oct  3 18:02:02 2017,694492Sig.16pg Eng.005_Sig003_F_Yellow.tif
+Tue Oct  3 18:04:36 2017,694492Sig.16pg Fren.007_Sig005_B_Black.tif
+Tue Oct  3 18:04:44 2017,694492Sig.16pg Fren.007_Sig005_B_Cyan.tif
+Tue Oct  3 18:04:52 2017,694492Sig.16pg Fren.007_Sig005_B_Magenta.tif
+Tue Oct  3 18:05:00 2017,694492Sig.16pg Fren.007_Sig005_B_Yellow.tif
+Tue Oct  3 18:04:09 2017,694492Sig.16pg Fren.007_Sig005_F_Black.tif
+Tue Oct  3 18:04:15 2017,694492Sig.16pg Fren.007_Sig005_F_Cyan.tif
+Tue Oct  3 18:04:20 2017,694492Sig.16pg Fren.007_Sig005_F_Magenta.tif
+Tue Oct  3 18:04:27 2017,694492Sig.16pg Fren.007_Sig005_F_Yellow.tif
+Tue Oct  3 18:03:30 2017,694492Sig.2 8pg Eng.006_Sig004_B_Black.tif
+Tue Oct  3 18:03:38 2017,694492Sig.2 8pg Eng.006_Sig004_B_Cyan.tif
+Tue Oct  3 18:03:46 2017,694492Sig.2 8pg Eng.006_Sig004_B_Magenta.tif
+Tue Oct  3 18:03:54 2017,694492Sig.2 8pg Eng.006_Sig004_B_Yellow.tif
+Tue Oct  3 18:02:53 2017,694492Sig.2 8pg Eng.006_Sig004_F_Black.tif
+Tue Oct  3 18:03:04 2017,694492Sig.2 8pg Eng.006_Sig004_F_Cyan.tif
+Tue Oct  3 18:03:13 2017,694492Sig.2 8pg Eng.006_Sig004_F_Magenta.tif
+Tue Oct  3 18:03:22 2017,694492Sig.2 8pg Eng.006_Sig004_F_Yellow.tif
+Tue Oct  3 18:05:53 2017,694492Sig.2 8pg Fren.008_Sig006_B_Black.tif
+Tue Oct  3 18:06:01 2017,694492Sig.2 8pg Fren.008_Sig006_B_Cyan.tif
+Tue Oct  3 18:06:08 2017,694492Sig.2 8pg Fren.008_Sig006_B_Magenta.tif
+Tue Oct  3 18:06:15 2017,694492Sig.2 8pg Fren.008_Sig006_B_Yellow.tif
+Tue Oct  3 18:05:17 2017,694492Sig.2 8pg Fren.008_Sig006_F_Black.tif
+Tue Oct  3 18:05:27 2017,694492Sig.2 8pg Fren.008_Sig006_F_Cyan.tif
+Tue Oct  3 18:05:35 2017,694492Sig.2 8pg Fren.008_Sig006_F_Magenta.tif
+Tue Oct  3 18:05:44 2017,694492Sig.2 8pg Fren.008_Sig006_F_Yellow.tif
+Thu Oct  5 02:08:20 2017,690142Sg1-16pg_Sig001_B_Black.tif
+Thu Oct  5 02:08:39 2017,690142Sg1-16pg_Sig001_B_Cyan.tif
+Thu Oct  5 02:08:55 2017,690142Sg1-16pg_Sig001_B_Magenta.tif
+Thu Oct  5 02:09:14 2017,690142Sg1-16pg_Sig001_B_Yellow.tif
+Thu Oct  5 02:06:53 2017,690142Sg1-16pg_Sig001_F_Black.tif
+Thu Oct  5 02:07:20 2017,690142Sg1-16pg_Sig001_F_Cyan.tif
+Thu Oct  5 02:07:43 2017,690142Sg1-16pg_Sig001_F_Magenta.tif
+Thu Oct  5 02:08:05 2017,690142Sg1-16pg_Sig001_F_Yellow.tif
+Thu Oct  5 02:10:47 2017,690142Sg2-16pg_Sig002_B_Black.tif
+Thu Oct  5 02:11:07 2017,690142Sg2-16pg_Sig002_B_Cyan.tif
+Thu Oct  5 02:11:27 2017,690142Sg2-16pg_Sig002_B_Magenta.tif
+Thu Oct  5 02:11:49 2017,690142Sg2-16pg_Sig002_B_Yellow.tif
+Thu Oct  5 02:09:32 2017,690142Sg2-16pg_Sig002_F_Black.tif
+Thu Oct  5 02:09:52 2017,690142Sg2-16pg_Sig002_F_Cyan.tif
+Thu Oct  5 02:10:09 2017,690142Sg2-16pg_Sig002_F_Magenta.tif
+Thu Oct  5 02:10:29 2017,690142Sg2-16pg_Sig002_F_Yellow.tif
+Thu Oct  5 02:15:25 2017,690142Sg4-16pg_Sig004_B_Black.tif
+Thu Oct  5 02:15:44 2017,690142Sg4-16pg_Sig004_B_Cyan.tif
+Thu Oct  5 02:16:02 2017,690142Sg4-16pg_Sig004_B_Magenta.tif
+Thu Oct  5 02:16:23 2017,690142Sg4-16pg_Sig004_B_Yellow.tif
+Thu Oct  5 02:14:32 2017,690142Sg4-16pg_Sig004_F_Black.tif
+Thu Oct  5 02:14:44 2017,690142Sg4-16pg_Sig004_F_Cyan.tif
+Thu Oct  5 02:14:55 2017,690142Sg4-16pg_Sig004_F_Magenta.tif
+Thu Oct  5 02:15:08 2017,690142Sg4-16pg_Sig004_F_Yellow.tif
+Thu Oct  5 02:17:35 2017,690142Sg5-16pg_Sig005_B_Black.tif
+Thu Oct  5 02:17:52 2017,690142Sg5-16pg_Sig005_B_Cyan.tif
+Thu Oct  5 02:18:10 2017,690142Sg5-16pg_Sig005_B_Magenta.tif
+Thu Oct  5 02:18:28 2017,690142Sg5-16pg_Sig005_B_Yellow.tif
+Thu Oct  5 02:16:37 2017,690142Sg5-16pg_Sig005_F_Black.tif
+Thu Oct  5 02:16:52 2017,690142Sg5-16pg_Sig005_F_Cyan.tif
+Thu Oct  5 02:17:05 2017,690142Sg5-16pg_Sig005_F_Magenta.tif
+Thu Oct  5 02:17:18 2017,690142Sg5-16pg_Sig005_F_Yellow.tif
+Thu Oct  5 02:20:12 2017,690142Sg6-16pg_Sig006_B_Black.tif
+Thu Oct  5 02:20:33 2017,690142Sg6-16pg_Sig006_B_Cyan.tif
+Thu Oct  5 02:20:54 2017,690142Sg6-16pg_Sig006_B_Magenta.tif
+Thu Oct  5 02:21:17 2017,690142Sg6-16pg_Sig006_B_Yellow.tif
+Thu Oct  5 02:18:48 2017,690142Sg6-16pg_Sig006_F_Black.tif
+Thu Oct  5 02:19:10 2017,690142Sg6-16pg_Sig006_F_Cyan.tif
+Thu Oct  5 02:19:30 2017,690142Sg6-16pg_Sig006_F_Magenta.tif
+Thu Oct  5 02:19:53 2017,690142Sg6-16pg_Sig006_F_Yellow.tif
+Thu Oct  5 04:10:36 2017,691071Sg1-16pg_Sig002_B_Black.tif
+Thu Oct  5 04:10:59 2017,691071Sg1-16pg_Sig002_B_Cyan.tif
+Thu Oct  5 04:11:18 2017,691071Sg1-16pg_Sig002_B_Magenta.tif
+Thu Oct  5 04:11:42 2017,691071Sg1-16pg_Sig002_B_Yellow.tif
+Thu Oct  5 04:09:28 2017,691071Sg1-16pg_Sig002_F_Black.tif
+Thu Oct  5 04:09:45 2017,691071Sg1-16pg_Sig002_F_Cyan.tif
+Thu Oct  5 04:10:01 2017,691071Sg1-16pg_Sig002_F_Magenta.tif
+Thu Oct  5 04:10:16 2017,691071Sg1-16pg_Sig002_F_Yellow.tif
+Thu Oct  5 04:13:19 2017,691071Sg2-16pg_Sig003_B_Black.tif
+Thu Oct  5 04:13:37 2017,691071Sg2-16pg_Sig003_B_Cyan.tif
+Thu Oct  5 04:13:53 2017,691071Sg2-16pg_Sig003_B_Magenta.tif
+Thu Oct  5 04:14:09 2017,691071Sg2-16pg_Sig003_B_Yellow.tif
+Thu Oct  5 04:12:01 2017,691071Sg2-16pg_Sig003_F_Black.tif
+Thu Oct  5 04:12:23 2017,691071Sg2-16pg_Sig003_F_Cyan.tif
+Thu Oct  5 04:12:43 2017,691071Sg2-16pg_Sig003_F_Magenta.tif
+Thu Oct  5 04:13:02 2017,691071Sg2-16pg_Sig003_F_Yellow.tif
+Thu Oct  5 04:15:41 2017,691071Sg3-16pg_Sig004_B_Black.tif
+Thu Oct  5 04:16:04 2017,691071Sg3-16pg_Sig004_B_Cyan.tif
+Thu Oct  5 04:16:24 2017,691071Sg3-16pg_Sig004_B_Magenta.tif
+Thu Oct  5 04:16:45 2017,691071Sg3-16pg_Sig004_B_Yellow.tif
+Thu Oct  5 04:14:31 2017,691071Sg3-16pg_Sig004_F_Black.tif
+Thu Oct  5 04:14:50 2017,691071Sg3-16pg_Sig004_F_Cyan.tif
+Thu Oct  5 04:15:06 2017,691071Sg3-16pg_Sig004_F_Magenta.tif
+Thu Oct  5 04:15:22 2017,691071Sg3-16pg_Sig004_F_Yellow.tif
+Thu Oct  5 04:54:33 2017,691993Sg1-16pg_Sig001_B_Black.tif
+Thu Oct  5 04:55:03 2017,691993Sg1-16pg_Sig001_B_Cyan.tif
+Thu Oct  5 04:55:32 2017,691993Sg1-16pg_Sig001_B_Magenta.tif
+Thu Oct  5 04:56:00 2017,691993Sg1-16pg_Sig001_B_Yellow.tif
+Thu Oct  5 04:52:54 2017,691993Sg1-16pg_Sig001_F_Black.tif
+Thu Oct  5 04:53:22 2017,691993Sg1-16pg_Sig001_F_Cyan.tif
+Thu Oct  5 04:53:47 2017,691993Sg1-16pg_Sig001_F_Magenta.tif
+Thu Oct  5 04:54:08 2017,691993Sg1-16pg_Sig001_F_Yellow.tif
+Thu Oct  5 04:57:36 2017,691993Sg2-12pg_Sig002_B_Black.tif
+Thu Oct  5 04:57:56 2017,691993Sg2-12pg_Sig002_B_Cyan.tif
+Thu Oct  5 04:58:15 2017,691993Sg2-12pg_Sig002_B_Magenta.tif
+Thu Oct  5 04:58:34 2017,691993Sg2-12pg_Sig002_B_Yellow.tif
+Thu Oct  5 04:56:19 2017,691993Sg2-12pg_Sig002_F_Black.tif
+Thu Oct  5 04:56:39 2017,691993Sg2-12pg_Sig002_F_Cyan.tif
+Thu Oct  5 04:56:58 2017,691993Sg2-12pg_Sig002_F_Magenta.tif
+Thu Oct  5 04:57:18 2017,691993Sg2-12pg_Sig002_F_Yellow.tif
+Thu Oct  5 05:01:01 2017,691993Sg3-16pg_Sig003_B_Black.tif
+Thu Oct  5 05:01:31 2017,691993Sg3-16pg_Sig003_B_Cyan.tif
+Thu Oct  5 05:01:59 2017,691993Sg3-16pg_Sig003_B_Magenta.tif
+Thu Oct  5 05:02:31 2017,691993Sg3-16pg_Sig003_B_Yellow.tif
+Thu Oct  5 04:59:07 2017,691993Sg3-16pg_Sig003_F_Black.tif
+Thu Oct  5 04:59:38 2017,691993Sg3-16pg_Sig003_F_Cyan.tif
+Thu Oct  5 05:00:06 2017,691993Sg3-16pg_Sig003_F_Magenta.tif
+Thu Oct  5 05:00:35 2017,691993Sg3-16pg_Sig003_F_Yellow.tif
+Thu Oct  5 05:04:48 2017,691993Sg4-16pg_Sig004_B_Black.tif
+Thu Oct  5 05:05:13 2017,691993Sg4-16pg_Sig004_B_Cyan.tif
+Thu Oct  5 05:05:36 2017,691993Sg4-16pg_Sig004_B_Magenta.tif
+Thu Oct  5 05:06:01 2017,691993Sg4-16pg_Sig004_B_Yellow.tif
+Thu Oct  5 05:02:58 2017,691993Sg4-16pg_Sig004_F_Black.tif
+Thu Oct  5 05:03:32 2017,691993Sg4-16pg_Sig004_F_Cyan.tif
+Thu Oct  5 05:03:58 2017,691993Sg4-16pg_Sig004_F_Magenta.tif
+Thu Oct  5 05:04:27 2017,691993Sg4-16pg_Sig004_F_Yellow.tif
+Thu Oct  5 05:07:36 2017,691993Sg5-16pg_Sig005_B_Black.tif
+Thu Oct  5 05:08:03 2017,691993Sg5-16pg_Sig005_B_Cyan.tif
+Thu Oct  5 05:08:28 2017,691993Sg5-16pg_Sig005_B_Magenta.tif
+Thu Oct  5 05:08:54 2017,691993Sg5-16pg_Sig005_B_Yellow.tif
+Thu Oct  5 05:06:19 2017,691993Sg5-16pg_Sig005_F_Black.tif
+Thu Oct  5 05:06:38 2017,691993Sg5-16pg_Sig005_F_Cyan.tif
+Thu Oct  5 05:06:55 2017,691993Sg5-16pg_Sig005_F_Magenta.tif
+Thu Oct  5 05:07:13 2017,691993Sg5-16pg_Sig005_F_Yellow.tif
+Thu Oct  5 05:10:59 2017,691993Sg6-16pg_Sig006_B_Black.tif
+Thu Oct  5 05:11:18 2017,691993Sg6-16pg_Sig006_B_Cyan.tif
+Thu Oct  5 05:11:35 2017,691993Sg6-16pg_Sig006_B_Magenta.tif
+Thu Oct  5 05:11:54 2017,691993Sg6-16pg_Sig006_B_Yellow.tif
+Thu Oct  5 05:09:24 2017,691993Sg6-16pg_Sig006_F_Black.tif
+Thu Oct  5 05:09:51 2017,691993Sg6-16pg_Sig006_F_Cyan.tif
+Thu Oct  5 05:10:16 2017,691993Sg6-16pg_Sig006_F_Magenta.tif
+Thu Oct  5 05:10:42 2017,691993Sg6-16pg_Sig006_F_Yellow.tif
+Thu Oct  5 05:13:43 2017,691993Sg7-16pg_Sig007_B_Black.tif
+Thu Oct  5 05:14:07 2017,691993Sg7-16pg_Sig007_B_Cyan.tif
+Thu Oct  5 05:14:29 2017,691993Sg7-16pg_Sig007_B_Magenta.tif
+Thu Oct  5 05:14:50 2017,691993Sg7-16pg_Sig007_B_Yellow.tif
+Thu Oct  5 05:12:16 2017,691993Sg7-16pg_Sig007_F_Black.tif
+Thu Oct  5 05:12:40 2017,691993Sg7-16pg_Sig007_F_Cyan.tif
+Thu Oct  5 05:13:02 2017,691993Sg7-16pg_Sig007_F_Magenta.tif
+Thu Oct  5 05:13:23 2017,691993Sg7-16pg_Sig007_F_Yellow.tif
+Thu Oct  5 05:16:26 2017,691993Sg8-16pg_Sig008_B_Black.tif
+Thu Oct  5 05:16:45 2017,691993Sg8-16pg_Sig008_B_Cyan.tif
+Thu Oct  5 05:17:03 2017,691993Sg8-16pg_Sig008_B_Magenta.tif
+Thu Oct  5 05:17:23 2017,691993Sg8-16pg_Sig008_B_Yellow.tif
+Thu Oct  5 05:15:10 2017,691993Sg8-16pg_Sig008_F_Black.tif
+Thu Oct  5 05:15:30 2017,691993Sg8-16pg_Sig008_F_Cyan.tif
+Thu Oct  5 05:15:48 2017,691993Sg8-16pg_Sig008_F_Magenta.tif
+Thu Oct  5 05:16:08 2017,691993Sg8-16pg_Sig008_F_Yellow.tif
+Wed Oct  4 18:09:46 2017,692663Sg1-16pg_Sig001_B_Black.tif
+Wed Oct  4 18:10:10 2017,692663Sg1-16pg_Sig001_B_Cyan.tif
+Wed Oct  4 18:10:33 2017,692663Sg1-16pg_Sig001_B_Magenta.tif
+Wed Oct  4 18:10:58 2017,692663Sg1-16pg_Sig001_B_Yellow.tif
+Wed Oct  4 18:08:21 2017,692663Sg1-16pg_Sig001_F_Black.tif
+Wed Oct  4 18:08:44 2017,692663Sg1-16pg_Sig001_F_Cyan.tif
+Wed Oct  4 18:09:03 2017,692663Sg1-16pg_Sig001_F_Magenta.tif
+Wed Oct  4 18:09:25 2017,692663Sg1-16pg_Sig001_F_Yellow.tif
+Wed Oct  4 18:12:32 2017,692663Sg2-16pg_Sig002_B_Black.tif
+Wed Oct  4 18:12:49 2017,692663Sg2-16pg_Sig002_B_Cyan.tif
+Wed Oct  4 18:13:06 2017,692663Sg2-16pg_Sig002_B_Magenta.tif
+Wed Oct  4 18:13:23 2017,692663Sg2-16pg_Sig002_B_Yellow.tif
+Wed Oct  4 18:11:21 2017,692663Sg2-16pg_Sig002_F_Black.tif
+Wed Oct  4 18:11:42 2017,692663Sg2-16pg_Sig002_F_Cyan.tif
+Wed Oct  4 18:12:00 2017,692663Sg2-16pg_Sig002_F_Magenta.tif
+Wed Oct  4 18:12:17 2017,692663Sg2-16pg_Sig002_F_Yellow.tif
+Wed Oct  4 18:14:40 2017,692663Sg3-16pg_Sig003_B_Black.tif
+Wed Oct  4 18:14:55 2017,692663Sg3-16pg_Sig003_B_Cyan.tif
+Wed Oct  4 18:15:09 2017,692663Sg3-16pg_Sig003_B_Magenta.tif
+Wed Oct  4 18:15:22 2017,692663Sg3-16pg_Sig003_B_Yellow.tif
+Wed Oct  4 18:13:43 2017,692663Sg3-16pg_Sig003_F_Black.tif
+Wed Oct  4 18:13:59 2017,692663Sg3-16pg_Sig003_F_Cyan.tif
+Wed Oct  4 18:14:13 2017,692663Sg3-16pg_Sig003_F_Magenta.tif
+Wed Oct  4 18:14:27 2017,692663Sg3-16pg_Sig003_F_Yellow.tif
+Wed Oct  4 18:17:07 2017,692663Sg4-16pg_Sig004_B_Black.tif
+Wed Oct  4 18:17:29 2017,692663Sg4-16pg_Sig004_B_Cyan.tif
+Wed Oct  4 18:17:47 2017,692663Sg4-16pg_Sig004_B_Magenta.tif
+Wed Oct  4 18:18:04 2017,692663Sg4-16pg_Sig004_B_Yellow.tif
+Wed Oct  4 18:15:53 2017,692663Sg4-16pg_Sig004_F_Black.tif
+Wed Oct  4 18:16:13 2017,692663Sg4-16pg_Sig004_F_Cyan.tif
+Wed Oct  4 18:16:32 2017,692663Sg4-16pg_Sig004_F_Magenta.tif
+Wed Oct  4 18:16:51 2017,692663Sg4-16pg_Sig004_F_Yellow.tif
+Wed Oct  4 21:28:54 2017,692660Sg1-16pg_Sig001_B_Black.tif
+Wed Oct  4 21:29:09 2017,692660Sg1-16pg_Sig001_B_Cyan.tif
+Wed Oct  4 21:29:22 2017,692660Sg1-16pg_Sig001_B_Magenta.tif
+Wed Oct  4 21:29:37 2017,692660Sg1-16pg_Sig001_B_Yellow.tif
+Wed Oct  4 21:27:53 2017,692660Sg1-16pg_Sig001_F_Black.tif
+Wed Oct  4 21:28:11 2017,692660Sg1-16pg_Sig001_F_Cyan.tif
+Wed Oct  4 21:28:24 2017,692660Sg1-16pg_Sig001_F_Magenta.tif
+Wed Oct  4 21:28:42 2017,692660Sg1-16pg_Sig001_F_Yellow.tif
+Wed Oct  4 21:30:48 2017,692660Sg2-16pg_Sig002_B_Black.tif
+Wed Oct  4 21:31:01 2017,692660Sg2-16pg_Sig002_B_Cyan.tif
+Wed Oct  4 21:31:14 2017,692660Sg2-16pg_Sig002_B_Magenta.tif
+Wed Oct  4 21:31:27 2017,692660Sg2-16pg_Sig002_B_Yellow.tif
+Wed Oct  4 21:29:52 2017,692660Sg2-16pg_Sig002_F_Black.tif
+Wed Oct  4 21:30:07 2017,692660Sg2-16pg_Sig002_F_Cyan.tif
+Wed Oct  4 21:30:20 2017,692660Sg2-16pg_Sig002_F_Magenta.tif
+Wed Oct  4 21:30:35 2017,692660Sg2-16pg_Sig002_F_Yellow.tif
+Wed Oct  4 21:32:42 2017,692660Sg3-16pg_Sig003_B_Black.tif
+Wed Oct  4 21:32:54 2017,692660Sg3-16pg_Sig003_B_Cyan.tif
+Wed Oct  4 21:33:05 2017,692660Sg3-16pg_Sig003_B_Magenta.tif
+Wed Oct  4 21:33:16 2017,692660Sg3-16pg_Sig003_B_Yellow.tif
+Wed Oct  4 21:31:44 2017,692660Sg3-16pg_Sig003_F_Black.tif
+Wed Oct  4 21:31:59 2017,692660Sg3-16pg_Sig003_F_Cyan.tif
+Wed Oct  4 21:32:15 2017,692660Sg3-16pg_Sig003_F_Magenta.tif
+Wed Oct  4 21:32:31 2017,692660Sg3-16pg_Sig003_F_Yellow.tif
+Wed Oct  4 21:34:28 2017,692660Sg4-8pg_Sig004_B_Black.tif
+Wed Oct  4 21:34:40 2017,692660Sg4-8pg_Sig004_B_Cyan.tif
+Wed Oct  4 21:34:51 2017,692660Sg4-8pg_Sig004_B_Magenta.tif
+Wed Oct  4 21:35:05 2017,692660Sg4-8pg_Sig004_B_Yellow.tif
+Wed Oct  4 21:33:32 2017,692660Sg4-8pg_Sig004_F_Black.tif
+Wed Oct  4 21:33:46 2017,692660Sg4-8pg_Sig004_F_Cyan.tif
+Wed Oct  4 21:34:00 2017,692660Sg4-8pg_Sig004_F_Magenta.tif
+Wed Oct  4 21:34:14 2017,692660Sg4-8pg_Sig004_F_Yellow.tif
+Wed Oct  4 21:36:05 2017,692660Sg5-16pg_Sig005_B_Black.tif
+Wed Oct  4 21:36:13 2017,692660Sg5-16pg_Sig005_B_Cyan.tif
+Wed Oct  4 21:36:22 2017,692660Sg5-16pg_Sig005_B_Magenta.tif
+Wed Oct  4 21:36:31 2017,692660Sg5-16pg_Sig005_B_Yellow.tif
+Wed Oct  4 21:35:20 2017,692660Sg5-16pg_Sig005_F_Black.tif
+Wed Oct  4 21:35:34 2017,692660Sg5-16pg_Sig005_F_Cyan.tif
+Wed Oct  4 21:35:45 2017,692660Sg5-16pg_Sig005_F_Magenta.tif
+Wed Oct  4 21:35:57 2017,692660Sg5-16pg_Sig005_F_Yellow.tif
+Thu Oct  5 14:30:49 2017,687110Sg1-8pg_Sig001_B_Black.tif
+Thu Oct  5 14:31:24 2017,687110Sg1-8pg_Sig001_B_Cyan.tif
+Thu Oct  5 14:31:53 2017,687110Sg1-8pg_Sig001_B_Magenta.tif
+Thu Oct  5 14:32:24 2017,687110Sg1-8pg_Sig001_B_Yellow.tif
+Thu Oct  5 14:28:35 2017,687110Sg1-8pg_Sig001_F_Black.tif
+Thu Oct  5 14:29:10 2017,687110Sg1-8pg_Sig001_F_Cyan.tif
+Thu Oct  5 14:29:43 2017,687110Sg1-8pg_Sig001_F_Magenta.tif
+Thu Oct  5 14:30:21 2017,687110Sg1-8pg_Sig001_F_Yellow.tif
+Thu Oct  5 14:36:43 2017,687110Sg2-16pg_Sig002_F_Black.tif
+Thu Oct  5 14:34:42 2017,687110Sg3-16pg_Sig003_B_Black.tif
+Thu Oct  5 14:35:16 2017,687110Sg3-16pg_Sig003_B_Cyan.tif
+Thu Oct  5 14:35:45 2017,687110Sg3-16pg_Sig003_B_Magenta.tif
+Thu Oct  5 14:36:11 2017,687110Sg3-16pg_Sig003_B_Yellow.tif
+Thu Oct  5 14:32:58 2017,687110Sg3-16pg_Sig003_F_Black.tif
+Thu Oct  5 14:33:27 2017,687110Sg3-16pg_Sig003_F_Cyan.tif
+Thu Oct  5 14:33:54 2017,687110Sg3-16pg_Sig003_F_Magenta.tif
+Thu Oct  5 14:34:18 2017,687110Sg3-16pg_Sig003_F_Yellow.tif
+Thu Oct  5 12:21:44 2017,690142Sg3-16pg_Sig003_B_Black.tif
+Thu Oct  5 12:22:02 2017,690142Sg3-16pg_Sig003_B_Cyan.tif
+Thu Oct  5 12:22:20 2017,690142Sg3-16pg_Sig003_B_Magenta.tif
+Thu Oct  5 12:22:39 2017,690142Sg3-16pg_Sig003_B_Yellow.tif
+Thu Oct  5 12:20:26 2017,690142Sg3-16pg_Sig003_F_Black.tif
+Thu Oct  5 12:20:46 2017,690142Sg3-16pg_Sig003_F_Cyan.tif
+Thu Oct  5 12:21:07 2017,690142Sg3-16pg_Sig003_F_Magenta.tif
+Thu Oct  5 12:21:28 2017,690142Sg3-16pg_Sig003_F_Yellow.tif
+Thu Oct  5 09:56:22 2017,692663Sg4-16pg_Sig004_B_Black.tif
+Thu Oct  5 09:56:43 2017,692663Sg4-16pg_Sig004_B_Cyan.tif
+Thu Oct  5 09:57:01 2017,692663Sg4-16pg_Sig004_B_Magenta.tif
+Thu Oct  5 09:57:18 2017,692663Sg4-16pg_Sig004_B_Yellow.tif
+Thu Oct  5 09:55:08 2017,692663Sg4-16pg_Sig004_F_Black.tif
+Thu Oct  5 09:55:28 2017,692663Sg4-16pg_Sig004_F_Cyan.tif
+Thu Oct  5 09:55:46 2017,692663Sg4-16pg_Sig004_F_Magenta.tif
+Thu Oct  5 09:56:07 2017,692663Sg4-16pg_Sig004_F_Yellow.tif
+Thu Oct  5 10:56:31 2017,693018Sg2-16pg 2up parallel_Sig002_B_Black.tif
+Thu Oct  5 10:56:37 2017,693018Sg2-16pg 2up parallel_Sig002_B_Cyan.tif
+Thu Oct  5 10:56:47 2017,693018Sg2-16pg 2up parallel_Sig002_B_Magenta.tif
+Thu Oct  5 10:56:53 2017,693018Sg2-16pg 2up parallel_Sig002_B_Yellow.tif
+Thu Oct  5 10:56:22 2017,693018Sg2-16pg 2up parallel_Sig002_F_Black.tif
+Thu Oct  5 13:20:45 2017,693634Sg1-4pg_Sig001_B_Black.tif
+Thu Oct  5 13:21:01 2017,693634Sg1-4pg_Sig001_B_Cyan.tif
+Thu Oct  5 13:21:13 2017,693634Sg1-4pg_Sig001_B_Magenta.tif
+Thu Oct  5 13:21:28 2017,693634Sg1-4pg_Sig001_B_Yellow.tif
+Thu Oct  5 13:19:40 2017,693634Sg1-4pg_Sig001_F_Black.tif
+Thu Oct  5 13:19:57 2017,693634Sg1-4pg_Sig001_F_Cyan.tif
+Thu Oct  5 13:20:14 2017,693634Sg1-4pg_Sig001_F_Magenta.tif
+Thu Oct  5 13:20:36 2017,693634Sg1-4pg_Sig001_F_Yellow.tif
+Thu Oct  5 13:23:15 2017,693634Sg2-8pg_Sig002_B_Black.tif
+Thu Oct  5 13:23:34 2017,693634Sg2-8pg_Sig002_B_Cyan.tif
+Thu Oct  5 13:23:53 2017,693634Sg2-8pg_Sig002_B_Magenta.tif
+Thu Oct  5 13:24:16 2017,693634Sg2-8pg_Sig002_B_Yellow.tif
+Thu Oct  5 13:21:58 2017,693634Sg2-8pg_Sig002_F_Black.tif
+Thu Oct  5 13:22:18 2017,693634Sg2-8pg_Sig002_F_Cyan.tif
+Thu Oct  5 13:22:36 2017,693634Sg2-8pg_Sig002_F_Magenta.tif
+Thu Oct  5 13:22:59 2017,693634Sg2-8pg_Sig002_F_Yellow.tif
+Thu Oct  5 11:00:54 2017,694480Sg1-32pg_Sig001_B_Black.tif
+Thu Oct  5 11:01:16 2017,694480Sg1-32pg_Sig001_B_Cyan.tif
+Thu Oct  5 11:01:40 2017,694480Sg1-32pg_Sig001_B_Magenta.tif
+Thu Oct  5 11:02:05 2017,694480Sg1-32pg_Sig001_B_Yellow.tif
+Thu Oct  5 10:59:08 2017,694480Sg1-32pg_Sig001_F_Black.tif
+Thu Oct  5 10:59:35 2017,694480Sg1-32pg_Sig001_F_Cyan.tif
+Thu Oct  5 11:00:02 2017,694480Sg1-32pg_Sig001_F_Magenta.tif
+Thu Oct  5 11:00:33 2017,694480Sg1-32pg_Sig001_F_Yellow.tif
+Fri Oct  6 07:26:37 2017,693274Sig-1_Sig001_B_Black.tif
+Fri Oct  6 07:26:52 2017,693274Sig-1_Sig001_B_Cyan.tif
+Thu Oct  5 16:47:17 2017,692667Sg1-16pg_Sig001_B_Black.tif
+Thu Oct  5 16:47:39 2017,692667Sg1-16pg_Sig001_B_Cyan.tif
+Thu Oct  5 16:47:58 2017,692667Sg1-16pg_Sig001_B_Magenta.tif
+Thu Oct  5 16:48:16 2017,692667Sg1-16pg_Sig001_B_Yellow.tif
+Thu Oct  5 16:45:51 2017,692667Sg1-16pg_Sig001_F_Black.tif
+Thu Oct  5 16:46:14 2017,692667Sg1-16pg_Sig001_F_Cyan.tif
+Thu Oct  5 16:46:31 2017,692667Sg1-16pg_Sig001_F_Magenta.tif
+Thu Oct  5 16:46:49 2017,692667Sg1-16pg_Sig001_F_Yellow.tif
+Thu Oct  5 16:50:24 2017,692667Sg2-16pg_Sig002_B_Black.tif
+Thu Oct  5 16:50:43 2017,692667Sg2-16pg_Sig002_B_Cyan.tif
+Thu Oct  5 16:50:57 2017,692667Sg2-16pg_Sig002_B_Magenta.tif
+Thu Oct  5 16:51:16 2017,692667Sg2-16pg_Sig002_B_Yellow.tif
+Thu Oct  5 16:48:47 2017,692667Sg2-16pg_Sig002_F_Black.tif
+Thu Oct  5 16:49:12 2017,692667Sg2-16pg_Sig002_F_Cyan.tif
+Thu Oct  5 16:49:34 2017,692667Sg2-16pg_Sig002_F_Magenta.tif
+Thu Oct  5 16:49:57 2017,692667Sg2-16pg_Sig002_F_Yellow.tif
+Thu Oct  5 17:33:08 2017,692668Sg1-16pg_Sig001_B_Black.tif
+Thu Oct  5 17:33:27 2017,692668Sg1-16pg_Sig001_B_Cyan.tif
+Thu Oct  5 17:33:46 2017,692668Sg1-16pg_Sig001_B_Magenta.tif
+Thu Oct  5 17:34:07 2017,692668Sg1-16pg_Sig001_B_Yellow.tif
+Thu Oct  5 17:31:28 2017,692668Sg1-16pg_Sig001_F_Black.tif
+Thu Oct  5 17:31:55 2017,692668Sg1-16pg_Sig001_F_Cyan.tif
+Thu Oct  5 17:32:15 2017,692668Sg1-16pg_Sig001_F_Magenta.tif
+Thu Oct  5 17:32:36 2017,692668Sg1-16pg_Sig001_F_Yellow.tif
+Thu Oct  5 17:36:20 2017,692668Sg2-16pg_Sig002_B_Black.tif
+Thu Oct  5 17:36:40 2017,692668Sg2-16pg_Sig002_B_Cyan.tif
+Thu Oct  5 17:36:59 2017,692668Sg2-16pg_Sig002_B_Magenta.tif
+Thu Oct  5 17:37:16 2017,692668Sg2-16pg_Sig002_B_Yellow.tif
+Thu Oct  5 17:34:41 2017,692668Sg2-16pg_Sig002_F_Black.tif
+Thu Oct  5 17:35:03 2017,692668Sg2-16pg_Sig002_F_Cyan.tif
+Thu Oct  5 17:35:23 2017,692668Sg2-16pg_Sig002_F_Magenta.tif
+Thu Oct  5 17:35:42 2017,692668Sg2-16pg_Sig002_F_Yellow.tif
+Thu Oct  5 17:39:22 2017,692668Sg3-16pg_Sig003_B_Black.tif
+Thu Oct  5 17:39:47 2017,692668Sg3-16pg_Sig003_B_Cyan.tif
+Thu Oct  5 17:40:09 2017,692668Sg3-16pg_Sig003_B_Magenta.tif
+Thu Oct  5 17:40:33 2017,692668Sg3-16pg_Sig003_B_Yellow.tif
+Thu Oct  5 17:37:44 2017,692668Sg3-16pg_Sig003_F_Black.tif
+Thu Oct  5 17:38:06 2017,692668Sg3-16pg_Sig003_F_Cyan.tif
+Thu Oct  5 17:38:23 2017,692668Sg3-16pg_Sig003_F_Magenta.tif
+Thu Oct  5 17:38:42 2017,692668Sg3-16pg_Sig003_F_Yellow.tif
+Thu Oct  5 17:43:25 2017,692668Sg4-16pg_Sig004_B_Black.tif
+Thu Oct  5 17:43:50 2017,692668Sg4-16pg_Sig004_B_Cyan.tif
+Thu Oct  5 17:44:11 2017,692668Sg4-16pg_Sig004_B_Magenta.tif
+Thu Oct  5 17:44:36 2017,692668Sg4-16pg_Sig004_B_Yellow.tif
+Thu Oct  5 17:41:46 2017,692668Sg4-16pg_Sig004_F_Black.tif
+Thu Oct  5 17:42:08 2017,692668Sg4-16pg_Sig004_F_Cyan.tif
+Thu Oct  5 17:42:27 2017,692668Sg4-16pg_Sig004_F_Magenta.tif
+Thu Oct  5 17:42:51 2017,692668Sg4-16pg_Sig004_F_Yellow.tif
+Thu Oct  5 18:48:48 2017,693274Sig-003_Sig001_B_Varnish.tif
+Thu Oct  5 18:48:33 2017,693274Sig-003_Sig001_F_Varnish.tif
+Fri Oct  6 00:38:46 2017,688337Sg1-16pg_Sig001_B_Black.tif
+Fri Oct  6 00:39:13 2017,688337Sg1-16pg_Sig001_B_Cyan.tif
+Fri Oct  6 00:39:37 2017,688337Sg1-16pg_Sig001_B_Magenta.tif
+Fri Oct  6 00:40:03 2017,688337Sg1-16pg_Sig001_B_Yellow.tif
+Fri Oct  6 00:37:07 2017,688337Sg1-16pg_Sig001_F_Black.tif
+Fri Oct  6 00:37:32 2017,688337Sg1-16pg_Sig001_F_Cyan.tif
+Fri Oct  6 00:37:57 2017,688337Sg1-16pg_Sig001_F_Magenta.tif
+Fri Oct  6 00:38:21 2017,688337Sg1-16pg_Sig001_F_Yellow.tif
+Fri Oct  6 00:42:22 2017,688337Sg2-16pg_Sig002_B_Black.tif
+Fri Oct  6 00:42:51 2017,688337Sg2-16pg_Sig002_B_Cyan.tif
+Fri Oct  6 00:43:18 2017,688337Sg2-16pg_Sig002_B_Magenta.tif
+Fri Oct  6 00:43:47 2017,688337Sg2-16pg_Sig002_B_Yellow.tif
+Fri Oct  6 00:40:37 2017,688337Sg2-16pg_Sig002_F_Black.tif
+Fri Oct  6 00:41:05 2017,688337Sg2-16pg_Sig002_F_Cyan.tif
+Fri Oct  6 00:41:30 2017,688337Sg2-16pg_Sig002_F_Magenta.tif
+Fri Oct  6 00:41:56 2017,688337Sg2-16pg_Sig002_F_Yellow.tif
+Fri Oct  6 00:46:20 2017,688337Sg3-16pg_Sig003_B_Black.tif
+Fri Oct  6 00:46:51 2017,688337Sg3-16pg_Sig003_B_Cyan.tif
+Fri Oct  6 00:47:19 2017,688337Sg3-16pg_Sig003_B_Magenta.tif
+Fri Oct  6 00:47:50 2017,688337Sg3-16pg_Sig003_B_Yellow.tif
+Fri Oct  6 00:44:26 2017,688337Sg3-16pg_Sig003_F_Black.tif
+Fri Oct  6 00:44:57 2017,688337Sg3-16pg_Sig003_F_Cyan.tif
+Fri Oct  6 00:45:23 2017,688337Sg3-16pg_Sig003_F_Magenta.tif
+Fri Oct  6 00:45:53 2017,688337Sg3-16pg_Sig003_F_Yellow.tif
+Fri Oct  6 00:51:05 2017,688337Sg4-16pg_Sig004_B_Black.tif
+Fri Oct  6 00:51:47 2017,688337Sg4-16pg_Sig004_B_Cyan.tif
+Fri Oct  6 00:52:25 2017,688337Sg4-16pg_Sig004_B_Magenta.tif
+Fri Oct  6 00:53:05 2017,688337Sg4-16pg_Sig004_B_Yellow.tif
+Fri Oct  6 00:48:29 2017,688337Sg4-16pg_Sig004_F_Black.tif
+Fri Oct  6 00:49:13 2017,688337Sg4-16pg_Sig004_F_Cyan.tif
+Fri Oct  6 00:49:52 2017,688337Sg4-16pg_Sig004_F_Magenta.tif
+Fri Oct  6 00:50:34 2017,688337Sg4-16pg_Sig004_F_Yellow.tif
+Fri Oct  6 00:55:13 2017,688337Sg5-16pg_Sig005_B_Black.tif
+Fri Oct  6 00:55:41 2017,688337Sg5-16pg_Sig005_B_Cyan.tif
+Fri Oct  6 00:56:07 2017,688337Sg5-16pg_Sig005_B_Magenta.tif
+Fri Oct  6 00:56:34 2017,688337Sg5-16pg_Sig005_B_Yellow.tif
+Fri Oct  6 00:53:31 2017,688337Sg5-16pg_Sig005_F_Black.tif
+Fri Oct  6 00:54:00 2017,688337Sg5-16pg_Sig005_F_Cyan.tif
+Fri Oct  6 00:54:25 2017,688337Sg5-16pg_Sig005_F_Magenta.tif
+Fri Oct  6 00:54:52 2017,688337Sg5-16pg_Sig005_F_Yellow.tif
+Fri Oct  6 00:58:45 2017,688337Sg6-16pg_Sig006_B_Black.tif
+Fri Oct  6 00:59:16 2017,688337Sg6-16pg_Sig006_B_Cyan.tif
+Fri Oct  6 00:59:44 2017,688337Sg6-16pg_Sig006_B_Magenta.tif
+Fri Oct  6 01:00:14 2017,688337Sg6-16pg_Sig006_B_Yellow.tif
+Fri Oct  6 00:57:12 2017,688337Sg6-16pg_Sig006_F_Black.tif
+Fri Oct  6 00:57:36 2017,688337Sg6-16pg_Sig006_F_Cyan.tif
+Fri Oct  6 00:57:56 2017,688337Sg6-16pg_Sig006_F_Magenta.tif
+Fri Oct  6 00:58:19 2017,688337Sg6-16pg_Sig006_F_Yellow.tif
+Fri Oct  6 01:02:28 2017,688337Sg7-16pg_Sig007_B_Black.tif
+Fri Oct  6 01:02:59 2017,688337Sg7-16pg_Sig007_B_Cyan.tif
+Fri Oct  6 01:03:26 2017,688337Sg7-16pg_Sig007_B_Magenta.tif
+Fri Oct  6 01:03:53 2017,688337Sg7-16pg_Sig007_B_Yellow.tif
+Fri Oct  6 01:00:46 2017,688337Sg7-16pg_Sig007_F_Black.tif
+Fri Oct  6 01:01:13 2017,688337Sg7-16pg_Sig007_F_Cyan.tif
+Fri Oct  6 01:01:39 2017,688337Sg7-16pg_Sig007_F_Magenta.tif
+Fri Oct  6 01:02:06 2017,688337Sg7-16pg_Sig007_F_Yellow.tif
+Fri Oct  6 02:31:56 2017,689622GTA-Sg1-16pg_Sig004_B_Black.tif
+Fri Oct  6 02:32:13 2017,689622GTA-Sg1-16pg_Sig004_B_Cyan.tif
+Fri Oct  6 02:32:31 2017,689622GTA-Sg1-16pg_Sig004_B_Magenta.tif
+Fri Oct  6 02:32:50 2017,689622GTA-Sg1-16pg_Sig004_B_Yellow.tif
+Fri Oct  6 02:30:47 2017,689622GTA-Sg1-16pg_Sig004_F_Black.tif
+Fri Oct  6 02:31:05 2017,689622GTA-Sg1-16pg_Sig004_F_Cyan.tif
+Fri Oct  6 02:31:22 2017,689622GTA-Sg1-16pg_Sig004_F_Magenta.tif
+Fri Oct  6 02:31:40 2017,689622GTA-Sg1-16pg_Sig004_F_Yellow.tif
+Fri Oct  6 02:29:31 2017,689622King-Sg1-16pg_Sig003_B_Black.tif
+Fri Oct  6 02:29:50 2017,689622King-Sg1-16pg_Sig003_B_Cyan.tif
+Fri Oct  6 02:30:09 2017,689622King-Sg1-16pg_Sig003_B_Magenta.tif
+Fri Oct  6 02:30:29 2017,689622King-Sg1-16pg_Sig003_B_Yellow.tif
+Fri Oct  6 02:28:25 2017,689622King-Sg1-16pg_Sig003_F_Black.tif
+Fri Oct  6 02:28:40 2017,689622King-Sg1-16pg_Sig003_F_Cyan.tif
+Fri Oct  6 02:28:55 2017,689622King-Sg1-16pg_Sig003_F_Magenta.tif
+Fri Oct  6 02:29:12 2017,689622King-Sg1-16pg_Sig003_F_Yellow.tif
+Fri Oct  6 02:24:29 2017,689622Ott-Sg1-16pg_Sig001_B_Black.tif
+Fri Oct  6 02:24:48 2017,689622Ott-Sg1-16pg_Sig001_B_Cyan.tif
+Fri Oct  6 02:25:06 2017,689622Ott-Sg1-16pg_Sig001_B_Magenta.tif
+Fri Oct  6 02:25:26 2017,689622Ott-Sg1-16pg_Sig001_B_Yellow.tif
+Fri Oct  6 02:23:20 2017,689622Ott-Sg1-16pg_Sig001_F_Black.tif
+Fri Oct  6 02:23:38 2017,689622Ott-Sg1-16pg_Sig001_F_Cyan.tif
+Fri Oct  6 02:23:54 2017,689622Ott-Sg1-16pg_Sig001_F_Magenta.tif
+Fri Oct  6 02:24:11 2017,689622Ott-Sg1-16pg_Sig001_F_Yellow.tif
+Fri Oct  6 02:39:20 2017,689622Ott-Sg4-16pg_Sig007_B_Black.tif
+Fri Oct  6 02:39:39 2017,689622Ott-Sg4-16pg_Sig007_B_Cyan.tif
+Fri Oct  6 02:40:00 2017,689622Ott-Sg4-16pg_Sig007_B_Magenta.tif
+Fri Oct  6 02:40:23 2017,689622Ott-Sg4-16pg_Sig007_B_Yellow.tif
+Fri Oct  6 02:38:05 2017,689622Ott-Sg4-16pg_Sig007_F_Black.tif
+Fri Oct  6 02:38:22 2017,689622Ott-Sg4-16pg_Sig007_F_Cyan.tif
+Fri Oct  6 02:38:38 2017,689622Ott-Sg4-16pg_Sig007_F_Magenta.tif
+Fri Oct  6 02:38:58 2017,689622Ott-Sg4-16pg_Sig007_F_Yellow.tif
+Fri Oct  6 02:42:03 2017,689622Ott-Sg5-16pg_Sig008_B_Black.tif
+Fri Oct  6 02:42:24 2017,689622Ott-Sg5-16pg_Sig008_B_Cyan.tif
+Fri Oct  6 02:42:44 2017,689622Ott-Sg5-16pg_Sig008_B_Magenta.tif
+Fri Oct  6 02:43:06 2017,689622Ott-Sg5-16pg_Sig008_B_Yellow.tif
+Fri Oct  6 02:40:43 2017,689622Ott-Sg5-16pg_Sig008_F_Black.tif
+Fri Oct  6 02:41:02 2017,689622Ott-Sg5-16pg_Sig008_F_Cyan.tif
+Fri Oct  6 02:41:22 2017,689622Ott-Sg5-16pg_Sig008_F_Magenta.tif
+Fri Oct  6 02:41:42 2017,689622Ott-Sg5-16pg_Sig008_F_Yellow.tif
+Fri Oct  6 02:44:53 2017,689622Ott-Sg6-16pg_Sig009_B_Black.tif
+Fri Oct  6 02:45:10 2017,689622Ott-Sg6-16pg_Sig009_B_Cyan.tif
+Fri Oct  6 02:45:26 2017,689622Ott-Sg6-16pg_Sig009_B_Magenta.tif
+Fri Oct  6 02:45:47 2017,689622Ott-Sg6-16pg_Sig009_B_Yellow.tif
+Fri Oct  6 02:43:27 2017,689622Ott-Sg6-16pg_Sig009_F_Black.tif
+Fri Oct  6 02:43:47 2017,689622Ott-Sg6-16pg_Sig009_F_Cyan.tif
+Fri Oct  6 02:44:10 2017,689622Ott-Sg6-16pg_Sig009_F_Magenta.tif
+Fri Oct  6 02:44:34 2017,689622Ott-Sg6-16pg_Sig009_F_Yellow.tif
+Fri Oct  6 02:34:27 2017,689622Sg2-16pg-common_Sig005_B_Black.tif
+Fri Oct  6 02:34:46 2017,689622Sg2-16pg-common_Sig005_B_Cyan.tif
+Fri Oct  6 02:35:02 2017,689622Sg2-16pg-common_Sig005_B_Magenta.tif
+Fri Oct  6 02:35:19 2017,689622Sg2-16pg-common_Sig005_B_Yellow.tif
+Fri Oct  6 02:33:10 2017,689622Sg2-16pg-common_Sig005_F_Black.tif
+Fri Oct  6 02:33:30 2017,689622Sg2-16pg-common_Sig005_F_Cyan.tif
+Fri Oct  6 02:33:49 2017,689622Sg2-16pg-common_Sig005_F_Magenta.tif
+Fri Oct  6 02:34:10 2017,689622Sg2-16pg-common_Sig005_F_Yellow.tif
+Fri Oct  6 02:36:49 2017,689622Sg3-16pg-common_Sig006_B_Black.tif
+Fri Oct  6 02:37:08 2017,689622Sg3-16pg-common_Sig006_B_Cyan.tif
+Fri Oct  6 02:37:26 2017,689622Sg3-16pg-common_Sig006_B_Magenta.tif
+Fri Oct  6 02:37:46 2017,689622Sg3-16pg-common_Sig006_B_Yellow.tif
+Fri Oct  6 02:35:37 2017,689622Sg3-16pg-common_Sig006_F_Black.tif
+Fri Oct  6 02:35:55 2017,689622Sg3-16pg-common_Sig006_F_Cyan.tif
+Fri Oct  6 02:36:12 2017,689622Sg3-16pg-common_Sig006_F_Magenta.tif
+Fri Oct  6 02:36:30 2017,689622Sg3-16pg-common_Sig006_F_Yellow.tif
+Fri Oct  6 02:27:01 2017,689622Valley-Sg1-16pg_Sig002_B_Black.tif
+Fri Oct  6 02:27:23 2017,689622Valley-Sg1-16pg_Sig002_B_Cyan.tif
+Fri Oct  6 02:27:45 2017,689622Valley-Sg1-16pg_Sig002_B_Magenta.tif
+Fri Oct  6 02:28:08 2017,689622Valley-Sg1-16pg_Sig002_B_Yellow.tif
+Fri Oct  6 02:25:45 2017,689622Valley-Sg1-16pg_Sig002_F_Black.tif
+Fri Oct  6 02:26:03 2017,689622Valley-Sg1-16pg_Sig002_F_Cyan.tif
+Fri Oct  6 02:26:20 2017,689622Valley-Sg1-16pg_Sig002_F_Magenta.tif
+Fri Oct  6 02:26:40 2017,689622Valley-Sg1-16pg_Sig002_F_Yellow.tif
+Thu Oct  5 20:09:58 2017,691512Sig-1 common_Sig001_B_Black.tif
+Thu Oct  5 20:10:16 2017,691512Sig-1 common_Sig001_B_Cyan.tif
+Thu Oct  5 20:10:35 2017,691512Sig-1 common_Sig001_B_Magenta.tif
+Thu Oct  5 20:10:55 2017,691512Sig-1 common_Sig001_B_Yellow.tif
+Thu Oct  5 20:08:40 2017,691512Sig-1 common_Sig001_F_Black.tif
+Thu Oct  5 20:09:00 2017,691512Sig-1 common_Sig001_F_Cyan.tif
+Thu Oct  5 20:09:20 2017,691512Sig-1 common_Sig001_F_Magenta.tif
+Thu Oct  5 20:09:39 2017,691512Sig-1 common_Sig001_F_Yellow.tif
+Thu Oct  5 20:12:43 2017,691512Sig-2 common_Sig002_B_Black.tif
+Thu Oct  5 20:13:06 2017,691512Sig-2 common_Sig002_B_Cyan.tif
+Thu Oct  5 20:13:25 2017,691512Sig-2 common_Sig002_B_Magenta.tif
+Thu Oct  5 20:13:45 2017,691512Sig-2 common_Sig002_B_Yellow.tif
+Thu Oct  5 20:11:16 2017,691512Sig-2 common_Sig002_F_Black.tif
+Thu Oct  5 20:11:39 2017,691512Sig-2 common_Sig002_F_Cyan.tif
+Thu Oct  5 20:12:03 2017,691512Sig-2 common_Sig002_F_Magenta.tif
+Thu Oct  5 20:12:24 2017,691512Sig-2 common_Sig002_F_Yellow.tif
+Thu Oct  5 20:15:18 2017,691512Sig-3 common_Sig003_B_Black.tif
+Thu Oct  5 20:15:37 2017,691512Sig-3 common_Sig003_B_Cyan.tif
+Thu Oct  5 20:15:55 2017,691512Sig-3 common_Sig003_B_Magenta.tif
+Thu Oct  5 20:16:15 2017,691512Sig-3 common_Sig003_B_Yellow.tif
+Thu Oct  5 20:14:03 2017,691512Sig-3 common_Sig003_F_Black.tif
+Thu Oct  5 20:14:22 2017,691512Sig-3 common_Sig003_F_Cyan.tif
+Thu Oct  5 20:14:40 2017,691512Sig-3 common_Sig003_F_Magenta.tif
+Thu Oct  5 20:15:01 2017,691512Sig-3 common_Sig003_F_Yellow.tif
+Thu Oct  5 20:18:19 2017,691512Sig-4 common_Sig004_B_Black.tif
+Thu Oct  5 20:18:44 2017,691512Sig-4 common_Sig004_B_Cyan.tif
+Thu Oct  5 20:19:08 2017,691512Sig-4 common_Sig004_B_Magenta.tif
+Thu Oct  5 20:19:35 2017,691512Sig-4 common_Sig004_B_Yellow.tif
+Thu Oct  5 20:16:39 2017,691512Sig-4 common_Sig004_F_Black.tif
+Thu Oct  5 20:17:02 2017,691512Sig-4 common_Sig004_F_Cyan.tif
+Thu Oct  5 20:17:26 2017,691512Sig-4 common_Sig004_F_Magenta.tif
+Thu Oct  5 20:17:54 2017,691512Sig-4 common_Sig004_F_Yellow.tif
+Thu Oct  5 20:20:52 2017,691512Sig-5 common_Sig005_B_Black.tif
+Thu Oct  5 20:21:10 2017,691512Sig-5 common_Sig005_B_Cyan.tif
+Thu Oct  5 20:21:27 2017,691512Sig-5 common_Sig005_B_Magenta.tif
+Thu Oct  5 20:21:45 2017,691512Sig-5 common_Sig005_B_Yellow.tif
+Thu Oct  5 20:19:52 2017,691512Sig-5 common_Sig005_F_Black.tif
+Thu Oct  5 20:20:08 2017,691512Sig-5 common_Sig005_F_Cyan.tif
+Thu Oct  5 20:20:22 2017,691512Sig-5 common_Sig005_F_Magenta.tif
+Thu Oct  5 20:20:37 2017,691512Sig-5 common_Sig005_F_Yellow.tif
+Thu Oct  5 14:38:32 2017,687110Sg2-16pg_Sig002_B_Black.tif
+Thu Oct  5 14:38:58 2017,687110Sg2-16pg_Sig002_B_Cyan.tif
+Thu Oct  5 14:39:22 2017,687110Sg2-16pg_Sig002_B_Magenta.tif
+Thu Oct  5 14:39:43 2017,687110Sg2-16pg_Sig002_B_Yellow.tif
+Thu Oct  5 14:37:19 2017,687110Sg2-16pg_Sig002_F_Cyan.tif
+Thu Oct  5 14:37:49 2017,687110Sg2-16pg_Sig002_F_Magenta.tif
+Thu Oct  5 14:38:15 2017,687110Sg2-16pg_Sig002_F_Yellow.tif
+Fri Oct  6 00:16:48 2017,692287eng-sg1-16pg_sig001_b_black.tif
+Fri Oct  6 00:17:06 2017,692287eng-sg1-16pg_sig001_b_cyan.tif
+Fri Oct  6 00:17:22 2017,692287eng-sg1-16pg_sig001_b_magenta.tif
+Fri Oct  6 00:17:39 2017,692287eng-sg1-16pg_sig001_b_yellow.tif
+Fri Oct  6 00:15:38 2017,692287eng-sg1-16pg_sig001_f_black.tif
+Fri Oct  6 00:15:56 2017,692287eng-sg1-16pg_sig001_f_cyan.tif
+Fri Oct  6 00:16:14 2017,692287eng-sg1-16pg_sig001_f_magenta.tif
+Fri Oct  6 00:16:34 2017,692287eng-sg1-16pg_sig001_f_yellow.tif
+Fri Oct  6 00:19:24 2017,692287Eng-Sg2-8pg_Sig002_B_Black.tif
+Fri Oct  6 00:19:48 2017,692287Eng-Sg2-8pg_Sig002_B_Cyan.tif
+Fri Oct  6 00:20:10 2017,692287Eng-Sg2-8pg_Sig002_B_Magenta.tif
+Fri Oct  6 00:20:33 2017,692287Eng-Sg2-8pg_Sig002_B_Yellow.tif
+Fri Oct  6 00:18:10 2017,692287Eng-Sg2-8pg_Sig002_F_Black.tif
+Fri Oct  6 00:18:29 2017,692287Eng-Sg2-8pg_Sig002_F_Cyan.tif
+Fri Oct  6 00:18:48 2017,692287Eng-Sg2-8pg_Sig002_F_Magenta.tif
+Fri Oct  6 00:19:07 2017,692287Eng-Sg2-8pg_Sig002_F_Yellow.tif
+Fri Oct  6 00:22:22 2017,692287fre-sg1-16pg_sig003_b_black.tif
+Fri Oct  6 00:22:40 2017,692287fre-sg1-16pg_sig003_b_cyan.tif
+Fri Oct  6 00:22:56 2017,692287fre-sg1-16pg_sig003_b_magenta.tif
+Fri Oct  6 00:23:13 2017,692287fre-sg1-16pg_sig003_b_yellow.tif
+Fri Oct  6 00:21:10 2017,692287fre-sg1-16pg_sig003_f_black.tif
+Fri Oct  6 00:21:29 2017,692287fre-sg1-16pg_sig003_f_cyan.tif
+Fri Oct  6 00:21:48 2017,692287fre-sg1-16pg_sig003_f_magenta.tif
+Fri Oct  6 00:22:08 2017,692287fre-sg1-16pg_sig003_f_yellow.tif
+Fri Oct  6 00:24:59 2017,692287Fre-Sg2-8pg_Sig004_B_Black.tif
+Fri Oct  6 00:25:23 2017,692287Fre-Sg2-8pg_Sig004_B_Cyan.tif
+Fri Oct  6 00:25:44 2017,692287Fre-Sg2-8pg_Sig004_B_Magenta.tif
+Fri Oct  6 00:26:08 2017,692287Fre-Sg2-8pg_Sig004_B_Yellow.tif
+Fri Oct  6 00:23:44 2017,692287Fre-Sg2-8pg_Sig004_F_Black.tif
+Fri Oct  6 00:24:03 2017,692287Fre-Sg2-8pg_Sig004_F_Cyan.tif
+Fri Oct  6 00:24:22 2017,692287Fre-Sg2-8pg_Sig004_F_Magenta.tif
+Fri Oct  6 00:24:42 2017,692287Fre-Sg2-8pg_Sig004_F_Yellow.tif
