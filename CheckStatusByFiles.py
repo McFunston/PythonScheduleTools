@@ -12,9 +12,11 @@ def check_status_by_files(excel_filename, status_column, id_column, status, root
     jobs_to_check = ExcelReader.get_jobs_by_status(
         excel_filename, status_column, status)
     jobs_to_check = ExcelReader.get_just_ids(jobs_to_check, id_column)
+    #print(jobs_to_check)
     folders_to_check = FolderChecker.find_folders(root_path, jobs_to_check)
     folders_to_check = FolderChecker.folder_append(folders_to_check, sub_path)
-    jobs = FolderChecker.count_files(folders_to_check)
+    #pprint.pprint(folders_to_check)
+    jobs = FolderChecker.count_files(folders_to_check)    
     if jobs:
         candidates = [job for job in jobs if int(job[1]) > 0]
         return candidates

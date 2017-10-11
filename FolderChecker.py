@@ -29,7 +29,8 @@ def get_full_file_list(path):
     Returns: list of string (file names)"""
     file_list = list()
     for dirpath, dirnames, filenames in os.walk(path):
-        for filename in [f for f in filenames if f.endswith(".pdf") or f.endswith(".tif")]:
+        for filename in [f for f in filenames if f.lower().endswith(".pdf") or f.lower().endswith(".tif")]:
+        #for filename in filenames:
             if filename[0] != ".":
                 file_list.append(os.path.join(dirpath, filename))
             #print(os.path.join(dirpath, filename))
@@ -41,9 +42,11 @@ def get_file_list_with_date(path):
     Args: path: Path that you want to get the file list from
     Returns: list of [date, path]
     """
+    #print(path)
     file_list = get_full_file_list(path)
     file_list_with_date = list()
     for file in file_list:
+        #print(file)
         if file[0] != ".":
             #file = os.path.normpath(file)
             try:
