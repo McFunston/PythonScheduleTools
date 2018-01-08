@@ -4,7 +4,7 @@ import tkinter
 import CheckStatusByFiles
 import CheckStatusByLog
 import FolderWatcher
-
+PFFILE = '/Users/MicaFunston/Downloads/Printflow-ToDo.xls'
 
 class ScheduleToolsGUI(tkinter.Frame):
     """Gui class for checking Files In and Proof Out"""
@@ -56,7 +56,7 @@ class ScheduleToolsGUI(tkinter.Frame):
         files_in = list()
         files_in.clear()
         dockets_files = CheckStatusByFiles.check_status_by_files(
-            'Printflow-ToDo1.xls',
+            PFFILE,
             2,
             3,
             'Files In',
@@ -66,7 +66,7 @@ class ScheduleToolsGUI(tkinter.Frame):
             for dockets_file in dockets_files:
                 files_in.append(dockets_file)
         insite_files = CheckStatusByFiles.check_status_by_files(
-            'Printflow-ToDo1.xls',
+            PFFILE,
             2,
             3,
             'Files In',
@@ -88,13 +88,13 @@ class ScheduleToolsGUI(tkinter.Frame):
         proofs_out = list()
         proofs_out.clear()
         proofs_out = CheckStatusByLog.check_status_by_csv(
-            'Printflow-ToDo1.xls',
+            PFFILE,
             2,
             3,
             'Proof Out',
             'ProofLog.csv')
         csr_proofs_out = CheckStatusByFiles.check_status_by_files(
-            'Printflow-ToDo1.xls',
+            PFFILE,
             2,
             3,
             'Proof Out',
@@ -120,20 +120,20 @@ class ScheduleToolsGUI(tkinter.Frame):
         dollco = list()
         huntclub = list()
         proofs_in.clear
-        FolderWatcher.folder_watcher("/Volumes/Prepress-2/Plates","dcplates.csv")
+        FolderWatcher.folder_watcher("/Volumes/Prepress-2/Plates","/Users/MicaFunston/Downloads/dcplates.csv")
 
         dollco = CheckStatusByLog.check_status_by_csv(
-            'Printflow-ToDo1.xls',
+            PFFILE,
             2,
             3,
             'Proof In',
-            'dcplates.csv')
+            '/Users/MicaFunston/Downloads/dcplates.csv')
         huntclub = CheckStatusByLog.check_status_by_csv(
-            'Printflow-ToDo1.xls',
+            PFFILE,
             2,
             3,
             'Proof In',
-            'hcplates.csv')
+            '/Users/MicaFunston/Downloads/hcplates.csv')
         proofs_in = dollco + huntclub
         self.results_box.config(state="normal")
         self.results_box.delete(1.0, tkinter.END)

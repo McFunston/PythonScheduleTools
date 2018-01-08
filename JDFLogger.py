@@ -31,7 +31,7 @@ def jdf_logger(folder, logfile):
             writer.writerow(file_to_add)
 # quotechar='|'
 
-jdf_logger('/Volumes/Dockets/Impositions', 'jdfs.csv')
+#jdf_logger('/Volumes/Dockets/Impositions', 'jdfs.csv')
 
 #folder_watcher("//192.168.113.50/share/", "ProofLog2.csv")
 if __name__ == "__main__":
