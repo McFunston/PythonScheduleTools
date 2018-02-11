@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-"""A utility to add any new files in a given folder to a comma separated text file"""
+"""A utility to add any new folders in a given folder to a comma separated text file"""
 import sys
 import csv
 import CSVReader
 import FolderChecker
+from datetime import datetime
+from datetime import timedelta
 
+def datetime_parser(dt):
+    return datetime.strptime(dt, '%a %b %d %H:%M:%S %Y')
 
 def jdf_logger(folder, logfile):
     files = FolderChecker.get_folder_list_with_date(folder)
@@ -18,7 +22,8 @@ def jdf_logger(folder, logfile):
         file.close()
     current_log = CSVReader.read_log(csv_path)
     log = list()
-    log = [[l[0], l[1]] for l in current_log]
+    log = [[l[0], l[1]] for l in current_log if datetime_parser(l[0]) > datetime.today() - timedelta(days=60)]
+    #log = [[l[0], l[1]] for l in current_log]
     files_to_add = list()
     for file in files:
         if file not in log:
