@@ -40,7 +40,7 @@ def logger(path, csv_path, sub_path):
             log_entry.append(job)
             potential_log_addition = list()
             potential_log_addition.append(log_entry)
-            if potential_log_addition[0] not in log: 
+            if potential_log_addition[0] not in log and datetime_parser(form[0]) < datetime.today() - timedelta(days=7): 
                     if PDFFormChecker.PDFFormChecker(full_path + "/" + form[1], 'PROOF OK AS SUBMITTED', 'Yes'):
                         log.append(log_entry)
     with open(csv_path, 'w', newline='', encoding='latin-1') as csvfile:
