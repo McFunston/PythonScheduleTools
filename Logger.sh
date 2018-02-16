@@ -6,3 +6,4 @@ set -ex
 /usr/local/bin/Python3 /Users/MicaFunston/Projects/PythonScheduleTools/FolderLogger.py "/Volumes/Dockets/Impositions" "jdfs.csv"
 /usr/local/bin/Python3 /Users/MicaFunston/Projects/PythonScheduleTools/FileLogger.py "/Volumes/printreadyportal" "/Users/MicaFunston/Downloads/hcplates.csv"
 /usr/local/bin/Python3 /Users/MicaFunston/Projects/PythonScheduleTools/FileLogger.py "/Volumes/Spool" "/Users/MicaFunston/Downloads/hcplates.csv"
+/usr/local/bin/Python3 /Users/MicaFunston/Projects/PythonScheduleTools/ApprovalLogger.py

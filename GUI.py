@@ -3,7 +3,7 @@ import tkinter
 #from tkinter import filedialog
 import CheckStatusByFiles
 import CheckStatusByLog
-import FolderWatcher
+import FileLogger
 PFFILE = '/Users/MicaFunston/Downloads/Printflow-ToDo.xls'
 
 class ScheduleToolsGUI(tkinter.Frame):
@@ -120,7 +120,7 @@ class ScheduleToolsGUI(tkinter.Frame):
         dollco = list()
         huntclub = list()
         proofs_in.clear
-        FolderWatcher.folder_watcher("/Volumes/Prepress-2/Plates","/Users/MicaFunston/Downloads/dcplates.csv")
+        FileLogger.folder_watcher("/Volumes/Prepress-2/Plates","/Users/MicaFunston/Downloads/dcplates.csv")
 
         dollco = CheckStatusByLog.check_status_by_csv(
             PFFILE,

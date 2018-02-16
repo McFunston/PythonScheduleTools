@@ -9,12 +9,20 @@ from pdfminer.pdftypes import resolve1
 def PDFFormChecker(path, fieldName, trueValue):
     #filename = sys.argv[1]
     print('Checking '+path)
-    if 'approved' in path.lower():
+    if 'digital' in path.lower() or 'changes' in path.lower():
+        return False
+    if 'approv' in path.lower() or 'ok' in path.lower() or 'final' in path.lower():
         return True
-    fp = open(path, 'rb')
+    try:
+        fp = open(path, 'rb')
+    except FileNotFoundError:
+        return False
     parser = PDFParser(fp)
     doc = PDFDocument(parser)
-    fields = resolve1(doc.catalog['AcroForm'])['Fields']
+    try:
+        fields = resolve1(doc.catalog['AcroForm'])['Fields']
+    except KeyError:
+        return False
     for i in fields:
         field = resolve1(i)
         name, value = field.get('T'), field.get('V')

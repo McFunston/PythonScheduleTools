@@ -36,6 +36,40 @@ def get_full_file_list(path):
             #print(os.path.join(dirpath, filename))
     return file_list
 
+def get_full_file_list_no_subpath(path):
+    """Given a path returns a list of all files contained,
+    with full path, does not include subdirectories
+    Args: path: Path that you want to get the file list from
+    Returns: list of string (file names)"""
+    file_list = list()
+    for dirpath, dirnames, filenames in os.walk(path):
+        for filename in [f for f in filenames if f.lower().endswith(".pdf") or f.lower().endswith(".tif")]:
+        #for filename in filenames:
+            if filename[0] != ".":
+                file_list.append(os.path.join(dirpath, filename))
+            #print(os.path.join(dirpath, filename))
+        break
+    return file_list
+
+def get_file_list_with_date_no_subs(path):
+    """Given a path, returns a list of dates and file paths
+    Args: path: Path that you want to get the file list from
+    Returns: list of [date, path]
+    """
+    #print(path)
+    file_list = get_full_file_list_no_subpath(path)
+    file_list_with_date = list()
+    for file in file_list:
+        #print(file)
+        if file[0] != ".":
+            #file = os.path.normpath(file)
+            try:
+                file_with_date = [time.ctime(
+                    os.path.getmtime(file)), os.path.basename(file)]
+                file_list_with_date.append(file_with_date)
+            except FileNotFoundError:
+                print(file + " is not a real file")
+    return file_list_with_date
 
 def get_file_list_with_date(path):
     """Given a path, returns a list of dates and file paths

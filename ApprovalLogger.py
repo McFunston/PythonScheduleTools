@@ -34,9 +34,10 @@ def logger(path, csv_path, sub_path):
     for job in job_list:
         if str(job) not in logged_jobs:
             full_path = get_full_path(path, job, sub_path)
-            forms = FolderChecker.get_file_list_with_date(full_path)
-            log_entry = list()
+            forms = FolderChecker.get_file_list_with_date_no_subs(full_path)
+            
             for form in forms:
+                log_entry = list()
                 log_entry.append(form[0])
                 log_entry.append(job)
                 potential_log_addition = list()
@@ -48,4 +49,4 @@ def logger(path, csv_path, sub_path):
         writer = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
         for file_to_add in log:
             writer.writerow(file_to_add)
-logger('C:/Visual Studio Projects/PythonScheduleTools/TestData/Dockets', 'C:/Visual Studio Projects/PythonScheduleTools/ApprovedJobs.csv', '/Prepress/Proofslip')
+logger('/Volumes/Dockets', '/Users/MicaFunston/Downloads/ApprovedJobs.csv', '/PREPRESS/PROOFSLIP')
